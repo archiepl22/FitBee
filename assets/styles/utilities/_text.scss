@@ -1,0 +1,44 @@
+// Text Utils
+// ====
+
+
+// Text align
+.u-text-align-left {
+  text-align: left;
+}
+
+.u-text-align-right {
+  text-align: right;
+}
+
+.u-text-align-center {
+  text-align: center;
+}
+
+
+// Text Size
+.u-text-size-small {
+  font-size: $small-font;
+}
+
+.u-text-size-medium {
+  font-size: $medium-font;
+}
+
+.u-text-size-title {
+  font-size: $title-font;
+}
+
+.u-text-size-large {
+  font-size: $large-font;
+}
+
+.u-text-size-xlarge {
+  font-size: $xlarge-font;
+}
+
+
+// Font Weight
+.u-text-bold {
+  font-weight: bold;
+}

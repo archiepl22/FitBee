@@ -1,0 +1,68 @@
+// Variables
+// ======
+//
+
+//Spacing
+// ---
+
+$unit: 4px;
+
+
+// Fonts
+// --
+
+$font-family: 'Roboto', sans-serif;
+
+
+
+
+// Font size
+// ---
+
+$font-size: 16px;
+
+$small-font: 14px;
+$medium-font: 18px;
+$large-font: 20px;
+$title-font: 24px;
+$xlarge-font: 36px;
+
+
+// Colors
+// ---
+
+// Neutrals
+$neutral-00: #fff;
+$neutral-10: #F0F0F2;
+$neutral-20: #CFCFCF;
+$neutral-70: #31383E;
+$neutral-80: #21272A;
+
+// Brand Colors
+$brand-blue: #1385B9;
+$brand-orange: #F6921E;
+$brand-yellow: #F6C811;
+
+
+// Media-queries
+// ---
+
+$screen-xs: new-breakpoint(min-width 480px);
+$screen-hlf-scrn: new-breakpoint(min-width 618px);
+$screen-sm: new-breakpoint(min-width 768px);
+$screen-md: new-breakpoint(min-width 992px);
+$screen-lg: new-breakpoint(min-width 1200px);
+
+
+// Borders
+// ---
+
+$border-radius: $unit/2;
+$border: 1px solid $neutral-20;
+
+
+// Other
+// ---
+
+$tap-size: 44px;
+$slow-animation: 0.25s ease-in-out all;

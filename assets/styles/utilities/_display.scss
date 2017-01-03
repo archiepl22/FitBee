@@ -1,0 +1,26 @@
+// Display utils
+// ====
+
+.u-display-flex {
+  display: flex;
+}
+
+.u-display-flex.u--align-center {
+  align-items: center;
+}
+
+.u-display-flex.u--space-between {
+  justify-content: space-between;;
+}
+
+.u-display-none {
+  display: none;
+}
+
+.u-display-inline {
+  display: inline;
+}
+
+.u-display-block {
+  display: block;
+}
