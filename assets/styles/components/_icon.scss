@@ -1,3 +1,11 @@
-.c-icon__small {
+.c-icon {
+  cursor: pointer;
+}
+
+.c-icon.c--small {
   width: 14px;
+}
+
+.c-icon.c--medium {
+  width: 18px;
 }

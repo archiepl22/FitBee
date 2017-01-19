@@ -8,17 +8,18 @@
 
 .c-nav__primary-list {
     justify-content: flex-end;
+    align-items: center;
+}
 
-    li {
-      padding: 0 $unit*3;
-    }
+.c-nav__primary-list-item {
+  &:hover {
+    color: $brand-blue;
+    fill: $brand-blue;
+  }
 }
 
 .c-nav__secondary-list {
     font-weight: 500;
     color: $brand-blue;
-
-    li {
-      padding-right: $unit*6;
-    }
   }
+

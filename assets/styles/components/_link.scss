@@ -1,0 +1,10 @@
+// Link
+// ===
+
+.c-link {
+  cursor: pointer;
+  
+  &:hover {
+    color: darken($brand-blue, 10%);
+  }
+}
