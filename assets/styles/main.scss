@@ -8,6 +8,12 @@
 
 // Local Imports
 
+// Components
+// @import './components/button';
+@import './components/header';
+@import './components/icon';
+@import './components/nav';
+
 // Utilities
 @import "./utilities/spacing";
 @import "./utilities/text";
@@ -16,3 +22,4 @@
 @import "./utilities/align";
 @import "./utilities/width";
 @import "./utilities/color";
+@import "./utilities/border";

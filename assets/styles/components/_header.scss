@@ -1,0 +1,19 @@
+// Header
+// ===
+
+.c-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-header__top {
+  padding: $unit*3;
+  background-color: $neutral-10;
+  font-size: $small-font;
+}
+
+.c-header__logo {
+  width: $unit*23;
+  margin-right: $unit*12;
+}

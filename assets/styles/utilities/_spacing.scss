@@ -8,6 +8,25 @@
   margin: 0 !important;
 }
 
+.u-margin-none {
+  margin: 0 !important;
+}
+
+.u-margin-sm {
+  margin: $unit !important;;
+}
+
+.u-margin-md {
+  margin: $unit*2 !important;;
+}
+
+.u-margin-lg {
+  margin: $unit*3 !important;;
+}
+
+.u-margin-xlg {
+  margin-top: $unit*4 !important;;
+}
 
 // Top Margins
 
@@ -132,6 +151,25 @@
   padding: 0 !important;
 }
 
+.u-padding-none {
+  padding: 0 !important;
+}
+
+.u-padding-sm {
+  padding: $unit !important;;
+}
+
+.u-padding-md {
+  padding: $unit*2 !important;;
+}
+
+.u-padding-lg {
+  padding: $unit*3 !important;;
+}
+
+.u-padding-xlg {
+  padding-top: $unit*4 !important;;
+}
 
 // Top Padding
 

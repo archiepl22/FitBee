@@ -38,6 +38,7 @@ $neutral-20: #CFCFCF;
 $neutral-70: #31383E;
 $neutral-80: #21272A;
 
+
 // Brand Colors
 $brand-blue: #1385B9;
 $brand-orange: #F6921E;
@@ -52,6 +53,8 @@ $screen-hlf-scrn: new-breakpoint(min-width 618px);
 $screen-sm: new-breakpoint(min-width 768px);
 $screen-md: new-breakpoint(min-width 992px);
 $screen-lg: new-breakpoint(min-width 1200px);
+
+$max-width: 1280px;
 
 
 // Borders
