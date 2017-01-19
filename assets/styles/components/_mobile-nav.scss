@@ -1,0 +1,15 @@
+// Mobile Nav
+// ===
+
+.c-mobile-nav {
+  background-color: $neutral-80;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: $unit;
+
+  a {
+    color: $neutral-00;
+    fill: $neutral-00;
+  }
+}

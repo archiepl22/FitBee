@@ -19,7 +19,7 @@
 .c-nav-primary__item-nav {
   display: none;
   position: absolute;
-  margin-top: 18px;
+  margin-top: $unit*3.5;
   box-sizing: border-box;
   padding: $unit*3 $unit*10 $unit*3 $unit*3;
   background-color: $neutral-00;

@@ -9,3 +9,11 @@
 .c-icon.c--medium {
   width: 18px;
 }
+
+.c-icon.c--large {
+  width: $unit*6;
+}
+
+.c-icon.c--xlarge {
+  width: $unit*8;
+}

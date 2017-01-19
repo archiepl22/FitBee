@@ -9,8 +9,16 @@
   align-items: center;
 }
 
+.u-display-flex.u--align-baseline {
+  align-items: baseline;
+}
+
 .u-display-flex.u--space-between {
-  justify-content: space-between;;
+  justify-content: space-between;
+}
+
+.u-display-flex.u--column {
+  flex-direction: column;
 }
 
 .u-display-none {
