@@ -1,0 +1,35 @@
+var koa     = require('koa'),
+    router  = require('koa-router')(),
+    logger  = require('koa-logger'),
+    serve   = require('koa-static'),
+    hbs     = require("koa-handlebars");
+
+
+var app = koa();
+
+// Logger
+app.use(logger());
+app.use(serve(process.cwd() + '/dist'));
+
+app.use(hbs({
+  defaultLayout: 'dash', 
+  viewsDir: './views', 
+  layoutsDir: './views/layouts', 
+  extension: 'hbs',
+  cache: false
+}));
+
+router.get('/', function *() {
+    yield this.render('home', {title: 'Fitbee Home'});
+  });
+// router.get('/contests', function *() {
+//     yield this.render('contests', {title: 'Canucks Kid\'s Club: Contests'});
+//   });
+
+app.use(router.routes());
+
+
+if (!module.parent) {
+  app.listen(1337);
+  console.log('listening on port 1337');
+}
