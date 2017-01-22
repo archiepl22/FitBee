@@ -3,11 +3,39 @@
 
 
 .c-side-nav {
-  width: 150px;
-  background: $neutral-80;
+  background: $neutral-70;
   height: 100vh;
   position: fixed;
   color: $neutral-00;
   top: 0;
-  padding: 10px;
 }
+
+.c-side-nav__item-bar:before {
+  content: '';
+  display: none;
+  width: 3px;
+  background-color: $brand-orange;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.c-side-nav__item {
+  padding: $unit*4 $unit*10;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $neutral-80;
+
+    .c-side-nav__item-bar:before {
+      display: block;
+    }
+  }
+
+  a {
+    color: $neutral-00;
+  }
+}
+
