@@ -81,4 +81,9 @@
   li a {
     color: $brand-blue;
   }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
 } 

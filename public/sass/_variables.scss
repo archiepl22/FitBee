@@ -36,6 +36,8 @@ $xlarge-font: 36px;
 $neutral-00: #fff;
 $neutral-10: #F0F0F2;
 $neutral-20: #CFCFCF;
+$neutral-30: #BBBBBB;
+$neutral-40: #9A9A9A;
 $neutral-70: #31383E;
 $neutral-80: #21272A;
 
@@ -48,11 +50,11 @@ $brand-yellow: #F6C811;
 // Media-queries
 // ---
 
-$screen-xs: new-breakpoint(min-width 480px);
-$screen-hlf-scrn: new-breakpoint(min-width 618px);
-$screen-sm: new-breakpoint(min-width 768px);
-$screen-md: new-breakpoint(min-width 992px);
-$screen-lg: new-breakpoint(min-width 1200px);
+$screen-xs: 480px;
+$screen-hlf-scrn: 618px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
 
 $max-width: 1280px;
 
@@ -69,3 +71,7 @@ $border: 1px solid $neutral-20;
 
 $tap-size: 44px;
 $slow-animation: 0.25s ease-in-out all;
+
+
+
+

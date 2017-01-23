@@ -2,14 +2,29 @@
 // ===
 
 .c-mobile-nav {
-  background-color: $neutral-80;
+  background-color: $neutral-00;
   position: fixed;
   bottom: 0;
   width: 100%;
   padding-top: $unit;
+  display: block;
+  z-index: 1;
+  border-top: $border;
 
   a {
-    color: $neutral-00;
-    fill: $neutral-00;
+    color: $neutral-40;
+    fill: $neutral-40;
+    font-size: 10px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $brand-blue;
+      fill: $brand-blue;
+    }
+  }
+
+  @media (min-width: $screen-xs) {
+    display: none;
   }
 }
