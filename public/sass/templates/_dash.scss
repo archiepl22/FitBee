@@ -1,0 +1,16 @@
+// Dashboards Styles
+// ====
+
+.t-dash {
+  background-color: $neutral-30;
+  padding: $unit*8;
+  height: 100vh;
+  transition: $slow-animation;
+
+  h1 {
+    margin-top: 0;
+  }
+  @media (min-width: $screen-sm) {
+    padding-left: 210px;
+  }
+}

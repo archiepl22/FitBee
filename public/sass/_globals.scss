@@ -1,6 +1,8 @@
 // Global Styles
 // ====
 //
+// 1. Height of the fixed top header.
+// 2. Height of both fixed headers. 
 
 * {
     box-sizing: border-box;
@@ -15,11 +17,18 @@ html {
   font-family: $font-family;
   color: $neutral-80;
   -webkit-font-smoothing: antialiased;
-  // font-size: 18px;
 }
 
 img {
   max-width: 100%;
+}
+
+main {
+  margin-top: 45px; // 1
+
+  @media (min-width: $screen-sm) {
+    margin-top: 123px; // 2
+  }
 }
 
 

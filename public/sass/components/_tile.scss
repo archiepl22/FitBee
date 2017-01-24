@@ -1,0 +1,37 @@
+// Tile
+// ====
+
+
+.c-tile {
+  background-color: $neutral-00;
+  border: $border;
+}
+
+.c-tile__options {
+  display: none;
+
+  @media (min-width: $screen-sm) {
+    display: block;
+  }
+}
+
+.c-tile__legend {
+  display: none;
+
+  @media (min-width: $screen-sm) {
+    margin-left: auto;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: $unit*5;
+  }
+}
+
+.c-tile__title {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+  }
+}

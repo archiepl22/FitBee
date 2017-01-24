@@ -15,16 +15,18 @@ app.use(hbs({
   defaultLayout: 'dash', 
   viewsDir: './views', 
   layoutsDir: './views/layouts', 
+  partialsDir: './views/partials', 
   extension: 'hbs',
   cache: false
 }));
 
+
 router.get('/', function *() {
     yield this.render('home', {title: 'Fitbee Home'});
   });
-// router.get('/contests', function *() {
-//     yield this.render('contests', {title: 'Canucks Kid\'s Club: Contests'});
-//   });
+router.get('/workouts', function *() {
+    yield this.render('workouts', {title: 'My Workouts'});
+  });
 
 app.use(router.routes());
 

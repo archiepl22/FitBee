@@ -8,6 +8,9 @@
 
 // Local Imports
 
+// Templates
+@import './templates/dash';
+
 // Components
 // @import './components/button';
 @import './components/header';
@@ -16,6 +19,7 @@
 @import './components/link';
 @import './components/mobile-nav';
 @import './components/side-nav';
+@import './components/tile';
 
 // Utilities
 @import "./utilities/spacing";

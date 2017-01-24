@@ -17,28 +17,33 @@
 
 
 // Text Size
+.u-text-size-quiet {
+  font-size: 10px;
+  color: $neutral-40;
+}
+
 .u-text-size-mobile {
-  font-size: $mobile-font;
+  font-size: $mobile-font; // 12px
 }
 
 .u-text-size-small {
-  font-size: $small-font;
+  font-size: $small-font; // 14px
 }
 
 .u-text-size-medium {
-  font-size: $medium-font;
-}
-
-.u-text-size-title {
-  font-size: $title-font;
+  font-size: $medium-font; // 18px
 }
 
 .u-text-size-large {
-  font-size: $large-font;
+  font-size: $large-font; // 20px
+}
+
+.u-text-size-title {
+  font-size: $title-font; // 24px
 }
 
 .u-text-size-xlarge {
-  font-size: $xlarge-font;
+  font-size: $xlarge-font; // 36px
 }
 
 
