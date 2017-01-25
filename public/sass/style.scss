@@ -10,9 +10,11 @@
 
 // Templates
 @import './templates/dash';
+@import './templates/form';
+@import './templates/main';
 
 // Components
-// @import './components/button';
+@import './components/button';
 @import './components/header';
 @import './components/icon';
 @import './components/nav';
@@ -20,6 +22,10 @@
 @import './components/mobile-nav';
 @import './components/side-nav';
 @import './components/tile';
+@import './components/hero';
+@import './components/input';
+@import './components/checkbox';
+@import './components/grid';
 
 // Utilities
 @import "./utilities/spacing";
@@ -30,3 +36,4 @@
 @import "./utilities/width";
 @import "./utilities/color";
 @import "./utilities/border";
+@import "./utilities/float";

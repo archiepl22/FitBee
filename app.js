@@ -12,7 +12,7 @@ app.use(logger());
 app.use(serve(process.cwd() + '/dist'));
 
 app.use(hbs({
-  defaultLayout: 'dash', 
+  defaultLayout: 'main', 
   viewsDir: './views', 
   layoutsDir: './views/layouts', 
   partialsDir: './views/partials', 
@@ -22,10 +22,22 @@ app.use(hbs({
 
 
 router.get('/', function *() {
-    yield this.render('home', {title: 'Fitbee Home'});
+    yield this.render('home', {
+      title: 'Fitbee Home'
+    });
   });
+
 router.get('/workouts', function *() {
-    yield this.render('workouts', {title: 'My Workouts'});
+    yield this.render('workouts', {
+      layout: 'dash',
+      title: 'My Workouts'
+    });
+  });
+router.get('/login', function *() {
+    yield this.render('login', {title: 'Login'});
+  });
+router.get('/signup', function *() {
+    yield this.render('signup', {title: 'Sign up'});
   });
 
 app.use(router.routes());

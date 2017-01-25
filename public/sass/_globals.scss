@@ -26,7 +26,7 @@ img {
 main {
   margin-top: 45px; // 1
 
-  @media (min-width: $screen-sm) {
+  @media (min-width: $screen-xs) {
     margin-top: 123px; // 2
   }
 }

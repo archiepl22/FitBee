@@ -1,0 +1,33 @@
+// Input
+// ===
+
+
+.c-input {
+  input {
+    display: block;
+    padding: $unit*3;
+    border-radius: 2px;
+    box-shadow: none;
+    border: 1px solid grey;
+    font-size: $font-size;
+
+    &:focus,
+    &:active {
+      box-shadow: $brand-blue;
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: $font-size;
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: $font-size;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: $font-size;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: $font-size;
+  }
+}

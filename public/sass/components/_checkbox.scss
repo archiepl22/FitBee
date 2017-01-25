@@ -1,0 +1,32 @@
+// Checkbox
+// ====
+
+
+.c-checkbox {
+  display: flex;
+  align-items: center;
+
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    margin-right: $unit;
+    outline: 0;
+    border-radius: $border-radius;
+    border: 1px solid $neutral-80;
+  }
+
+  input:checked {
+    &::before {
+      content: '';
+      width: 15px;
+      height: 14px;
+      display: block;
+      background-image: url("../img/check-mark.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

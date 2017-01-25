@@ -1,0 +1,19 @@
+// Button
+// ====
+
+.c-button {
+  display: inline-block;
+  padding: $unit*2 $unit*7;
+
+  outline: none;
+  border: none;
+  border-radius: $border-radius;
+
+  font-size: $small-font;
+  color: $neutral-00;
+  font-weight: 500;
+}
+
+.c-button.c--primary {
+  background-color: $brand-blue;  
+}

@@ -3,6 +3,7 @@
 
 .c-link {
   cursor: pointer;
+  color: $brand-blue;
   
   &:hover {
     color: darken($brand-blue, 10%);

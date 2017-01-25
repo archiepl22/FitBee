@@ -1,0 +1,24 @@
+// Home
+// ====
+//
+// 1. Height of mobile tab bar
+// 
+
+.t-main {
+  padding: 0 $unit*3;
+  padding-bottom: $unit*5;
+  margin-bottom: 42px; // 1
+
+  @media (min-width: $screen-xs) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $screen-sm) {
+    padding-right: $unit*5;
+    padding-left: $unit*5;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 0 0 $unit*5;
+  }
+}
