@@ -12,8 +12,16 @@
   font-size: $small-font;
   color: $neutral-00;
   font-weight: 500;
+
+  cursor: pointer;
 }
 
 .c-button.c--primary {
-  background-color: $brand-blue;  
+  background-color: $brand-blue; 
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($brand-blue, 5%);
+  } 
 }

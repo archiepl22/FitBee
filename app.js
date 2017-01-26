@@ -36,8 +36,13 @@ router.get('/workouts', function *() {
 router.get('/login', function *() {
     yield this.render('login', {title: 'Login'});
   });
+
 router.get('/signup', function *() {
     yield this.render('signup', {title: 'Sign up'});
+  });
+
+router.get('/browse-workouts', function *() {
+    yield this.render('browse-workouts', {title: 'Browse Workouts'});
   });
 
 app.use(router.routes());

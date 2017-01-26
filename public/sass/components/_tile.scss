@@ -7,6 +7,9 @@
   border: $border;
 }
 
+// Elements
+// ---
+
 .c-tile__options {
   display: none;
 
@@ -31,7 +34,22 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-sm) {
     flex-direction: row;
+  }
+}
+
+// Modifiers
+// ---
+
+.c-tile.c--save {
+  .c-tile__edit-options {
+    display: none;
+  }
+}
+
+.c-tile.c--edit {
+  .c-tile__save-options {
+    display: none;
   }
 }
