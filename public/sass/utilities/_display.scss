@@ -21,6 +21,10 @@
   justify-content: flex-end;
 }
 
+.u-display-flex.u--align-flex-end {
+  align-items: flex-end;
+}
+
 .u-display-flex.u--column {
   flex-direction: column;
 }

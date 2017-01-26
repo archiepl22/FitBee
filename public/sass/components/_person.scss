@@ -1,0 +1,33 @@
+// Person
+// ===
+
+
+.c-person {
+  width: 50%;
+  background-color: $neutral-00;
+  border: 1px solid $neutral-20;
+  border-radius: $border-radius;
+}
+
+.c-person__buttons {
+  padding: $unit*3;
+  border-bottom: 1px solid $neutral-20
+}
+
+.c-person__image {
+  width: 30%;
+  display: inline-block;
+
+  img {
+    border-radius: $border-radius;
+  }
+}
+
+.c-person__details {
+  display: inline-block;
+  width: 65%;
+
+  h1 {
+    line-height: 20px;
+  }
+}

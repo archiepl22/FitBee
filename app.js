@@ -45,6 +45,10 @@ router.get('/browse-workouts', function *() {
     yield this.render('browse-workouts', {title: 'Browse Workouts'});
   });
 
+router.get('/find-trainer', function *() {
+    yield this.render('find-trainer', {title: 'Find a Trainer'});
+  });
+
 app.use(router.routes());
 
 
