@@ -2,7 +2,8 @@
 // ====
 //
 // 1. Height of the fixed top header.
-// 2. Height of both fixed headers. 
+// 2. Height of the fixed mobile tab bar.
+// 3. Height of both fixed headers. 
 
 * {
     box-sizing: border-box;
@@ -27,8 +28,12 @@ img {
 main {
   margin-top: 45px; // 1
 
+  @media (max-width: $screen-xs) {
+    margin-bottom: 45px; // 2
+  }
+
   @media (min-width: $screen-xs) {
-    margin-top: 123px; // 2
+    margin-top: 123px; // 3
   }
 }
 

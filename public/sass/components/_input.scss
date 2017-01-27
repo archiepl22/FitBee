@@ -1,21 +1,18 @@
 // Input
 // ===
 
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+textarea {
+  display: block;
+  padding: $unit*3;
 
-.c-input {
-  input {
-    display: block;
-    padding: $unit*3;
-    border-radius: 2px;
-    box-shadow: none;
-    border: 1px solid grey;
-    font-size: $font-size;
+  border-radius: 2px;
+  box-shadow: none;
+  border: 1px solid grey;
 
-    &:focus,
-    &:active {
-      box-shadow: $brand-blue;
-    }
-  }
+  font-size: $font-size;
 
   ::-webkit-input-placeholder {
     font-size: $font-size;
@@ -30,4 +27,10 @@
   :-moz-placeholder { /* Firefox 18- */
     font-size: $font-size;
   }
+}
+ 
+textarea {
+  width: 100%;
+  min-height: 200px;
+  resize: none;
 }

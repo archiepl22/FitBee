@@ -40,6 +40,19 @@ router.get('/messages', function *() {
     title: 'Messages'
   });
 });
+
+router.get('/new-message', function *() {
+  yield this.render('new-message', {
+    layout: 'dash',
+    title: 'New Message'});
+});
+
+router.get('/private-message', function *() {
+  yield this.render('private-message', {
+    layout: 'dash',
+    title: 'private Message'});
+});
+
 router.get('/login', function *() {
   yield this.render('login', {title: 'Login'});
 });
@@ -55,6 +68,8 @@ router.get('/browse-workouts', function *() {
 router.get('/find-trainer', function *() {
   yield this.render('find-trainer', {title: 'Find a Trainer'});
 });
+
+
 
 app.use(router.routes());
 

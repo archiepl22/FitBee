@@ -1,6 +1,49 @@
 // Message
 // ====
 
+// Modifiers
+// ---
+
+.c-message.c--open {
+  margin-top: $unit*4;
+
+  .c-message__trash,
+  .c-message__subject {
+    display: none;
+  }
+
+  .c-message__wrapper {
+    justify-content: flex-start;
+  }
+  .c-message__main {
+    width: 100%;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+  .c-message__details {
+    width: auto;
+  }
+  .c-message__content {
+    padding: $unit*4;
+    margin-left: $unit*8;
+    margin-bottom: $unit*3;
+  }
+}
+
+.c-message.c--closed {
+  .c-message__content {
+    display: none;
+  }
+}
+
+.c-message__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: $unit*4;
+  padding-left: $unit*4;
+}
+
 .c-message__main {
   display: flex;
   flex-direction: column;
