@@ -10,19 +10,19 @@
         <img src="img/profile-pic.jpg">
       </div>
       <div class="c-person__details">
-        <h1 class="u-text-bold u-color-blue u-text-size-medium u-margin-none">Name User</h1>
-        <p class="u-margin-none u-margin-top-sm">Small description of the user and what the trainer is looking for, when they train, what they train in, where they  Max 150char </p>
+        <h1 class="u-text-bold u-color-blue u-text-size-medium u-margin-none">{{name}}</h1>
+        <p class="u-margin-none u-margin-top-sm">{{description}}</p>
         <div class="u-text-bold u-display-flex u--space-between u--align-flex-end u-margin-top-xlg">
-          <div>Coach Type</div>
-          <div><span class="u-color-blue u-text-size-mobile u-display-block">Live</span>$20/Session</div>
-          <div><span class="u-color-blue u-text-size-mobile u-display-block">Virtual</span>$20/Session</div>
+          <div>{{type}}</div>
+          <div><span class="u-color-blue u-text-size-mobile u-display-block">Live</span>${{liverate}}/Session</div>
+          <div><span class="u-color-blue u-text-size-mobile u-display-block">Virtual</span>${{virtualrate}}/Session</div>
         </div>
       </div>
     </div>
     <div class="c-person__stats">
-      <span class="u-text-bold u-color-grey">Activity</span>
-      <span class="u-text-bold u-color-grey">Location</span>
-      <span class="u-text-bold u-color-grey">Evenings, Weekends</span>
+      <span class="u-text-bold u-color-grey">{{activity}}</span>
+      <span class="u-text-bold u-color-grey">{{location}}</span>
+      <span class="u-text-bold u-color-grey">{{availability}}</span>
     </div>
   </div>
 </article>
