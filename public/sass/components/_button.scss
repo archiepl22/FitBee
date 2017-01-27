@@ -9,8 +9,10 @@
   border: none;
   border-radius: $border-radius;
 
+  background-color: transparent;
+
+  color: $neutral-80;
   font-size: $small-font;
-  color: $neutral-00;
   font-weight: 500;
 
   cursor: pointer;
@@ -18,10 +20,15 @@
 
 .c-button.c--primary {
   background-color: $brand-blue; 
+  color: $neutral-00;
 
   &:hover,
   &:active,
   &:focus {
     background-color: darken($brand-blue, 5%);
   } 
+}
+
+.c-button.c--ghost {
+  border: 1px solid $neutral-40;
 }

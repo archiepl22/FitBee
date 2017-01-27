@@ -1,0 +1,24 @@
+.c-friend {
+  display: flex;
+  position: relative;
+  border-radius: $border-radius
+}
+
+.c-friend__image {
+  width: 115px;
+  height: 115px;
+
+  img {
+    border-radius: 2px 0 0 2px;
+  }
+}
+
+.c-friend__details {
+  margin: auto 0;
+}
+
+.c-friend__button {
+  position: absolute;
+  bottom: 0;
+  right: -$unit*3;
+}

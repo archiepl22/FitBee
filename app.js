@@ -27,6 +27,12 @@ router.get('/', function *() {
   });
 });
 
+router.get('/landing', function *() {
+  yield this.render('landing', {
+    title: 'Fitbee'
+  });
+});
+
 router.get('/workouts', function *() {
   yield this.render('workouts', {
     layout: 'dash',
@@ -41,16 +47,9 @@ router.get('/messages', function *() {
   });
 });
 
-router.get('/new-message', function *() {
-  yield this.render('new-message', {
-    layout: 'dash',
-    title: 'New Message'});
-});
-
-router.get('/private-message', function *() {
-  yield this.render('private-message', {
-    layout: 'dash',
-    title: 'private Message'});
+router.get('/friends', function *() {
+  yield this.render('friends', {
+    title: 'Friends'});
 });
 
 router.get('/login', function *() {
@@ -67,6 +66,24 @@ router.get('/browse-workouts', function *() {
 
 router.get('/find-trainer', function *() {
   yield this.render('find-trainer', {title: 'Find a Trainer'});
+});
+
+router.get('/new-message', function *() {
+  yield this.render('new-message', {
+    layout: 'dash',
+    title: 'New Message'});
+});
+
+router.get('/private-message', function *() {
+  yield this.render('private-message', {
+    layout: 'dash',
+    title: 'Private Message'});
+});
+
+router.get('/calendar', function *() {
+  yield this.render('calendar', {
+    layout: 'dash',
+    title: 'Calendar'});
 });
 
 
