@@ -3,31 +3,117 @@
 
 
 .c-person {
-  width: 50%;
+  width: 100%;
   background-color: $neutral-00;
   border: 1px solid $neutral-20;
   border-radius: $border-radius;
+  margin-bottom: $unit*8;
+
+  @media (min-width: $screen-sm) {
+    width: 49%;
+    float: left;
+  }
+
+  &:nth-child(even) {
+    @media (min-width: $screen-sm) {
+      margin-right: 2%;
+    }
+  }
 }
 
 .c-person__buttons {
   padding: $unit*3;
-  border-bottom: 1px solid $neutral-20
+  border-bottom: 1px solid $neutral-20;
+
+  button:first-child {
+    @media (max-width: 355px) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.c-person__profile {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-xs) {
+    flex-direction: row;
+  }
 }
 
 .c-person__image {
-  width: 30%;
+  width: 100%;
   display: inline-block;
 
   img {
     border-radius: $border-radius;
   }
+
+  @media (min-width: $screen-xs) {
+    width: 30%;
+  }
 }
 
 .c-person__details {
   display: inline-block;
-  width: 65%;
+  width: 100%;
+  margin-top: $unit*3;
+
+  @media (min-width: $screen-xs) {
+    width: 65%;
+    padding-left: $unit*5;
+    margin-top: 0;
+  }
 
   h1 {
     line-height: 20px;
+
+    @media (min-width: $screen-xs) {
+      font-size: $font-size;
+    }
+  }
+
+  p {
+    @media (min-width: $screen-xs) {
+      font-size: $small-font;
+    }
+  }
+
+  div {
+    line-height: 16px;
+    font-size: $small-font;
+
+    @media (min-width: $screen-sm) {
+      line-height: 20px;
+      font-size: $mobile-font;
+    }
+  }
+}
+
+.c-person__stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $unit*3;
+
+  @media (min-width: $screen-hlf-scrn) and (max-width: $screen-sm) {
+    width: 60%;
+    position: absolute;
+    right: 35px;
+    top: 150px;
+  }
+
+  span {
+    line-height: 16px;
+    font-size: $small-font;
+
+    @media (min-width: $screen-xs) {
+      line-height: 20px;
+      font-size: $font-size;
+    }
+    @media (min-width: $screen-sm) {
+      line-height: 20px;
+      font-size: $small-font;
+    }
   }
 }
