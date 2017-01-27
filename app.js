@@ -22,32 +22,39 @@ app.use(hbs({
 
 
 router.get('/', function *() {
-    yield this.render('home', {
-      title: 'Fitbee Home'
-    });
+  yield this.render('home', {
+    title: 'Fitbee Home'
   });
+});
 
 router.get('/workouts', function *() {
-    yield this.render('workouts', {
-      layout: 'dash',
-      title: 'My Workouts'
-    });
+  yield this.render('workouts', {
+    layout: 'dash',
+    title: 'My Workouts'
   });
+});
+
+router.get('/messages', function *() {
+  yield this.render('messages', {
+    layout: 'dash',
+    title: 'Messages'
+  });
+});
 router.get('/login', function *() {
-    yield this.render('login', {title: 'Login'});
-  });
+  yield this.render('login', {title: 'Login'});
+});
 
 router.get('/signup', function *() {
-    yield this.render('signup', {title: 'Sign up'});
-  });
+  yield this.render('signup', {title: 'Sign up'});
+});
 
 router.get('/browse-workouts', function *() {
-    yield this.render('browse-workouts', {title: 'Browse Workouts'});
-  });
+  yield this.render('browse-workouts', {title: 'Browse Workouts'});
+});
 
 router.get('/find-trainer', function *() {
-    yield this.render('find-trainer', {title: 'Find a Trainer'});
-  });
+  yield this.render('find-trainer', {title: 'Find a Trainer'});
+});
 
 app.use(router.routes());
 
