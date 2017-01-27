@@ -21,16 +21,25 @@
   }
 }
 
+
+// Button wrapper
+// ---
+// 1. To create margin at this specifc width when buttons stack 💩
+
 .c-person__buttons {
   padding: $unit*3;
   border-bottom: 1px solid $neutral-20;
 
   button:first-child {
     @media (max-width: 355px) {
-      margin-bottom: 12px;
+      margin-bottom: $unit*3; // 1
     }
   }
 }
+
+
+// Image and person details
+// ---
 
 .c-person__profile {
   display: flex;
@@ -41,18 +50,26 @@
   }
 }
 
+
+// Image 
+// ---
+
 .c-person__image {
   width: 100%;
   display: inline-block;
 
-  img {
-    border-radius: $border-radius;
-  }
-
   @media (min-width: $screen-xs) {
     width: 30%;
   }
+
+  img {
+    border-radius: $border-radius;
+  }
 }
+
+
+// Details
+// ---
 
 .c-person__details {
   display: inline-block;
@@ -89,6 +106,10 @@
     }
   }
 }
+
+
+// Availability and Location stats
+// ---
 
 .c-person__stats {
   display: flex;
