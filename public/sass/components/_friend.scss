@@ -1,11 +1,10 @@
 .c-friend {
-  display: flex;
+  display: inline-flex;
   position: relative;
   border-radius: $border-radius;
-  float: left;
   width: 100%;
   margin-bottom: $unit*5;
-  margin-right: 2%;
+  margin-right: 1%;
 
 
   @media (min-width: $screen-xs) {
@@ -13,7 +12,7 @@
   }
 
   @media (min-width: $screen-sm) {
-    width: 32%;
+    width: 32.3%;
   }
 
   &:nth-child(odd) {
