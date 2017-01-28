@@ -1,7 +1,32 @@
 .c-friend {
   display: flex;
   position: relative;
-  border-radius: $border-radius
+  border-radius: $border-radius;
+  float: left;
+  width: 100%;
+  margin-bottom: $unit*3;
+  margin-right: 2%;
+
+
+  @media (min-width: $screen-xs) {
+    width: 49%;
+  }
+
+  @media (min-width: $screen-sm) {
+    width: 32%;
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: $screen-xs) and (max-width: $screen-sm) {
+       margin-right: 0;
+    }
+  }
+
+  &:nth-child(4n) {
+    @media (min-width: $screen-sm){
+      margin-right: 0%;
+    }
+  }
 }
 
 .c-friend__image {
