@@ -42,7 +42,6 @@ router.get('/workouts', function *() {
 
 router.get('/messages', function *() {
   yield this.render('messages', {
-    layout: 'dash',
     title: 'Messages'
   });
 });
@@ -70,13 +69,11 @@ router.get('/find-trainer', function *() {
 
 router.get('/new-message', function *() {
   yield this.render('new-message', {
-    layout: 'dash',
     title: 'New Message'});
 });
 
 router.get('/private-message', function *() {
   yield this.render('private-message', {
-    layout: 'dash',
     title: 'Private Message'});
 });
 
