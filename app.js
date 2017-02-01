@@ -53,6 +53,24 @@ router.get('/friends', function *() {
     title: 'Friends'});
 });
 
+router.get('/new-message', function *() {
+  yield this.render('new-message', {
+    layout: 'dash',
+    title: 'New Message'});
+});
+
+router.get('/private-message', function *() {
+  yield this.render('private-message', {
+    layout: 'dash',
+    title: 'Private Message'});
+});
+
+router.get('/calendar', function *() {
+  yield this.render('calendar', {
+    layout: 'dash',
+    title: 'Calendar'});
+});
+
 router.get('/login', function *() {
   yield this.render('login', {title: 'Login'});
 });
@@ -69,21 +87,6 @@ router.get('/find-trainer', function *() {
   yield this.render('find-trainer', {title: 'Find a Trainer'});
 });
 
-router.get('/new-message', function *() {
-  yield this.render('new-message', {
-    title: 'New Message'});
-});
-
-router.get('/private-message', function *() {
-  yield this.render('private-message', {
-    title: 'Private Message'});
-});
-
-router.get('/calendar', function *() {
-  yield this.render('calendar', {
-    layout: 'dash',
-    title: 'Calendar'});
-});
 
 
 
