@@ -1,13 +1,14 @@
 <article class="c-message {{class}} u-color-bg-white u-border">
   <div class="c-message__wrapper">
     <div class="u-margin-left-sm c-icon c--medium">
-      {{>iconmessage class="u-width-full u-align-vertical-middle u-fill-blue"}}
+      {{>iconmessage class="u-width-full u-align-vertical-middle u-fill-blue c-message__icon-new"}}
+      {{>iconmessageopen class="u-width-full u-align-vertical-middle u-fill-grey c-message__icon-old"}}
     </div>
     <div class="c-message__main">
-      <a href="/private-message"><h1 class="c-message__author c-link u-text-bold u-color-blue u-margin-none">Message Author</h1></a>
+      <a href="/private-message"><h1 class="c-message__author u-text-bold u-margin-none">Message Author</h1></a>
       <div class="c-message__details">
         <span class="c-message__subject u-margin-right-md">Beginning of the message...</span>
-        <span class="u-color-grey">2hrs&nbsp;ago</span>
+        <span>2hrs&nbsp;ago</span>
       </div>
     </div>
     <div class="c-message__trash u-margin-left-md c-icon c--small">

@@ -1,6 +1,11 @@
 // Message
 // ====
 
+.c-message {
+  margin-bottom: $unit*3;
+}
+
+
 // Modifiers
 // ---
 
@@ -35,6 +40,24 @@
     display: none;
   }
 }
+
+.c-message.c--new {
+  a,span {color: $brand-blue;}
+  .c-message__icon-old {
+    display: none;
+  }
+}
+
+.c-message.c--old {
+  a,span {color: $neutral-40;}
+  .c-message__icon-new {
+    display: none;
+  }
+}
+
+
+// Child Elements
+// ---
 
 .c-message__wrapper {
   display: flex;
