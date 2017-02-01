@@ -5,7 +5,7 @@
 
 .t-dash {
   background-color: $neutral-30;
-  padding: $unit*10;
+  padding: $unit*5;
   height: 100%;
   // transition: $slow-animation;
 
@@ -13,6 +13,7 @@
     margin-top: 0;
   }
   @media (min-width: $screen-sm) {
+    padding: $unit*10;
     padding-left: 210px;
   }
 }

@@ -87,6 +87,10 @@ router.get('/find-trainer', function *() {
   yield this.render('find-trainer', {title: 'Find a Trainer'});
 });
 
+router.get('/profile', function *() {
+  yield this.render('profile', {title: 'Profile'});
+});
+
 
 
 

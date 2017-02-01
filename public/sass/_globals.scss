@@ -1,7 +1,7 @@
 // Global Styles
 // ====
 //
-// 1. Height of the fixed top header.
+// 1. Height of the mobile fixed top header.
 // 2. Height of the fixed mobile tab.
 // 3. Height of both fixed headers. 
 
@@ -26,7 +26,7 @@ img {
 }
 
 main {
-  margin-top: 45px; // 1
+  margin-top: $mobile-header-size; // 1
 
   @media (max-width: $screen-xs) {
     margin-bottom: 45px; // 2
@@ -94,4 +94,13 @@ a {
 ul {
   padding: 0;
   list-style: none;
+}
+
+// Default Styles
+// ---
+button,
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
