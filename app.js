@@ -42,12 +42,14 @@ router.get('/workouts', function *() {
 
 router.get('/messages', function *() {
   yield this.render('messages', {
+    layout: 'dash',
     title: 'Messages'
   });
 });
 
 router.get('/friends', function *() {
   yield this.render('friends', {
+    layout: 'dash',
     title: 'Friends'});
 });
 
