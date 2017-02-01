@@ -33,7 +33,7 @@ main {
   }
 
   @media (min-width: $screen-xs) {
-    margin-top: 123px; // 3
+    margin-top: $header-size; // 3
   }
 }
 

@@ -12,9 +12,14 @@
 }
 
 .c-header__top {
-  padding: 0 $unit*5;
-  background-color: $neutral-10;
+  padding: $unit $unit*5;
+  background-color: $neutral-00;
   font-size: $small-font;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .c-header__logo {
@@ -39,7 +44,7 @@
 }
 
 .c-header__bottom {
-  background-color: $neutral-00;
+  background-color: $brand-blue;
   display: none;
 
   @media (min-width: $screen-xs) {

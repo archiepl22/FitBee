@@ -7,11 +7,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
+  height: $unit*50;
   margin-bottom: $unit*10;
 }
 
 .c-hero.c--blue {
-  background-color: $brand-blue;
+  background-image: url('../img/trainer.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
   color: $neutral-00;
 }

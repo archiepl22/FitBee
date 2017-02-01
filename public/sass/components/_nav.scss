@@ -83,14 +83,15 @@
 
 .c-nav-secondary {
   font-weight: 500;
-  color: $brand-blue;
+  margin: 0 0 0 $unit*5;
 
   li a {
-    color: $brand-blue;
+    color: $neutral-00;
   }
 
   li {
     display: flex;
     align-items: center;
+    margin-right: $unit*10;
   }
 } 
