@@ -18,3 +18,11 @@
   background-position: 50%;
   color: $neutral-00;
 }
+
+.c--profile {
+  height: $unit*40;
+
+  @media (min-width: $screen-sm) {
+    height: $unit*80;
+  }
+}

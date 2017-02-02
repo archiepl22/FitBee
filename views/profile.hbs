@@ -1,1 +1,43 @@
-{{>hero class="c--blue"}}
+{{>hero class="c--blue c--profile"}}
+
+<div class="t-main">
+  <div class="c-profile">
+    <div class="c-profile__image">
+      <img src="img/profile-pic.jpg">
+    </div>
+    <div class="c-profile__main">
+      <div class="c-profile__top u-display-flex u-padding-lg">
+        <div class="c-profile__details">
+          <div class="c-profile__name u-display-flex u--align-center">
+            <h1 class="u-margin-right-lg u-margin-none">User Name</h1>
+            {{>iconedit class="c--small u-fill-blue u-margin-left-lg"}}
+          </div>
+          <div class="u-display-flex u--align-center">
+            <span class="u-margin-right-lg u-text-bold">Profession</span>
+            {{>iconrating class="c--xxlarge u-fill-yellow"}}
+          </div>
+          <div class="u-display-flex u--align-center u-margin-top-xlg">
+            {{>iconlocation class="c--small"}}
+            <span class="u-margin-left-md u-text-bold">Toronto</span>
+          </div>
+          <div class="c-profile__followers">
+            <span>437 Followers</span>
+            <a class="c-link u-margin-left-lg">Follow</a>
+          </div>
+        </div>
+        <div class="c-profile__contact u-text-align-center u-margin-top-xlg u-margin-right-lg">
+          <a class="c-button c--primary u-display-block u-margin-bottom-lg">Train&nbsp;with&nbsp;User</a>
+          <a class="c-link u-display-block">Send user a message</a>
+        </div>
+      </div>
+      <div class="c-profile__buttons">
+        <div>
+          <span>Feed</span>
+        </div>
+        <div>
+          <span>About</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
