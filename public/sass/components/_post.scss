@@ -1,0 +1,39 @@
+// Post
+// ====
+
+
+.c-post {
+  margin-top: $unit*5;
+
+  background-color: $neutral-00;
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+.c-post__image {
+  width: 80px;
+}
+
+.c-post__details {
+  h1 {
+    line-height: 20px;
+    font-size: $font-size;
+  }
+}
+
+.c-feed {
+  display: none;
+}
+
+.c-feed.c--active {
+  display: block;
+}
+
+.c-about {
+  display: none;
+}
+
+.c-about.c--active {
+  display: block;
+}

@@ -11,6 +11,28 @@
   }
 }
 
+.c-grid__col8 {
+  width: 100%;
+
+  &:not(:first-child) {
+    margin-top: $unit*3;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    width: CALC((8/12)*100%);
+  }
+
+  &:nth-child(even) {
+    @media (min-width: $screen-sm) {
+      padding-left: $unit*4;
+    }
+  }
+}
+
 .c-grid__col6 {
   width: 100%;
 
@@ -67,7 +89,7 @@
   }
 
   @media (min-width: $screen-sm) {
-    width: 33.333%;
+    width: CALC(100%/3);
   }
 
   &:nth-child(even) {

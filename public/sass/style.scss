@@ -12,6 +12,7 @@
 @import './templates/dash';
 @import './templates/form';
 @import './templates/main';
+@import './templates/profile';
 
 // Components
 @import './components/button';
@@ -32,6 +33,9 @@
 @import './components/friend';
 @import './components/mobile-dash';
 @import './components/profile';
+@import './components/share';
+@import './components/post';
+@import './components/item';
 
 // Utilities
 @import "./utilities/spacing";

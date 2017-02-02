@@ -31,3 +31,26 @@
     }
   }
 }
+
+.c-checkbox.c--quiet {
+  input {
+    width: 12px;
+    height: 12px;
+    border-color: $neutral-50;
+  }
+
+   input:checked {
+    &::before {
+      content: '';
+      
+      display: block;
+      width: 11px;
+      height: 10px;
+    }
+  }
+
+  label {
+    color: $neutral-50;
+    font-size: $small-font;
+  }
+}

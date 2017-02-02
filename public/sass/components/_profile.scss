@@ -8,8 +8,6 @@
   margin: -$unit*3;
   margin-top: -$unit*10;
 
-  max-width: $profile-width;
-
   position: relative;
   
   background: white;
@@ -21,7 +19,7 @@
 
   @media (min-width: $screen-xs) {
     flex-direction: row;
-    margin: 0 auto;
+    margin: auto;
     margin-top: -100px;
   }
 }
@@ -172,7 +170,7 @@
   }
 
 
-  div {
+  .c-profile__button {
     padding: $unit*3;
     width: 50%;
 
@@ -183,7 +181,10 @@
 
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:active, 
+    &:focus,
+    &.c--active {
       color: $brand-blue;
       background-color: $neutral-30;
     }
@@ -193,10 +194,11 @@
     }
   }
 
-  div:first-child {
+  .c-profile__button:first-child {
     border-right: $border;
   }
 }
+
 
 
 // Train / Message
