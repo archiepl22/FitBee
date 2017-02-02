@@ -1,4 +1,6 @@
 # FITBEE
 ## Setup
 - clone repository
-- open index.html
+- run `npm install`
+- run `node --harmony app.js`
+- view localhost:1337 in browser
