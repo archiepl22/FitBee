@@ -1,0 +1,53 @@
+// Messages
+// ====
+// 
+
+
+
+.t-messages {
+  background-color: $neutral-00;
+  height: 100vh;
+}
+
+.t-messages__header {
+  margin-right: -$unit*10;
+  margin-left: -$unit*10;
+  padding: 0 $unit*10;
+}
+
+.t-messages__nav-item,
+.t-messages__title,
+.t-messages__link {
+  padding-bottom: $unit*8;
+}
+
+.t-messages__nav-item {
+  padding: 0 $unit*8 $unit*8 $unit*8;
+  position: relative;
+
+  color: $neutral-40;
+
+  &:after {
+    display: none;
+    content: '';
+    height: $unit/1.5;
+    background-color: $brand-blue;
+    position: absolute;
+    bottom: -$unit*2;
+    left: 0;
+    right: 0;
+  }
+
+  &:hover {
+    color: $brand-blue;
+  }
+}
+
+.t-messages__nav-item.active {
+  color: $neutral-80;
+
+  &:after {
+    display: block;
+  }
+
+}

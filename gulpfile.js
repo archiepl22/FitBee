@@ -70,8 +70,8 @@ gulp.task('js:prod', function() {
 
 gulp.task('watch', ['clean', 'sass:dev', 'js:dev', 'images', 'copy'], function () {
   gulp.watch(SASS.ORIGINAL, ['sass:dev']);
-  gulp.watch(JS.ORIGINAL, ['js:dev']);
-  gulp.watch(IMAGES.ORIGINAL, ['images']);
+  // gulp.watch(JS.ORIGINAL, ['js:dev']);
+  // gulp.watch(IMAGES.ORIGINAL, ['images']);
 });
 
 gulp.task('images', function () {

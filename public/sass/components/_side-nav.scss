@@ -29,7 +29,7 @@
 }
 
 .c-side-nav__item {
-  padding: $unit*4 $unit*10;
+  padding: $unit*4 $unit*8;
   position: relative;
   cursor: pointer;
   color: $neutral-00;
@@ -45,40 +45,37 @@
     }
   }
 
-  // @media (min-width: $screen-sm) {
-  //   padding: $unit*4 $unit*10;
-  //   justify-content: flex-start;
-  // }
-
   .c-icon {
     fill: $neutral-00;
     margin-right: $unit*3;
     margin-left: -$unit*3;
-
-    // @media (min-width: $screen-sm) {
-    //   margin-right: $unit*3;
-    //   margin-left: -$unit*3;
-    // }
   }
 }
 
-// .c-side-nav__item-text,
-// .c-side-nav__logo {
-//   display: none;
+.c-side-nav__sub-nav {
+  margin-left: $unit*12;
+  font-size: $small-font;
+  margin-bottom: $unit*4;
+}
 
-//     @media (min-width: $screen-sm) {
-//       display: block;
-//   }
-// }
+.c-side-nav__sub-item {
+  position: relative;
+  cursor: pointer;
+  color: $neutral-00;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
-// "Dashboard"
-// .c-side-nav__title {
-//     opacity: 0;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $neutral-80;
 
-//     @media (min-width: $screen-sm) {
-//       opacity: 1;
-//   }
-// }
+    .c-side-nav__item-bar:before {
+      display: block;
+    }
+  }
+}
 
 // Mobile Logo Icon
 .c-side-nav__icon {
