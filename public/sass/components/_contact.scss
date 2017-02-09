@@ -1,0 +1,53 @@
+// Contact
+// ----
+// 1. Important to override utility class
+
+.c-contact.active {
+  background-color: $neutral-10;
+
+  .c-contact__message,
+  .c-contact__timestamp {
+    color: $neutral-70 !important; // 1
+  }
+}
+
+.c-contact.new {
+
+  .c-contact__name {
+    color: $brand-blue;
+    font-weight: 500;
+  }
+
+  .c-contact__image {
+    &:after {
+      content: '.';
+
+      display: block;
+      width: $unit*3;
+      height: $unit*3;
+
+      position: absolute;
+      bottom: 8px;
+      right: -2px;
+
+      background-color: $brand-orange;
+      border-radius: 50%;
+
+      color: $neutral-00;
+
+      font-size: $title-font;
+      font-weight: 500;
+      line-height: 0px;
+      text-align: center;
+    }
+  }
+}
+
+.c-contact__image {
+  width: $unit*12;
+  position: relative;
+
+  img {
+    border-radius: 50%;
+  }
+}

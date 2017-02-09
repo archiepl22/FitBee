@@ -15,6 +15,10 @@
   padding: 0 $unit*10;
 }
 
+
+// Messages header and nav
+// ---
+
 .t-messages__nav-item,
 .t-messages__title,
 .t-messages__link {
@@ -49,5 +53,52 @@
   &:after {
     display: block;
   }
-
 }
+
+
+// Contacts
+// ---
+
+.t-messages__contacts {
+  width: 250px;
+  height: 100%;
+  margin-left: -30px;
+
+  position: relative;
+
+  border-right: $border;
+}
+
+.t-messages__conversation {
+  width: calc(100% - 250px);
+}
+
+
+// Seach
+// ---
+
+.t-messages__search {
+  display: flex;
+  height: $unit*11;
+
+  position: relative;
+
+  input {
+    width: 100%;
+    border: none !important;
+    padding-left: $unit*8 !important;
+  }
+
+  svg {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: $unit*2;
+  }
+}
+
+
+
+
+

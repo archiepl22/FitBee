@@ -38,4 +38,18 @@ $( document ).ready(function() {
      $('.js-about').removeClass('c--active');
      $('.js-feed').addClass('c--active');
   });
+
+
+  // Messages
+  // ---
+
+    $(".js-messages-inbox").click( function(){
+     $(".js-messages-groups").removeClass('active');
+     $(".js-messages-inbox").addClass('active');
+  });
+
+  $(".js-messages-groups").click( function(){
+     $(".js-messages-inbox").removeClass('active');
+     $(".js-messages-groups").addClass('active');
+  });
 });

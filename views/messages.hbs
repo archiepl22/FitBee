@@ -14,5 +14,19 @@
     </nav>
     <a href="/" class="t-messages__link c-link u-margin-left-xxlg u-align-right">+ New Message</a>
   </div>
-  
+
+  <div class="t-messages__contacts">
+    <div class="t-messages__search u-border-bottom">
+      {{>iconsearch class="c--small"}}
+      <input type="text" placeholder="Search messages">
+    </div>
+    {{>contact class="active"}}
+    {{>contact class="new"}}
+    {{>contact}}
+    {{>contact}}
+    {{>contact}}
+  </div>
+  <div class="t-messages__conversation">
+  </div>
+
 <div>  
