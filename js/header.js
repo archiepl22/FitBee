@@ -40,10 +40,10 @@ $( document ).ready(function() {
   });
 
 
-  // Messages
+  // Messages Nav
   // ---
 
-    $(".js-messages-inbox").click( function(){
+  $(".js-messages-inbox").click( function(){
      $(".js-messages-groups").removeClass('active');
      $(".js-messages-inbox").addClass('active');
   });
@@ -52,4 +52,14 @@ $( document ).ready(function() {
      $(".js-messages-inbox").removeClass('active');
      $(".js-messages-groups").addClass('active');
   });
+
+
+  // Messages Contacts
+  // ---
+
+  $(".js-contact").click(function() {
+    $(".js-contact").not(this).removeClass('active');
+    $(this).toggleClass('active');
+  });
 });
+

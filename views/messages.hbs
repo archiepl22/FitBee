@@ -1,4 +1,4 @@
-<div class="t-dash t-messages"> 
+<div class="t-messages"> 
 
   <div class="t-messages__header u-display-flex u--align-center u-border-bottom">
     <h1 class="t-messages__title u-margin-none">Messages</h1>
@@ -15,18 +15,26 @@
     <a href="/" class="t-messages__link c-link u-margin-left-xxlg u-align-right">+ New Message</a>
   </div>
 
-  <div class="t-messages__contacts">
-    <div class="t-messages__search u-border-bottom">
-      {{>iconsearch class="c--small"}}
-      <input type="text" placeholder="Search messages">
+  <div class="u-display-flex">
+    <div class="t-messages__contacts">
+      <div class="t-messages__search u-border-bottom">
+        {{>iconsearch class="c--small"}}
+        <input type="text" placeholder="Search messages">
+      </div>
+      {{>contact}}
+      {{>contact class="new"}}
+      {{>contact}}
+      {{>contact}}
+      {{>contact}}
     </div>
-    {{>contact class="active"}}
-    {{>contact class="new"}}
-    {{>contact}}
-    {{>contact}}
-    {{>contact}}
+    <div class="t-messages__conversation">
+      <div class="t-messages__conversation-title u-border-bottom u-display-flex u--align-center u--justify-center">
+        <div class="u-text-bold u-color-blue">Conversation with User Name</div>
+        {{>iconstar class="c--medium t-messages__star"}}
+      </div>
+      {{>message class="c--received" time="2:03pm" message="Bacon ipsum dolor amet pig beef pancetta picanha biltong, frankfurter shoulder rump meatball. Cow kevin frankfurter tail landjaeger hamburger ham filet mignon, pork loin jerky bacon chuck salami pork belly bresaola."}}
+      {{>message class="c--sent" time="2:30pm" message="Cow kevin frankfurter tail landjaeger hamburger ham filet mignon, pork loin jerky bacon chuck salami pork belly bresaola"}}
+      {{>message class="c--received" time="2:32pm" message="Bacon."}}
+    </div>
   </div>
-  <div class="t-messages__conversation">
-  </div>
-
 <div>  

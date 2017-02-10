@@ -2,6 +2,16 @@
 // ----
 // 1. Important to override utility class
 
+
+.c-contact {
+  &:hover,
+  &:active,
+  &:focus {
+   background-color: $neutral-10;
+  }
+}
+
+
 .c-contact.active {
   background-color: $neutral-10;
 

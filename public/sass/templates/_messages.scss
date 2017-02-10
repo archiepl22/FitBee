@@ -1,17 +1,26 @@
 // Messages
 // ====
 // 
-
+// Dashboards Styles
+// ====
+// 
+// 1. To account for mobile tab bar
 
 
 .t-messages {
   background-color: $neutral-00;
-  height: 100vh;
+  padding-top: $unit*5;
+
+  h1 {
+    margin-top: 0;
+  }
+  @media (min-width: $screen-sm) {
+    padding-top: $unit*10;
+    padding-left: 180px;
+  }
 }
 
 .t-messages__header {
-  margin-right: -$unit*10;
-  margin-left: -$unit*10;
   padding: 0 $unit*10;
 }
 
@@ -62,16 +71,45 @@
 .t-messages__contacts {
   width: 250px;
   height: 100%;
-  margin-left: -30px;
 
   position: relative;
 
   border-right: $border;
 }
 
+
+// Conversation
+// ---
+
+
 .t-messages__conversation {
   width: calc(100% - 250px);
 }
+
+// Coversation title
+.t-messages__conversation-title {
+  height: $unit*11;
+  width: 100%;
+
+  position: relative;
+}
+
+.t-messages__star {
+  position: absolute;
+  right: $unit*3;
+  fill: none;
+  stroke: $neutral-80;
+  stroke-width: 2px;
+
+  .active,
+  &:hover,
+  &:focus,
+  &:active {
+    stroke: none;
+    fill: $brand-yellow;
+  }
+}
+
 
 
 // Seach
@@ -97,7 +135,6 @@
     left: $unit*2;
   }
 }
-
 
 
 

@@ -1,102 +1,57 @@
-// Message
+// Single message
 // ====
 
+
 .c-message {
-  margin-bottom: $unit*3;
+  display: flex;
+  margin: $unit*3;
+  margin-top: $unit*5;
+
+  align-items: center;
 }
 
-
-// Modifiers
-// ---
-
-.c-message.c--open {
-  margin-top: $unit*4;
-
-  .c-message__trash,
-  .c-message__subject {
-    display: none;
-  }
+.c-message.c--received {
 
   .c-message__wrapper {
-    justify-content: flex-start;
+    padding-right: 20%;
   }
-  .c-message__main {
-    width: 100%;
-    flex-direction: row !important;
-    justify-content: space-between !important;
+  .c-message__message {
+    background-color: $neutral-10;
   }
-  .c-message__details {
-    width: auto;
-  }
-  .c-message__content {
-    padding: $unit*4;
-    margin-left: $unit*8;
-    margin-bottom: $unit*3;
+
+  .c-message__image {
+    margin-right: $unit*6;
   }
 }
 
-.c-message.c--closed {
-  .c-message__content {
+.c-message.c--sent {
+  flex-direction: row-reverse;
+
+  .c-message__wrapper {
+   padding-left: 20%;
+  }
+
+  .c-message__message {
+    background-color: $brand-blue;
+    color: $neutral-00;
+  }
+
+  .c-message__image {
     display: none;
   }
 }
 
-.c-message.c--new {
-  a,span {color: $brand-blue;}
-  .c-message__icon-old {
-    display: none;
+.c-message__image {
+  width: $unit*10;
+  flex: 1 0 auto;
+  
+  img {
+    border-radius: 50%;
   }
 }
 
-.c-message.c--old {
-  a,span {color: $neutral-40;}
-  .c-message__icon-new {
-    display: none;
-  }
-}
-
-
-// Child Elements
-// ---
-
-.c-message__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: $unit*4;
-  padding-left: $unit*4;
-}
-
-.c-message__main {
-  display: flex;
-  flex-direction: column;
-  margin-left: $unit*3;
-  padding: $unit*3 0;
-
-  @media (min-width: $screen-xs) {
-    flex-direction: row;
-    width: 80%;
-    justify-content: space-between;
-  }
-
-  span {
-    font-size: $mobile-font;
-
-    @media (min-width: $screen-xs) {
-      font-size: $small-font;
-    }
-  }
-}
-
-.c-message__author {
-  font-size: $font-size;
-  line-height: 20px;
-}
-
-.c-message__details {
-  @media (min-width: $screen-xs) {
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
-  }
+.c-message__message {
+  padding: $unit*3;
+  border-radius: $unit*2;
+  font-size: $small-font;
 }

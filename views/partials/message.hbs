@@ -1,21 +1,12 @@
-<article class="c-message {{class}} u-color-bg-white u-border">
-  <div class="c-message__wrapper">
-    <div class="u-margin-left-sm c-icon c--medium">
-      {{>iconmessage class="u-width-full u-align-vertical-middle u-fill-blue c-message__icon-new"}}
-      {{>iconmessageopen class="u-width-full u-align-vertical-middle u-fill-grey c-message__icon-old"}}
+<div class="c-message {{class}}">
+  <div class="u-display-flex u--align-center c-message__wrapper">
+    <div class="c-message__image">
+      <img src="img/profile-pic.jpg">
     </div>
-    <div class="c-message__main">
-      <a href="/private-message"><h1 class="c-message__author u-text-bold u-margin-none">Message Author</h1></a>
-      <div class="c-message__details">
-        <span class="c-message__subject u-margin-right-md">Beginning of the message...</span>
-        <span>2hrs&nbsp;ago</span>
-      </div>
-    </div>
-    <div class="c-message__trash u-margin-left-md c-icon c--small">
-      {{>icontrash class="u-width-full u-align-vertical-middle"}}
+    <div class="c-message__message">
+      {{message}} 
     </div>
   </div>
-  <div class="c-message__content u-margin-right-md">Bacon ipsum dolor amet biltong brisket frankfurter, sirloin kielbasa sausage rump jowl pig jerky alcatra chuck venison meatball. Turducken burgdoggen leberkas pork. Hamburger strip steak shoulder tail pancetta. Cow pig venison filet mignon short ribs, alcatra chuck jowl burgdoggen drumstick landjaeger.
-  </div>
+  <div class="c-message__timestamp u-text-size-quiet">{{time}}</div>
 
-</article>
+</div>
