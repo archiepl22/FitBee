@@ -1,0 +1,17 @@
+// Favourite Star
+// ====
+
+
+.c-favourite {
+  fill: none;
+  stroke: $neutral-80;
+  stroke-width: 2px;
+
+  .active,
+  &:hover,
+  &:focus,
+  &:active {
+    stroke: none;
+    fill: $brand-yellow;
+  }
+}

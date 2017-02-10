@@ -15,26 +15,35 @@
     <a href="/" class="t-messages__link c-link u-margin-left-xxlg u-align-right">+ New Message</a>
   </div>
 
-  <div class="u-display-flex">
+  <div class="t-messages__wrapper u-display-flex">
     <div class="t-messages__contacts">
       <div class="t-messages__search u-border-bottom">
         {{>iconsearch class="c--small"}}
         <input type="text" placeholder="Search messages">
       </div>
-      {{>contact}}
-      {{>contact class="new"}}
-      {{>contact}}
-      {{>contact}}
-      {{>contact}}
+      {{!-- {{>contact class="new active" name="New Message"}} --}}
+      {{>contact class="active" name="Sarah Hillton" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+      {{>contact class="alert" name="Simon Hay" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+      {{>contact name="Sarah Hillton" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+      {{>contact name="Simon Hay" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+ 
     </div>
     <div class="t-messages__conversation">
-      <div class="t-messages__conversation-title u-border-bottom u-display-flex u--align-center u--justify-center">
-        <div class="u-text-bold u-color-blue">Conversation with User Name</div>
-        {{>iconstar class="c--medium t-messages__star"}}
+      <div class="t-messages__conversation-title t--new u-border-bottom u-display-flex u--align-center">
+        <div class="u-display-none t-messages__conversation-name">
+          <div class="u-text-bold u-color-blue">Conversation with User Name</div>
+          <div class="t-messages__star">
+            {{>favourite}}
+          </div>
+        </div>
+        <div class="u-display-flex u--align-center t-messages__conversation-new">
+          <div>To:</div>
+          <input type="text" placeholder="Type a name of a person or group"/>
       </div>
-      {{>message class="c--received" time="2:03pm" message="Bacon ipsum dolor amet pig beef pancetta picanha biltong, frankfurter shoulder rump meatball. Cow kevin frankfurter tail landjaeger hamburger ham filet mignon, pork loin jerky bacon chuck salami pork belly bresaola."}}
+      </div>
+   {{!--    {{>message class="c--received" time="2:03pm" message="Bacon ipsum dolor amet pig beef pancetta picanha biltong, frankfurter shoulder rump meatball. Cow kevin frankfurter tail landjaeger hamburger ham filet mignon, pork loin jerky bacon chuck salami pork belly bresaola."}}
       {{>message class="c--sent" time="2:30pm" message="Cow kevin frankfurter tail landjaeger hamburger ham filet mignon, pork loin jerky bacon chuck salami pork belly bresaola"}}
-      {{>message class="c--received" time="2:32pm" message="Bacon."}}
+      {{>message class="c--received" time="2:32pm" message="Bacon."}} --}}
     </div>
   </div>
 <div>  

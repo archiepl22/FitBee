@@ -10,6 +10,7 @@
 .t-messages {
   background-color: $neutral-00;
   padding-top: $unit*5;
+  height: 100%;
 
   h1 {
     margin-top: 0;
@@ -64,6 +65,9 @@
   }
 }
 
+.t-messages__wrapper {
+  height: 100%;
+}
 
 // Contacts
 // ---
@@ -80,10 +84,30 @@
 
 // Conversation
 // ---
+//
+// 1. To override default styles
 
 
 .t-messages__conversation {
   width: calc(100% - 250px);
+}
+
+.t-messages__conversation.t--name {
+  justify-content: center;
+}
+
+.t-messages__conversation.t--new {
+  justify-content: flex-start;
+}
+
+.t-messages__conversation-new {
+  width: 100%;
+  padding-left: $unit*3;
+
+  input {
+    width: 100%;
+    border: none !important; // 1
+  }
 }
 
 // Coversation title
@@ -97,17 +121,6 @@
 .t-messages__star {
   position: absolute;
   right: $unit*3;
-  fill: none;
-  stroke: $neutral-80;
-  stroke-width: 2px;
-
-  .active,
-  &:hover,
-  &:focus,
-  &:active {
-    stroke: none;
-    fill: $brand-yellow;
-  }
 }
 
 

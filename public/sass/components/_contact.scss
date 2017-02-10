@@ -11,7 +11,6 @@
   }
 }
 
-
 .c-contact.active {
   background-color: $neutral-10;
 
@@ -21,7 +20,7 @@
   }
 }
 
-.c-contact.new {
+.c-contact.alert {
 
   .c-contact__name {
     color: $brand-blue;
@@ -51,6 +50,10 @@
       text-align: center;
     }
   }
+}
+
+.c-contact__wrapper {
+  width: $unit*47;
 }
 
 .c-contact__image {

@@ -10,14 +10,16 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 html {
   font-family: $font-family;
   color: $neutral-80;
   -webkit-font-smoothing: antialiased;
+  height: 100%;
 }
 
 img {
@@ -26,6 +28,7 @@ img {
 
 main {
   margin-top: $mobile-header-size; // 1
+  height: 100%;
 
   @media (max-width: $screen-xs) {
     margin-bottom: 45px; // 2
