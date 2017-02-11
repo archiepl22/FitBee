@@ -53,18 +53,6 @@ router.get('/friends', function *() {
     title: 'Friends'});
 });
 
-router.get('/new-message', function *() {
-  yield this.render('new-message', {
-    layout: 'dash',
-    title: 'New Message'});
-});
-
-router.get('/private-message', function *() {
-  yield this.render('private-message', {
-    layout: 'dash',
-    title: 'Private Message'});
-});
-
 router.get('/calendar', function *() {
   yield this.render('calendar', {
     layout: 'dash',

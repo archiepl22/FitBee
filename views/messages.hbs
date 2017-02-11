@@ -12,7 +12,7 @@
         </li>
       </ul>
     </nav>
-    <a href="/" class="t-messages__link c-link u-margin-left-xxlg u-align-right">+ New Message</a>
+    <a class="js-new-message t-messages__link c-link u-margin-left-xxlg u-align-right">+ New Message</a>
   </div>
 
   <div class="t-messages__wrapper u-display-flex">
@@ -21,29 +21,52 @@
         {{>iconsearch class="c--small"}}
         <input type="text" placeholder="Search messages">
       </div>
-      {{!-- {{>contact class="new active" name="New Message"}} --}}
-      {{>contact class="active" name="Sarah Hillton" message="Cow kevin frankfurter tail" timestamp="2:03"}}
-      {{>contact class="alert" name="Simon Hay" message="Cow kevin frankfurter tail" timestamp="2:03"}}
-      {{>contact name="Sarah Hillton" message="Cow kevin frankfurter tail" timestamp="2:03"}}
-      {{>contact name="Simon Hay" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+      <div class="js-messages-contacts t-messages__contacts-wrapper">
+        {{>contact class="new" name="New Message"}}
+        {{>contact class="active" name="Sarah Hillton" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact class="alert" name="Simon Hay" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact name="Sarah Hillton" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact name="Simon Hay" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact class="active" name="Sarah Hillton" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact class="alert" name="Simon Hay" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact name="Sarah Hillton" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact name="Simon Hay" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact class="active" name="Sarah Hillton" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact class="alert" name="Simon Hay" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact name="Sarah Hillton" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+        {{>contact name="Simon Hay" message="Cow kevin frankfurter tail" timestamp="2:03"}}
+      </div>
  
     </div>
     <div class="t-messages__conversation">
-      <div class="t-messages__conversation-title t--new u-border-bottom u-display-flex u--align-center">
-        <div class="u-display-none t-messages__conversation-name">
+      <div class="t-messages__conversation-title u-border-bottom u-display-flex u--align-center">
+
+        <div class="t-messages__conversation-name active">
           <div class="u-text-bold u-color-blue">Conversation with User Name</div>
           <div class="t-messages__star">
             {{>favourite}}
           </div>
         </div>
-        <div class="u-display-flex u--align-center t-messages__conversation-new">
+
+        <div class="t-messages__conversation-new u--align-center">
           <div>To:</div>
           <input type="text" placeholder="Type a name of a person or group"/>
+        </div>
+
       </div>
-      </div>
-   {{!--    {{>message class="c--received" time="2:03pm" message="Bacon ipsum dolor amet pig beef pancetta picanha biltong, frankfurter shoulder rump meatball. Cow kevin frankfurter tail landjaeger hamburger ham filet mignon, pork loin jerky bacon chuck salami pork belly bresaola."}}
+      <div class="js-messages t-messages__messages">
+      {{>message class="c--received" time="2:03pm" message="Bacon ipsum dolor amet pig beef pancetta picanha biltong, frankfurter shoulder rump meatball. Cow kevin frankfurter tail landjaeger hamburger ham filet mignon, pork loin jerky bacon chuck salami pork belly bresaola."}}
       {{>message class="c--sent" time="2:30pm" message="Cow kevin frankfurter tail landjaeger hamburger ham filet mignon, pork loin jerky bacon chuck salami pork belly bresaola"}}
-      {{>message class="c--received" time="2:32pm" message="Bacon."}} --}}
+      {{>message class="c--received" time="2:32pm" message="Bacon."}}
+      {{>message class="c--sent" time="2:30pm" message="Cow kevin frankfurter tail landjaeger hamburger ham filet mignon, pork loin jerky bacon chuck salami pork belly bresaola"}}
+      {{>message class="c--received" time="2:32pm" message="Bacon."}}
+      </div>
+      <div class="t-messages__input u-display-flex u--align-center">
+        <textarea class="u-margin-right-lg" placeholder="Write a message..."></textarea>
+        <div>
+          <button type="submit" class="c-button c--primary">Send</button>
+        <div>
+      </div>
     </div>
   </div>
 <div>  

@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,15 +32,16 @@ img {
 }
 
 main {
-  margin-top: $mobile-header-size; // 1
+  padding-top: $mobile-header-size; // 1
   height: 100%;
+  overflow: scroll;
 
   @media (max-width: $screen-xs) {
-    margin-bottom: 45px; // 2
+    padding-bottom: 45px; // 2
   }
 
   @media (min-width: $screen-xs) {
-    margin-top: $header-size; // 3
+    padding-top: $header-size; // 3
   }
 }
 
@@ -51,7 +57,7 @@ h4 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 36px;
 }
 

@@ -10,13 +10,13 @@
 .t-messages {
   background-color: $neutral-00;
   padding-top: $unit*5;
-  height: 100%;
+  height: calc(100% - 68px);
 
   h1 {
     margin-top: 0;
   }
   @media (min-width: $screen-sm) {
-    padding-top: $unit*10;
+    padding-top: $unit*8;
     padding-left: 180px;
   }
 }
@@ -75,10 +75,16 @@
 .t-messages__contacts {
   width: 250px;
   height: 100%;
+  // overflow: scroll;
 
   position: relative;
 
   border-right: $border;
+}
+
+.t-messages__contacts-wrapper {
+  height: calc(100% - 44px);
+  overflow: scroll;
 }
 
 
@@ -90,6 +96,7 @@
 
 .t-messages__conversation {
   width: calc(100% - 250px);
+  position: relative;
 }
 
 .t-messages__conversation.t--name {
@@ -101,6 +108,8 @@
 }
 
 .t-messages__conversation-new {
+  display: none;
+  align-items: center;
   width: 100%;
   padding-left: $unit*3;
 
@@ -108,6 +117,17 @@
     width: 100%;
     border: none !important; // 1
   }
+}
+
+.t-messages__conversation-name {
+  display: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.t-messages__conversation-name.active,
+.t-messages__conversation-new.active {
+  display: flex;
 }
 
 // Coversation title
@@ -121,6 +141,18 @@
 .t-messages__star {
   position: absolute;
   right: $unit*3;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+
+// Messages
+// ---
+
+.t-messages__messages {
+  overflow: scroll;
+  height: 73%;
 }
 
 
@@ -146,6 +178,25 @@
     top: 0;
     margin: auto;
     left: $unit*2;
+  }
+}
+
+
+// Message Input
+// ---
+
+.t-messages__input {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  background-color: $neutral-10;
+  padding: $unit*3;
+
+  textarea {
+    border: $border;
+    font-size: $small-font;
   }
 }
 

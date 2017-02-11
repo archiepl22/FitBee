@@ -61,5 +61,23 @@ $( document ).ready(function() {
     $(".js-contact").not(this).removeClass('active');
     $(this).toggleClass('active');
   });
+
+  // New Message
+  // ---
+
+  $(".js-new-message").click(function() {
+    $('.t-messages__conversation-name').removeClass('active');
+    $('.t-messages__conversation-new').addClass('active');
+    $('.js-messages').children().hide();
+    $(".js-contact").not(this).removeClass('active');
+    $('.js-contact.new').addClass('active')
+
+  });
+
+  $('.js-contact').click(function(){
+    $('.t-messages__conversation-new').removeClass('active');
+    $('.t-messages__conversation-name').addClass('active');
+    $('.js-messages').children().show();
+  });
 });
 

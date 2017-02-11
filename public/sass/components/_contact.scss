@@ -11,8 +11,13 @@
   }
 }
 
+.c-contact.new {
+  display: none;
+}
+
 .c-contact.active {
   background-color: $neutral-10;
+  display: flex;
 
   .c-contact__message,
   .c-contact__timestamp {
@@ -21,7 +26,6 @@
 }
 
 .c-contact.alert {
-
   .c-contact__name {
     color: $brand-blue;
     font-weight: 500;
