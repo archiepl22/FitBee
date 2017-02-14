@@ -32,11 +32,11 @@ img {
 }
 
 main {
-  padding-top: $mobile-header-size; // 1
   height: 100%;
   overflow: scroll;
 
   @media (max-width: $screen-xs) {
+    padding-top: $mobile-header-size; // 1
     padding-bottom: 45px; // 2
   }
 
@@ -107,7 +107,10 @@ ul {
 // Default Styles
 // ---
 button,
-input {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="checkbox"], {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

@@ -136,6 +136,10 @@
 .t-messages__wrapper {
   height: 100%;
   position: relative;
+
+  @media (min-width: $screen-xs) {
+    height: 100%;
+  }
 }
 
 .t-messages__new-icon {
@@ -178,7 +182,7 @@
 }
 
 .t-messages__contacts-wrapper {
-  height: calc(100% - 44px);
+  height: calc(100% - 54px);
   overflow: scroll;
 }
 
@@ -250,7 +254,7 @@
 
 .t-messages__messages {
   overflow: scroll;
-  height: 66%;
+  height: 74%;
 }
 
 
@@ -284,10 +288,10 @@
 // ---
 
 .t-messages__input {
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
-  bottom: 0;
+  bottom: 47px;
 
   background-color: $neutral-10;
   padding: $unit*3;
@@ -298,6 +302,7 @@
   }
 
   @media (min-width: $screen-xs) {
+    position: absolute;
     bottom: 0;
   }
 }

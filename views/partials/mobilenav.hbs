@@ -1,0 +1,40 @@
+<div class="c-mobile-nav">
+  <nav>
+    <ul class="c-mobile-nav__list u-margin-none">
+      <li class="c-mobile-nav__item u-display-flex u--align-center">
+        <a class="js-mobile-nav u-padding-lg u-display-block">
+          {{>iconmenu class="c--large"}}
+        </a>
+        {{>mobileswipenav}}
+{{!--         <ul class="c-mobile-nav__sub-nav u-display-none">
+          <li><a href="">Profile</a></li>
+          <li><a href="">Settings</a></li>
+          <li><a href="/landing">Logout</a></li>
+        </ul> --}}
+      </li>
+      <li class="c-mobile-nav__logo">
+        <a href="/">
+          <div class="u-margin-left-md">
+            <img src="img/fitbee-logo-black.svg" />
+          </div>
+        </a>
+      </li>
+      <div class="u-display-flex u--align-center">
+        <li class="">
+          <a href="/friends" class="c-mobile-nav__item u-padding-lg u-display-block">
+            {{>iconfriends class="c--medium"}}
+          </a>
+        </li>
+        <li class="">
+          <a class="c-mobile-nav__item u-padding-lg u-display-block">
+            {{>iconnotification class="c--small"}}
+          </a>
+          <ul class="c-mobile-nav__sub-nav u-display-none">
+            <li>{{>notification text="Jen Jonhson is interested in your training services"}}</li>
+            <li>{{>notification text="John Smith is now following you"}}</li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </nav>
+</div>

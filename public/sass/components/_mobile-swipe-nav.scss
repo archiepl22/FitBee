@@ -1,0 +1,71 @@
+// Mobile Swipe Nav
+// ====
+
+
+.c-mobile-swipe-nav {
+  background-color: $neutral-70;
+
+  z-index: 1000;
+
+  position: fixed;
+  top: 0;
+  left: -420px;
+  width: 0;
+  bottom: 0;
+  transition: $slow-animation;
+
+  @media (min-width: $screen-xs) {
+    display: none;
+  }
+
+  li {
+    border-top: 1px solid $neutral-80;
+  }
+
+   li:last-child {
+    border-bottom: 1px solid $neutral-80;
+  }
+}
+
+.c-mobile-swipe-nav.c--open {
+  left: 0;
+  width: 100%;
+}
+
+.c-mobile-swipe-nav__item-bar:before {
+  content: '';
+  display: none;
+  width: 3px;
+  background-color: $brand-orange;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.c-mobile-swipe-nav__item {
+  padding: $unit*6 $unit*10;
+  position: relative;
+  cursor: pointer;
+  color: $neutral-00;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:hover {
+    background-color: $neutral-80;
+
+    .c-mobile-swipe-nav__item-bar:before {
+      display: block;
+    }
+  }
+
+
+  .c-icon {
+    fill: $neutral-00;
+    margin-right: $unit*3;
+    margin-left: -$unit*3;
+  }
+}
+
+

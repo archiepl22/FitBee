@@ -79,6 +79,11 @@ $( document ).ready(function() {
     $('.t-messages__conversation-new').removeClass('active');
     $('.t-messages__conversation-name').addClass('active');
     $('.js-messages').children().show();
+    $('.js-contacts').removeClass('active')
+  });
+
+  $('.js-messages-back').click(function(){
+    $('.js-contacts').addClass('active')
   });
 });
 

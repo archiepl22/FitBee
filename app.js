@@ -47,16 +47,15 @@ router.get('/messages', function *() {
   });
 });
 
-router.get('/friends', function *() {
-  yield this.render('friends', {
-    layout: 'dash',
-    title: 'Friends'});
-});
-
 router.get('/calendar', function *() {
   yield this.render('calendar', {
     layout: 'dash',
     title: 'Calendar'});
+});
+
+router.get('/friends', function *() {
+  yield this.render('friends', {
+    title: 'Friends'});
 });
 
 router.get('/login', function *() {
@@ -77,6 +76,10 @@ router.get('/find-trainer', function *() {
 
 router.get('/profile', function *() {
   yield this.render('profile', {title: 'Profile'});
+});
+
+router.get('/settings', function *() {
+  yield this.render('settings', {title: 'Settings'});
 });
 
 

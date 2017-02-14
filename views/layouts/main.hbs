@@ -7,10 +7,15 @@
     <script src="js/header.js"></script>
     <link rel="stylesheet" href="/css/style.css">
   </head>
-  {{>nav}}
-  {{>mobiledash}}
-  <main>
-    {{{@body}}}
-  </main>
-  {{>tabbar}}
+  <body>
+    <header class="c-header">
+    {{>nav}}
+    {{>mobilenav}}
+    {{>mobiledash}}
+    </header>
+    <main>
+      {{{@body}}}
+    </main>
+    {{>tabbar}}
+  </body>
 </html>

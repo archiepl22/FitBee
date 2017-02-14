@@ -1,58 +1,63 @@
-<header class="c-header">
-  <div class="c-header__top">
-    <nav>
-      <a href="/">
-        <div class="c-header__logo u-margin-left-md">
-          <img src="img/fitbee-logo-black.svg" />
-        </div>
-      </a>
-      <ul class="c-nav-primary u-margin-none">
-        <li>
-          <a href="/login">Login</a>
-        </li>
-        <li>
-          <a href="/signup">Sign up</a>
-        </li>
-        <li class="u-padding-lg">
-          <a href="/profile">Image User Name</a>
-        </li>
-        <li class="u-padding-lg">
-          <a class="c-nav-primary__item">
-            {{>iconnotification class="c--small"}}
-          </a>
-          <ul class="c-nav-primary__item-nav">
-            <li>{{>notification text="Jen Jonhson is interested in your training services"}}</li>
-            <li>{{>notification text="John Smith is now following you"}}</li>
-          </ul>
-        </li>
-        <li class="u-padding-lg c-nav-primary__item">
-          <a>
-            {{>icongear class="c--small"}}
-          </a>
-          <ul class="c-nav-primary__item-nav">
-            <li><a href="">Settings</a></li>
-            <li><a href="/landing">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="c-header__bottom u-padding-sides-xlg u-padding-top-lg u-padding-bottom-lg">
-    <nav>
-      <ul class="c-nav-secondary">
-        <li class="u-padding-sides-xlg">
-          <a href="/workouts" class="c-link">Dashboard</a>
-        </li>
-        <li class="u-padding-sides-xlg">
-          <a class="c-link">+ Create Workout</a>
-        </li>
-        <li class="u-padding-sides-xlg">
-          <a href="/browse-workouts" class="c-link">Browse Workouts</a>
-        </li>
-        <li class="u-padding-sides-xlg">
-          <a href="/find-trainer" class="c-link">Find a Trainer</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+
+<div class="c-header__top">
+  <nav>
+    <a href="/">
+      <div class="c-header__logo u-margin-left-md">
+        <img src="img/fitbee-logo-black.svg" />
+      </div>
+    </a>
+    <ul class="c-nav-primary u-margin-none">
+      <li>
+        <a href="/login">Login</a>
+      </li>
+      <li>
+        <a href="/signup">Sign up</a>
+      </li>
+      <li class="u-padding-lg">
+        <a href="/profile">Image User Name</a>
+      </li>
+      <li class="u-padding-lg">
+        <a href="/friends" class="c-nav-primary__item">
+          {{>iconfriends class="c--medium"}}
+        </a>
+      </li>
+      <li class="u-padding-lg">
+        <a class="c-nav-primary__item">
+          {{>iconnotification class="c--small"}}
+        </a>
+        <ul class="c-nav-primary__item-nav">
+          <li>{{>notification text="Jen Jonhson is interested in your training services"}}</li>
+          <li>{{>notification text="John Smith is now following you"}}</li>
+        </ul>
+      </li>
+      <li class="u-padding-lg c-nav-primary__item">
+        <a>
+          {{>icongear class="c--small"}}
+        </a>
+        <ul class="c-nav-primary__item-nav">
+          <li><a href="/settings">Settings</a></li>
+          <li><a href="/landing">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="c-header__bottom u-padding-sides-xlg u-padding-top-lg u-padding-bottom-lg">
+  <nav>
+    <ul class="c-nav-secondary">
+      <li class="u-padding-sides-xlg">
+        <a href="/workouts" class="c-link">Dashboard</a>
+      </li>
+      <li class="u-padding-sides-xlg">
+        <a class="c-link">+ Create Workout</a>
+      </li>
+      <li class="u-padding-sides-xlg">
+        <a href="/browse-workouts" class="c-link">Browse Workouts</a>
+      </li>
+      <li class="u-padding-sides-xlg">
+        <a href="/find-trainer" class="c-link">Find a Trainer</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
