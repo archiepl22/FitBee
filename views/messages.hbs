@@ -1,9 +1,16 @@
 <div class="t-messages"> 
 
-  <div class="t-messages__header u-display-flex u--align-center u-border-bottom">
-    <h1 class="t-messages__title u-margin-none">Messages</h1>
-    <nav>
-      <ul class="u-display-flex u-margin-top-none u-margin-bottom-none u-margin-left-xxlg">
+      {{>mobileheader newclass="js-new-message" backclass="js-messages-back"}}
+
+  <div class="t-messages__header u--align-center u-border-bottom">
+    <div class="t-messages__header-wrapper">
+      <h1 class="t-messages__title u-margin-none">Messages</h1>
+      <a class="js-new-message t-messages__new-icon">
+        {{>iconedit class="c--medium u-fill-blue"}}
+      </a>
+    </div>
+    <nav class="t-messages__nav">
+      <ul class="t-messages__nav-list u-display-flex">
         <li>
           <div class="js-messages-inbox t-messages__nav-item active">All Inbox</div>
         </li>
@@ -16,7 +23,7 @@
   </div>
 
   <div class="t-messages__wrapper u-display-flex">
-    <div class="t-messages__contacts">
+    <div class="js-contacts active t-messages__contacts">
       <div class="t-messages__search u-border-bottom">
         {{>iconsearch class="c--small"}}
         <input type="text" placeholder="Search messages">
@@ -48,11 +55,10 @@
           </div>
         </div>
 
-        <div class="t-messages__conversation-new u--align-center">
+        <div class="t-messages__conversation-new u--align-center u-position-relative">
           <div>To:</div>
           <input type="text" placeholder="Type a name of a person or group"/>
         </div>
-
       </div>
       <div class="js-messages t-messages__messages">
       {{>message class="c--received" time="2:03pm" message="Bacon ipsum dolor amet pig beef pancetta picanha biltong, frankfurter shoulder rump meatball. Cow kevin frankfurter tail landjaeger hamburger ham filet mignon, pork loin jerky bacon chuck salami pork belly bresaola."}}

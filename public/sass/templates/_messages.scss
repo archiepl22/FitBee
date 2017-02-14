@@ -19,10 +19,32 @@
     padding-top: $unit*8;
     padding-left: 180px;
   }
+
+  // Mobile only
+  @media (max-width: $screen-xs) {
+    padding: 0;
+    height: 100%;
+  }
 }
 
 .t-messages__header {
   padding: 0 $unit*10;
+  position: relative;
+  display: flex;
+
+  // Mobile only
+  @media (max-width: $screen-xs) {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.t-messages__header-wrapper {
+  display: none;
+
+  @media (min-width: $screen-xs) {
+   display: block;
+  }
 }
 
 
@@ -33,6 +55,43 @@
 .t-messages__title,
 .t-messages__link {
   padding-bottom: $unit*8;
+}
+
+.t-messages__link {
+  @media (max-width: $screen-xs) {
+    display: none;
+  }
+}
+
+.t-messages__title {
+  @media (max-width: $screen-xs) {
+    padding: $unit*4;
+  }
+}
+
+.t-messages__nav {
+  @media (max-width: $screen-xs) {
+    width: 100%;
+  }
+}
+
+.t-messages__nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: $unit*6;
+
+  // Mobile Only
+  @media (max-width: $screen-xs) {
+    margin: 0;
+    justify-content: center;
+  }
+
+  li {
+    @media (max-width: $screen-xs) {
+      width: 50%;
+      text-align: center;
+    }
+  }
 }
 
 .t-messages__nav-item {
@@ -50,10 +109,19 @@
     bottom: -$unit*2;
     left: 0;
     right: 0;
+
+    @media (max-width: $screen-xs) {
+      bottom: 0;
+    }
   }
 
   &:hover {
     color: $brand-blue;
+  }
+
+  // Mobile Only
+  @media (max-width: $screen-xs) {
+    padding: $unit*4; 
   }
 }
 
@@ -67,19 +135,46 @@
 
 .t-messages__wrapper {
   height: 100%;
+  position: relative;
+}
+
+.t-messages__new-icon {
+  position: absolute;
+  top: $unit*6;
+  right: $unit*6;
+
+  @media (min-width: $screen-xs) {
+    display: none;
+  }
 }
 
 // Contacts
 // ---
+// 1. to account for the tab bar
 
 .t-messages__contacts {
-  width: 250px;
-  height: 100%;
-  // overflow: scroll;
+  width: 100%;
+  height: calc(100% - 30px); // 1
 
-  position: relative;
+  position: absolute;
+  right: 100%;
+  overflow: scroll;
 
   border-right: $border;
+
+  transition: $slow-animation;
+
+  z-index: 10;
+
+  @media (min-width: $screen-xs) {
+    width: 250px;
+    position: static;
+    height: 100%;
+  }
+}
+
+.t-messages__contacts.active {
+  right: 0;
 }
 
 .t-messages__contacts-wrapper {
@@ -93,10 +188,13 @@
 //
 // 1. To override default styles
 
-
 .t-messages__conversation {
-  width: calc(100% - 250px);
-  position: relative;
+  width: 100%;
+
+  @media (min-width: $screen-xs) {
+    width: calc(100% - 250px);
+    position: relative;
+  }
 }
 
 .t-messages__conversation.t--name {
@@ -152,7 +250,7 @@
 
 .t-messages__messages {
   overflow: scroll;
-  height: 73%;
+  height: 66%;
 }
 
 
@@ -197,6 +295,10 @@
   textarea {
     border: $border;
     font-size: $small-font;
+  }
+
+  @media (min-width: $screen-xs) {
+    bottom: 0;
   }
 }
 

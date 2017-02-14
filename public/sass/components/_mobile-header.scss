@@ -1,0 +1,12 @@
+// Mobile Header
+// ====
+
+.c-mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $screen-xs) {
+   display: none;
+ }
+}

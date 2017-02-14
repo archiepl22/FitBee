@@ -4,10 +4,10 @@
 
 .c-message {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: $unit*3;
   margin-top: $unit*5;
-
-  align-items: center;
 }
 
 .c-message.c--received {

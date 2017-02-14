@@ -3,11 +3,32 @@
 // 1. Important to override utility class
 
 
+// Contact Close X
+// 1. This needs to remain on the top to show up on hover
+
+.c-contact__close { // 1
+  display: none;
+  color: $neutral-40;
+  position: absolute;
+  top: $unit;
+  right: $unit*2;
+  font-size: $font-size;
+  line-height: 10px;
+  cursor: pointer;
+}
+
 .c-contact {
+  position: relative;
+  background-color: $neutral-00;
+
   &:hover,
   &:active,
   &:focus {
    background-color: $neutral-10;
+
+   .c-contact__close {
+    display: block;
+   }
   }
 }
 
@@ -57,7 +78,11 @@
 }
 
 .c-contact__wrapper {
-  width: $unit*47;
+  width: 85%;
+
+  @media (min-width: $screen-xs) {
+    width: $unit*47;
+  }
 }
 
 .c-contact__image {

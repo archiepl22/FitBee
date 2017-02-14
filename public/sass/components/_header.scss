@@ -9,6 +9,12 @@
   width: 100%;
   top: 0;
   z-index: 1;
+  border-bottom: $border;
+
+  @media (min-width: $screen-xs) {
+    border: none;
+  }
+
 }
 
 .c-header__top {
