@@ -14,6 +14,7 @@
 @import './templates/main';
 @import './templates/profile';
 @import './templates/messages';
+@import './templates/calendar';
 
 // Components
 @import './components/button';
@@ -43,6 +44,7 @@
 @import './components/mobile-header';
 @import './components/mobile-nav';
 @import './components/mobile-swipe-nav';
+@import './components/calendar';
 
 // Utilities
 @import "./utilities/spacing";

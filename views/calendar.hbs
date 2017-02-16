@@ -1,5 +1,14 @@
-<div class="t-dash">
 
-  {{>heading heading="Calendar"}}
-
+<div class="t-calendar u-padding-top-xlg">
+  <h1 class="u-margin-top-none u-margin-left-lg">Calendar</h1>
+  <div id="calendar"></div>
 </div>
+
+<script>
+    $('#calendar').datepicker({
+        inline: true,
+        firstDay: 1,
+        showOtherMonths: true,
+        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    });
+</script>

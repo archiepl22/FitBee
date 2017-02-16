@@ -85,5 +85,22 @@ $( document ).ready(function() {
   $('.js-messages-back').click(function(){
     $('.js-contacts').addClass('active')
   });
+
+
+  // Mobile Swipe nav 
+  // ---
+  $(".js-mobile-nav").click( function(){
+    $(".js-swipe-nav").addClass('c--open');
+  });
+
+  // close on back button
+  $(".js-swipe-nav__back").click( function(){
+    $(".js-swipe-nav").removeClass('c--open');
+  });
+
+  // close on link click
+  $(".js-swipe-nav").find("li").click( function(){
+    $(".js-swipe-nav").removeClass('c--open'); 
+  });
 });
 

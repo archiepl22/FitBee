@@ -82,6 +82,10 @@ router.get('/settings', function *() {
   yield this.render('settings', {title: 'Settings'});
 });
 
+router.get('/edit-profile', function *() {
+  yield this.render('editprofile', {title: 'Edit your profile'});
+});
+
 
 
 
