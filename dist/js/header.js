@@ -89,6 +89,7 @@ $( document ).ready(function() {
 
   // Mobile Swipe nav 
   // ---
+
   $(".js-mobile-nav").click( function(){
     $(".js-swipe-nav").addClass('c--open');
   });
@@ -101,6 +102,52 @@ $( document ).ready(function() {
   // close on link click
   $(".js-swipe-nav").find("li").click( function(){
     $(".js-swipe-nav").removeClass('c--open'); 
+  });
+
+
+  // Calendar
+  // ---
+
+  var events = [ 
+    { Title: "Five K for charity", Date: new Date("02/13/2017") }, 
+    { Title: "Dinner", Date: new Date("02/25/2017") }, 
+    { Title: "Meeting with manager", Date: new Date("03/01/2017") }
+  ];
+
+  $('#calendar').datepicker({
+    inline: true,
+    firstDay: 1,
+    showOtherMonths: true,
+    dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    beforeShowDay: function(date) {
+        var result = [true, '', null];
+        var matching = $.grep(events, function(event) {
+            return event.Date.valueOf() === date.valueOf();
+        });
+        
+        if (matching.length) {
+            result = [true, 'active', null];
+        }
+        return result;
+    },
+    onSelect: function(dateText) {
+        var date,
+            selectedDate = new Date(dateText),
+            i = 0,
+            event = null;
+        
+        while (i < events.length && !event) {
+            date = events[i].Date;
+
+            if (selectedDate.valueOf() === date.valueOf()) {
+                event = events[i];
+            }
+            i++;
+        }
+        if (event) {
+            alert(event.Title);
+        }
+    }
   });
 });
 

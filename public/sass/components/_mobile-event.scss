@@ -1,0 +1,44 @@
+// Mobile Event
+// ====
+
+.c-mobile-event {
+  display: flex;
+  align-items: center;
+  background-color: $neutral-00;
+
+  border-bottom: $border;
+  border-left: 2px solid $brand-orange;
+
+  @media (min-width: $screen-xs) {
+    display: none;
+  }
+}
+
+.c-mobile-event__time {
+  padding: $unit*4 $unit*3;
+
+  background-color: $neutral-70;
+
+  color: $neutral-00;
+  font-size: $small-font;
+
+  & div:nth-child(2) {
+    color: $neutral-20;
+  }
+}
+
+.c-mobile-event__title {
+  padding: $unit*4 $unit*2;
+
+  font-weight: 500;
+  color: $neutral-70;
+}
+
+// Modifiers
+// ---
+
+.c-mobile-event.c--workout {
+  .c-mobile-event__title {
+    color: $brand-blue;
+  }
+}

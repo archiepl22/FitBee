@@ -2,13 +2,9 @@
 <div class="t-calendar u-padding-top-xlg">
   <h1 class="u-margin-top-none u-margin-left-lg">Calendar</h1>
   <div id="calendar"></div>
-</div>
 
-<script>
-    $('#calendar').datepicker({
-        inline: true,
-        firstDay: 1,
-        showOtherMonths: true,
-        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-    });
-</script>
+  {{!-- Render mobile-event only if mobile (define as variable max-width: 480px) --}}
+  {{>mobileevent class="c--workout" title="This is a Workout"}}
+  {{>mobileevent title="This is a regular event"}}
+
+</div>
