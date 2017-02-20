@@ -53,9 +53,14 @@ router.get('/calendar', function *() {
     title: 'Calendar'});
 });
 
+router.get('/groups', function *() {
+  yield this.render('groups', {
+    layout: 'dash',
+    title: 'Groups'});
+});
+
 router.get('/friends', function *() {
-  yield this.render('friends', {
-    title: 'Friends'});
+  yield this.render('friends', { title: 'Friends'});
 });
 
 router.get('/login', function *() {

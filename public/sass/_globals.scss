@@ -34,6 +34,7 @@ img {
 main {
   height: 100%;
   overflow: scroll;
+  background-color: $neutral-10;
 
   @media (max-width: $screen-xs) {
     padding-top: $mobile-header-size; // 1
