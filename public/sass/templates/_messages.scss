@@ -31,6 +31,7 @@
   padding: 0 $unit*10;
   position: relative;
   display: flex;
+  align-items: center;
 
   // Mobile only
   @media (max-width: $screen-xs) {
@@ -168,7 +169,7 @@
 
   position: absolute;
   right: 100%;
-  overflow: scroll;
+  // overflow: scroll;
 
   border-right: $border;
 
