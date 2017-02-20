@@ -2,6 +2,7 @@
 // ====
 //
 // 1. Important to override default input styles
+// 1. It's here temporarily until the functionality is in
 
 .c-calendar-event {
   width: 300px;
@@ -11,7 +12,8 @@
 
   color: $neutral-10;
 
-  position: relative;
+  position: absolute;
+  top: 0; // 1
 
   select {
     width: 100%;

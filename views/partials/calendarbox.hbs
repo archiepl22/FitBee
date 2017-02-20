@@ -1,0 +1,14 @@
+  <div class="t-calendar__calendars u-color-bg-white u-border u-margin-top-xxlg">
+    <h1 class="u-line-height-sm u-margin-none u-padding-lg u-width-full u-border-bottom u-text-size-normal">{{title}}</h1>
+    <div class="u-padding-md">
+      <div class="c-checkbox u-margin-right-lg u-margin-bottom-md">
+          <input type="checkbox" value="group-calendar" class="c-checkbox"/><label class="u-text-size-small" for="coach">{{item}}</label>
+      </div>
+      <div class="c-checkbox u-margin-right-lg">
+          <input type="checkbox" value="personal-trainer-calendar" class="c-checkbox"/><label class="u-text-size-small" for="coach">{{item}}</label>
+      </div>
+      {{#if link }}
+        <a class="c-link u-display-block u-text-size-small u-text-bold u-margin-top-lg">{{link}}</a>
+      {{/if}}
+    </div>
+  </div>
