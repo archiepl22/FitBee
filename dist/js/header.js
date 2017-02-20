@@ -72,14 +72,15 @@ $( document ).ready(function() {
     $(".js-contact").not(this).removeClass('active');
     $('.js-contacts').removeClass('active')
     $('.js-contact.new').addClass('active')
-
+    $('.js-messages__nav').addClass('hide');
   });
 
   $('.js-contact').click(function(){
     $('.t-messages__conversation-new').removeClass('active');
     $('.t-messages__conversation-name').addClass('active');
     $('.js-messages').children().show();
-    $('.js-contacts').removeClass('active')
+    $('.js-contacts').removeClass('active');
+    $('.js-messages__nav').addClass('hide');
   });
 
   $('.js-messages-back').click(function(){
@@ -109,7 +110,7 @@ $( document ).ready(function() {
   // ---
 
 
-    $(".js-calendar-event-input").click( function(){
+  $(".js-calendar-event-input").click( function(){
     $(".js-calendar .js-suggest").slideToggle(200);
   });
 

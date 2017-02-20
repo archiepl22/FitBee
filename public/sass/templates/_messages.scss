@@ -75,6 +75,12 @@
   }
 }
 
+.t-messages__nav.hide {
+  @media (max-width: $screen-xs) {
+    display: none;
+  }
+}
+
 .t-messages__nav-list {
   margin-top: 0;
   margin-bottom: 0;
