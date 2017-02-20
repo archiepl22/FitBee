@@ -1,0 +1,24 @@
+<div class="js-calendar c-calendar-event">
+  <input type="text" class="js-calendar-event-input c-calendar-event__title" placeholder="Type a workout or event" />
+  {{>suggest item="Zumba Dance Workout"}}
+  <div class="u-padding-top-lg u-padding-sides-lg">
+    <a href="/workouts" class="c-link c--orange u-text-size-small u-text-bold u-text-align-right u-display-block">Go to my workouts ></a>
+    <div class="u-margin-top-lg">
+      <span class="u-margin-right-md">Jan 16, 2017</span><span>9 AM to 10 AM</span>
+    </div>
+    <div class="u-display-flex u-margin-top-lg u-margin-bottom-lg">
+      <div class="c-checkbox u-margin-right-lg">
+          <input type="checkbox" value="coach" class="c-checkbox"/><label for="coach">all-day</label>
+      </div>
+      <div class="c-checkbox">
+          <input type="checkbox" value="coach" class="c-checkbox"/><label for="coach">repeat</label>
+      </div>
+    </div>
+    <select class="u-display-block">
+      <option value="my-calendar">Calendar</option>
+      <option value="my-calendar">Group Calendar</option>
+    </select>
+    <a class="c-link c--orange u-margin-top-lg u-display-block">Add Invitees</a>
+  </div>
+  <input type="text" class="c-calendar-event__description" placeholder="Type to add a description" />  
+</div>

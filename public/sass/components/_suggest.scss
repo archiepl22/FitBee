@@ -1,33 +1,18 @@
-// // Suggest 
-// // ====
-// // 
-// // *** Requires parent to be relative positioned ***
+// Suggest 
+// ====
+// 
+// *** Requires parent to be relative positioned ***
 
-// $person-height: 68px;
+.c-suggest {
+  display: none;
+}
 
-// .c-suggest {
-//   position: absolute;
-//   width: 300px;
-//   background-color: white;
-//   bottom: -$person-height;
-//   border-radius: $border-radius;
-// }
+.c-suggest__image {
+  display: none;
+}
 
-// .c-suggest__image {
-//   width: 50px;
-//   height: 50px;
-
-//   img {
-//     border-radius: 50%;
-//   }
-// }
-
-// .c-suggest__person {
-//   display: flex;
-//   align-items: center;
-//   padding: $unit*2;
-
-//   &:not(:last-child) {
-//     border-bottom: $border;
-//   }
-// }
+.c-suggest.c--image {
+  .c-suggest__image {
+    display: block;
+  }
+}

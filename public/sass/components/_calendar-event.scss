@@ -1,0 +1,77 @@
+// Calendar Event (Desktop only)
+// ====
+//
+// 1. Important to override default input styles
+
+.c-calendar-event {
+  width: 300px;
+
+  background-color: $neutral-70;
+  border-radius: $border-radius*8;
+
+  color: $neutral-10;
+
+  position: relative;
+
+  select {
+    width: 100%;
+    background-color: $neutral-60;
+    height: $unit*8;
+    color: $neutral-00;
+    border: none;
+    font-size: $small-font;
+  }
+
+  &:before {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+
+    border-right: 10px solid $neutral-70; 
+
+    position: absolute;
+    bottom: $unit*8;
+    left: -$unit*2;
+  }
+}
+
+.c-calendar-event .c-suggest {
+  width: 100%;
+  position: absolute;
+  background-color: $neutral-60;
+  border-top: 1px solid $neutral-80;
+
+  li {
+    font-size: $small-font;
+    padding: $unit*3;
+    border-bottom: 1px solid $neutral-80;
+
+    &:hover {
+      color: $brand-orange;
+    }
+  }
+
+}
+
+.c-calendar-event__title,
+.c-calendar-event__description {
+  width: 100%;
+
+  border: none !important;
+
+  color: $neutral-00;
+}
+
+.c-calendar-event__title {
+  background-color: $neutral-60;
+  border-radius: $border-radius*8 $border-radius*8 0 0 !important; // 1
+
+  font-weight: 500;
+}
+
+.c-calendar-event__description {
+  background-color: $neutral-70;
+  border-radius: 0 0 $border-radius*8 $border-radius*8 !important; // 1
+}
