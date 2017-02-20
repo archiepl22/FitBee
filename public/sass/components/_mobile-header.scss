@@ -5,8 +5,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: $border;
 
   @media (min-width: $screen-xs) {
    display: none;
  }
+
+  svg {
+    fill: $brand-blue;
+  }
+}
+
+.c-mobile-header.c--dark {
+  border: none;
+ svg {
+    fill: $brand-orange;
+  }
 }

@@ -1,0 +1,16 @@
+.c-new-event {
+  input[type="text"],
+  select {
+    width: 100%;
+    background: $neutral-60;
+    color: $neutral-00;
+    border-radius: 0;
+    border: none !important;
+    border-top: 1px solid $neutral-80 !important;
+   }
+
+ select {
+  padding: 12px;
+  font-size: $font-size;
+ }
+}

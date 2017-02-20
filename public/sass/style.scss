@@ -47,6 +47,8 @@
 @import './components/calendar';
 @import './components/mobile-event';
 @import './components/calendar-event';
+@import './components/heading';
+@import './components/new-event';
 
 // Utilities
 @import "./utilities/spacing";
@@ -60,3 +62,5 @@
 @import "./utilities/float";
 @import "./utilities/line-height";
 @import "./utilities/box-shadow";
+@import "./utilities/height";
+@import "./utilities/visibility";

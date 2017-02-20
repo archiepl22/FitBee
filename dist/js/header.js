@@ -108,10 +108,10 @@ $( document ).ready(function() {
   // Calendar
   // ---
 
-  $('.js-calendar-event-input').click( function() {
-    $('.c-calendar-event .c-suggest').slideToggle(100);
-  })
 
+    $(".js-calendar-event-input").click( function(){
+    $(".js-calendar .js-suggest").slideToggle(200);
+  });
 
   var events = [ 
     { Title: "Five K for charity", Date: new Date("02/13/2017") }, 

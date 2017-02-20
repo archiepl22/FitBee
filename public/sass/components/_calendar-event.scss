@@ -5,6 +5,10 @@
 // 1. It's here temporarily until the functionality is in
 
 .c-calendar-event {
+  @media (max-width: $screen-xs) {
+    display: none;
+  }
+  
   width: 300px;
 
   background-color: $neutral-70;

@@ -1,0 +1,7 @@
+.c-heading {
+  padding: 0 $unit*2 0 $unit*2;
+
+  @media (min-width: $screen-xs) {
+    padding: 0;
+  }
+}

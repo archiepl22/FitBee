@@ -53,6 +53,12 @@ router.get('/calendar', function *() {
     title: 'Calendar'});
 });
 
+router.get('/new-event', function *() {
+  yield this.render('newevent', {
+    layout: 'dash',
+    title: 'New Event'});
+});
+
 router.get('/groups', function *() {
   yield this.render('groups', {
     layout: 'dash',

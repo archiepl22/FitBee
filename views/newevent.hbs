@@ -1,0 +1,26 @@
+<div class="c-new-event u-color-bg-neutral-70 u-height-full u-color-white">
+  {{>mobileheader theme="c--dark" header="New Event" newclass="u-visibility-none"}}
+  <form>
+     <input type="text" class="" placeholder="Type a workout or event" />
+       <a href="/workouts" class="c-link c--orange u-margin-top-lg u-margin-bottom-lg u-display-block u-text-align-right u-margin-right-lg">Go to my workouts ></a>
+      <select class="u-display-block">
+        <option value="my-calendar">Calendar</option>
+        <option value="my-calendar">Group Calendar</option>
+      </select>
+      <input type="text" class="" placeholder="Type to add a description" /> 
+      <div class="u-display-flex u-padding-xlg">
+        <div class="c-checkbox u-margin-right-xxlg">
+            <input type="checkbox" value="coach" class="c-checkbox"/><label for="coach">all-day</label>
+        </div>
+        <div class="c-checkbox">
+            <input type="checkbox" value="coach" class="c-checkbox"/><label for="coach">repeat</label>
+        </div>
+      </div>
+      <input type="text" class="c-new-event__date-input" placeholder="Today's Date" />
+      <input type="text" class="" placeholder="Time" />
+   
+    <a class="u-margin-left-lg c-link c--orange u-margin-top-xlg u-display-block u-text-bold">Add Invitees</a>
+  </div>
+   
+  </form>
+</div>
