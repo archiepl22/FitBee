@@ -65,8 +65,8 @@ router.get('/groups', function *() {
     title: 'Groups'});
 });
 
-router.get('/friends', function *() {
-  yield this.render('friends', { title: 'Friends'});
+router.get('/connect', function *() {
+  yield this.render('connect', { title: 'Connect'});
 });
 
 router.get('/login', function *() {
@@ -79,10 +79,6 @@ router.get('/signup', function *() {
 
 router.get('/browse-workouts', function *() {
   yield this.render('browse-workouts', {title: 'Browse Workouts'});
-});
-
-router.get('/find-trainer', function *() {
-  yield this.render('find-trainer', {title: 'Find a Trainer'});
 });
 
 router.get('/profile', function *() {

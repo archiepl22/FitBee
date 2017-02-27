@@ -1,3 +1,9 @@
 .u-visibility-none {
   visibility: hidden;
 }
+
+.hidden-xs-up {
+  @media (max-width: $screen-xs) {
+    display: none;
+  }
+}

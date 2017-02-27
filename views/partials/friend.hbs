@@ -1,9 +1,21 @@
-<article class="c-friend u-color-bg-white u-border">
-  <div class="c-friend__image">
-    <img src="img/profile-pic.jpg">
-  </div>
-  <div class="c-friend__details u-padding-lg u-align-vertical-middle">
-    <h1 class="u-color-blue u-text-bold u-text-size-medium u-margin-none">User Name</h1>
-    <button class="c-friend__button c-button">Follow</button>
+<article class="c-friend {{class}}">
+  <div class="c-friend__wrapper u-color-bg-white u-border u-padding-md">
+    <div class="c-friend__image">
+      <img src="img/profile-pic.jpg">
+    </div>
+    <div class="c-friend__details u-margin-left-lg">
+      <h1 class="u-color-blue u-text-bold u-margin-none u-line-height-sm u-margin-bottom-md u-margin-top-sm">{{name}}</h1>
+      <span class="c-friend__title u-margin-right-sm">{{title}}</span>{{>iconrating class="c--xxlarge u-fill-yellow c-friend__rating"}}
+      <div class="c-friend__location u-display-flex u--align-center u-color-grey">{{>iconlocation class="c--small u-fill-grey u-margin-right-sm"}}{{location}}</div>
+      <div class="c-friend__buttons">
+        <button class="c-friend__request c-button c--primary u-margin-right-sm">Request</button>
+        <button class="c-button c--secondary">Follow</button>
+      </div>
+      <div class="c-friend__links">
+        <a class="c-link u-margin-right-lg">Request</a>
+        <a class="c-link">Follow</a>
+      </div>
+    </div>
   </div>
 </article>
+  

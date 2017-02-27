@@ -1,12 +1,12 @@
-<div class="c-search">
+<div class="c-search {{class}}">
   <form>
     <div class="c-search__keywords">
       <label class="u-color-blue u-text-bold" for="keywords">Keywords</label>
       <input type="text" id="keywords" placeholder="{{placeholder}}" />
     </div>
-    <div class="c-search__filters c-grid__row u-display-flex u--align-center u-margin-top-none">
-      <div class="c-grid__col3">
-        <span>Category</span>
+    <div class="c-search__filters u-display-flex u--align-center u-margin-top-none">
+      {{!-- <div class="c-grid__col3 c-search__workout-filter"> --}}
+        {{!-- <span>Category</span>
         <select name="category">
           <option value="any">Any</option> 
           <option value="crossfit">Crossfit</option> 
@@ -19,7 +19,7 @@
           <option value="body building">Body Building</option>
         </select>
       </div>
-      <div class="c-grid__col3">
+      <div class="c-grid__col3 c-search__workout-filter">
         <span>Difficulty</span>
         <select name="difficulty">
           <option value="all">All</option> 
@@ -28,7 +28,7 @@
           <option value="pro">Pro</option>
         </select>
       </div>
-      <div class="c-grid__col4">
+      <div class="c-grid__col4 c-search__workout-filter">
         <span class="u-color-blue u-text-bold u-margin-right-md">Sort by</span>
         <input type="radio" name="sort" value="popularity" id="popularity">
         <label for="popularity">Popularity</label>
@@ -36,9 +36,14 @@
         <label for="popularity">Rating</label>
         <input type="radio" name="sort" value="newest" id="newest">
         <label for="popularity">Newest</label>
+      </div> --}}
+      <div class="u-padding-none">
+        <div class="c-checkbox">
+          <input type="checkbox" value="trainers" class="c-checkbox"/><label class="u-text-bold u-text-size-normal u-color-blue"for="trainers">Search for Coaches and Trainers only</label>
+        </div>
       </div>
-      <div class="c-grid__col2">
-        <button type="submit" class="c-button c--primary">Search</button>
+      <div class="u-margin-left-auto">
+        <button type="submit" class="c-button c--primary u-display-block u-margin-left-auto">Search</button>
       </div>
     </div>
   </form>

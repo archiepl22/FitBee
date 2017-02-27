@@ -28,6 +28,17 @@
   } 
 }
 
+.c-button.c--secondary {
+  background-color: $brand-orange; 
+  color: $neutral-00;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($brand-orange, 5%);
+  } 
+}
+
 .c-button.c--ghost {
   border: 1px solid $neutral-40;
   color: $neutral-80;
