@@ -5,3 +5,43 @@
   max-width: $profile-width;
   margin: 0 auto;
 }
+
+.t-profile__edit {
+  label {
+    min-width: 120px;
+  }
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+
+  hr {
+    margin-left: -$unit*4;
+    margin-right: -$unit*4;
+    margin-top: $unit*8;
+    margin-bottom: $unit*8;
+
+    border: none;
+    border-top: $border;
+  }
+}
+
+.t-profile__edit-input {
+  flex-direction: column;
+  margin-top: $unit*3;
+  
+  @media (min-width: $screen-xs) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.t-profile__edit-number {
+  display: inline !important;
+  max-width: 75px;
+  margin-right: $unit;
+}

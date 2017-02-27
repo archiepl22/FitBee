@@ -1,0 +1,83 @@
+{{>hero class="c--blue c--profile"}}
+
+<div class="t-main t-profile">
+  {{>profile modifier="c--edit"}}
+  <div class="c-grid__row u-margin-top-xxlg">
+    <div class="c-grid__col4 hidden-xs-up">
+    </div>
+    <div class="c-grid__col8 u-display-block">
+
+      <div class="js-about c-about u-display-block">
+        <h1 class="u-text-size-title u-margin-top-none u-margin-bottom-md">About</h1>
+
+        <div class="c-item u-padding-xlg">
+          <form class="t-profile__edit">
+            <label>Description</label>
+            <textarea placeholder="Write something about yourself."></textarea>
+            <div class="t-profile__edit-input">
+              <label>Date of Birth</label>
+              <input type="date">
+            </div>
+            <div class="t-profile__edit-input">
+              <label>Hometown</label>
+              <input type="text" placeholder="Hometown" />
+            </div>
+            <div class="t-profile__edit-input">
+              <label>Gym</label>
+              <input type="text" placeholder="Gym" />
+            </div>
+            <div class="t-profile__edit-input">
+              <label>Team</label>
+              <input type="text" placeholder="Team" />
+            </div>
+            <div class="t-profile__edit-input">
+              <label>School</label>
+              <input type="text" placeholder="School" />
+            </div>
+            <hr>
+            <div class="t-profile__edit-input">
+              <label>Website</label>
+              <input type="url" placeholder="Website" />
+            </div>
+            <div class="t-profile__edit-input">
+              <label>Email</label>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="t-profile__edit-input">
+              <label>Phone</label>
+              <input type="tel" placeholder="Phone" />
+            </div>
+            <div class="t-profile__edit-input">
+              <label>Social Link</label>
+              <input type="text" placeholder="Social Link" />
+            </div>
+            <hr>
+            <div class="t-profile__edit-input u-margin-bottom-xxlg">
+              <label>Are you currently looking for clients?</label>
+              <div class="c-checkbox">
+                <input type="checkbox" value="yes" class="c-checkbox"/><label for="looking">Yes</label>
+              </div>
+              <div class="c-checkbox">
+                <input type="checkbox" value="no" class="c-checkbox"/><label for="looking">No</label>
+              </div>
+            </div>
+            <label>Training Description</label>
+            <textarea placeholder="E.g. What do your training services profide? What results can clients expect?"></textarea>
+            <div class="u-margin-top-xxlg u-margin-bottom-xxlg">
+              <div class="t-profile__edit-input">
+                <label>Live Rate</label>
+                $<input class="t-profile__edit-number" type="number" placeholder="" />/hr
+              </div>
+              <div class="t-profile__edit-input u-margin-bottom-md">
+                <label>Virtual Rate</label>
+                $<input class="t-profile__edit-number" type="number" placeholder="" />/hr
+              </div>
+            </div>
+            <label>Keywords to help clients find you</label>
+            <textarea class="u-margin-bottom-xxlg" placeholder="E.g. Cardio, Nutrition, Olympic Lifting, Soccer"></textarea>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

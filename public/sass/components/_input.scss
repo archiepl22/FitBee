@@ -4,13 +4,17 @@
 input[type="text"], 
 input[type="email"],
 input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
 textarea {
   display: block;
   padding: $unit*3;
 
   border-radius: 2px;
   box-shadow: none;
-  border: 1px solid grey;
+  border: 1px solid $neutral-20;
 
   font-size: $font-size;
 

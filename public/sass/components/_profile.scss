@@ -218,3 +218,15 @@
     }
   }
 }
+
+
+// Modifiers
+
+.c-profile.c--edit {
+  .c-profile__buttons {
+    display: none;
+  } 
+  .c-about {
+    display: block;
+  }
+}
