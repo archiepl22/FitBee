@@ -1,0 +1,84 @@
+.c-highlight {
+  margin: -$unit*3;
+
+  @media (min-width: $screen-xs) {
+    margin: 0;
+  }
+}
+
+.c-highlight__title {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $screen-xs) {
+    border-bottom: $border;
+  }
+}
+
+.c-highlight__top {
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.c-highlight__location {
+  justify-content: center;
+  margin: $unit*2 0;
+
+  @media (min-width: $screen-md) {
+    justify-content: flex-start;
+  }
+}
+
+.c-highlight__name {
+  color: $brand-blue;
+  font-weight: 500;
+
+  @media (min-width: $screen-md) {
+    font-size: $title-font;
+  }
+}
+
+.c-highlight__image,
+.c-highlight__main {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c-highlight__image {
+  @media (min-width: $screen-xs) {
+    margin-bottom: -$unit;
+    width: 40%;
+  }
+  @media (min-width: $screen-md) {
+    margin-bottom: -$unit;
+    width: 30%;
+  }
+}
+
+.c-highlight__main {
+  width: 100%;
+  @media (min-width: $screen-xs) {
+    width: 59%;
+  }
+  @media (min-width: $screen-md) {
+    width: 69%;
+  }
+}
+
+.c-highlight__badge {
+  max-width: 55px;
+}
+
+.c-highlight__contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}

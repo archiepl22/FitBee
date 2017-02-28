@@ -25,3 +25,9 @@
     display: none;
   }
 }
+
+.u-hidden-md-down {
+  @media (max-width: $screen-md) {
+    display: none;
+  }
+}

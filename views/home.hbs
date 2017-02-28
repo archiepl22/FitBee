@@ -1,11 +1,17 @@
 <div class="t-main t-home"> 
+<div class="u-width-full u-color-bg-white u-border u-padding-xxlg u-margin-top-xxlg u-text-align-center u-color-blue u-box-shadow">
+  <span class="u-text-bold">Welcome Back, User Name!</span> Here's what you missed:
+</div>
   <div class="c-grid__row u-margin-top-xxlg">
-    <div class="c-grid__col4">
-      {{>upcomingevents}}
-      {{>upcomingevents}}
-    </div>
     <div class="c-grid__col8">
+      {{>highlighttrainer}}
       {{>feed}}
       {{>about}}
     </div>
+    <div class="c-grid__col4">
+      {{>highlightworkout}}
+      {{>upcomingevents}}
+      {{>upcomingevents}}
+    </div>
   </div>
+</div>
