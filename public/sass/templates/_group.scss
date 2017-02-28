@@ -5,7 +5,7 @@
 
 .t-group {
   background-color: $neutral-30;
-  padding: $unit*5;
+  padding: 0;
   height: 100%;
 
   h1 {
@@ -14,6 +14,10 @@
   @media (min-width: $screen-sm) {
     padding: 0;
     padding-left: 180px;
+  }
+
+  .c-share {
+    margin-top: 0;
   }
 }
 
@@ -31,11 +35,28 @@
 }
 
 .t-group__title {
-  position: absolute;
-  bottom: 6px;
-  text-align: center;
   margin: 0 auto;
   display: block;
+
+  position: absolute;
+  bottom: 6px;
   left: 0;
   right: 0;
+
+  text-align: center;
+  font-size: $medium-font;
+
+  @media (min-width: $screen-sm) {
+    font-size: $title-font;
+  }
+}
+
+.t-group__main {
+  padding: 0 $unit*3;
+  margin-top: 0;
+
+  @media (min-width: $screen-sm) {
+    padding: 0 $unit*3;
+    margin-top: $unit*6 !important;
+  }
 }

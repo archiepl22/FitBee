@@ -1,22 +1,31 @@
 <div class="t-group">
   <div class="t-group__header">
-    {{>hero class="c--blue c--profile"}}
+    {{>hero class="c--blue c--profile u-margin-bottom-none"}}
     <div class="t-group__title-bg u-width-full u-color-bg-dark-gray">
     </div>
     <h1 class="t-group__title u-color-white u-text-align-center">Racine Erickson’s Baseball Team</h1>
   </div>
-  <div class="u-color-bg-white u-width-full u-display-flex u-align-center u-padding-lg u--space-between">
-    <div class="u-display-flex u-align-center">
-      <a class="u-display-block c-link">177 Members</a>
-      <a class="u-display-block c-link">+ Join Group</a>
+  <div class="t-group__toolbar u-border-bottom u-padding-left-md u-color-bg-white u-width-full u-display-flex u-align-center   u--space-between">
+    <div class="u-display-flex u-align-center u-hidden-sm-down">
+      <a class="u-display-block c-link u-padding-lg u-margin-right-xxlg u-line-height-lg">177 Members</a>
+      <a class="u-display-block c-link u-padding-lg u-margin-right-xxlg u-line-height-lg">+ Join Group</a>
+      <a class="u-display-block c-link u-padding-lg u-margin-right-xxlg u-line-height-lg">+ Invite Someone</a>
     </div>
+    <ul class="u-hidden-sm-up c-link">Group Menu
+{{!--         <li><a>View Memembers</a></li>
+        <li><a>Join Group</a></li>
+        <li><a>Invite Someone</a></li>
+        <li><a>Send Group Message</a></li>
+        <li><a>Calendar</a></li>
+        <li><a>Settings</a></li> --}}
+      </ul>
     <div class="u-display-flex u-align-center">
-      <a class="u-display-block c-link">{{>iconmessage class="c--small"}}</a>
-      <a class="u-display-block c-link">{{>iconmessage class="c--small"}}</a>
+      <a class="u-display-flex u--align-center u-padding-lg c-link u-margin-right-xlg">{{>iconmessage class="c--large u-fill-blue"}}</a>
+      <a class="u-display-block u-padding-lg c-link">{{>iconcalendar class="c--medium u-fill-blue"}}</a>
     </div>
   </div>  
-  <div class="c-grid__row u-margin-top-xxlg">
-    <div class="c-grid__col4">
+  <div class="t-group__main c-grid__row">
+    <div class="c-grid__col4 u-hidden-sm-down">
       {{>upcomingevents}}
       {{>upcomingevents}}
     </div>

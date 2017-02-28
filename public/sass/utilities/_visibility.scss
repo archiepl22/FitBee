@@ -7,3 +7,9 @@
     display: none;
   }
 }
+
+.u-hidden-sm-down {
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
+}
