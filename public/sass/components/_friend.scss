@@ -1,9 +1,13 @@
 .c-friend {
   display: inline-flex;
-  position: relative;
-  border-radius: $border-radius;
   width: 100%;
   margin-bottom: $unit*5;
+
+  vertical-align: top;
+
+  position: relative;
+
+  border-radius: $border-radius;
 
   @media (min-width: 821px) {
     width: 49%;

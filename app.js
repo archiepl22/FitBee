@@ -87,6 +87,10 @@ router.get('/connect', function *() {
   yield this.render('connect', { title: 'Connect'});
 });
 
+router.get('/notifications', function *() {
+  yield this.render('notifications', { title: 'Notifications'});
+});
+
 router.get('/login', function *() {
   yield this.render('login', {title: 'Login'});
 });
