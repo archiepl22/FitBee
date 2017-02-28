@@ -87,12 +87,19 @@
   margin: 0 0 0 $unit*5;
 
   li a {
-    color: $neutral-00;
+    color: $neutral-00 !important;
+    padding-right: $unit*7;
+    padding-left: $unit*7;
   }
 
   li {
     display: flex;
     align-items: center;
-    margin-right: $unit*10;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($brand-blue, 10%);
+    }
   }
 } 
