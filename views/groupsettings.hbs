@@ -1,0 +1,48 @@
+<div class="t-group">
+  <div class="t-group__header">
+    {{>hero class="c--blue c--profile u-margin-bottom-none"}}
+    <div class="t-group__title-bg u-width-full u-color-bg-dark-gray">
+    </div>
+    <h1 class="t-group__title u-color-white u-text-align-center">Group Name</h1>
+  </div>
+  <div class="t-group__toolbar u-position-relative u-border-bottom u-padding-left-md u-color-bg-white u-width-full u-display-flex u-align-center   u--space-between">
+    <div class="u-display-flex u-align-center u-hidden-sm-down">
+      <a class="u-display-block c-link u-padding-lg u-margin-right-xxlg u-line-height-lg">1 Member</a>
+      <a class="u-display-block c-link u-padding-lg u-margin-right-xxlg u-line-height-lg">+ Invite Someone</a>
+    </div>
+    <div class="js-group-menu t-group__menu u-padding-top-lg u-padding-bottom-lg  u-hidden-xs-up c-link">Group Menu{{>iconarrow class="c--xsmall u-fill-blue t-group__menu-arrow u-margin-left-sm"}}</div>
+    
+    <ul class="t-group__menu-items">    
+        <li><a>View Memembers</a></li>
+        <li><a>Invite Someone</a></li>
+        <li><a>Send Group Message</a></li>
+        <li><a>Calendar</a></li>
+        <li><a>Settings</a></li>
+      </ul>
+    <div class="u-display-flex u-align-center">
+      <a href="/group-settings" class="u-display-flex u--align-center u-padding-lg c-link u-margin-right-xlg">{{>icongear class="c--large u-fill-blue"}}</a>
+      <a class="u-display-flex u--align-center u-padding-lg c-link u-margin-right-xlg">{{>iconmessage class="c--large u-fill-blue"}}</a>
+      <a class="u-display-block u-padding-lg c-link">{{>iconcalendar class="c--medium u-fill-blue"}}</a>
+    </div>
+  </div>  
+  <div class="t-group__main">
+    <h2 class="u-margin-top-xxlg">Settings</h2>
+    <form>
+      <h4 class="u-margin-bottom-lg">Group Settings</h4>
+      <div class="u-margin-left-lg">
+        <div class="c-checkbox u-margin-top-xlg">
+          <input type="checkbox" value="coach" class="c-checkbox"/><label for="coach">Notify me when a request to join the group has been made</label>
+        </div>
+        <p>Notify me when a memeber does any of the following:</p>
+        <div class="c-checkbox u-margin-top-xlg">
+          <input type="checkbox" value="coach" class="c-checkbox"/><label for="coach">Completes a workout</label>
+        </div>
+        <div class="c-checkbox u-margin-top-xlg">
+          <input type="checkbox" value="coach" class="c-checkbox"/><label for="coach">Sends me a message</label>
+        </div>
+        <div class="c-checkbox u-margin-top-xlg">
+          <input type="checkbox" value="coach" class="c-checkbox"/><label for="coach">Posts to the wall</label>
+        </div>
+    </div>
+  </div>
+</div>

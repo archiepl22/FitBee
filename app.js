@@ -65,6 +65,24 @@ router.get('/groups', function *() {
     title: 'Groups'});
 });
 
+router.get('/group1', function *() {
+  yield this.render('group1', {
+    layout: 'dash',
+    title: 'Group 1'});
+});
+
+router.get('/group-new', function *() {
+  yield this.render('newgroup', {
+    layout: 'dash',
+    title: 'New Group'});
+});
+
+router.get('/group-settings', function *() {
+  yield this.render('groupsettings', {
+    layout: 'dash',
+    title: 'Group Settings'});
+});
+
 router.get('/connect', function *() {
   yield this.render('connect', { title: 'Connect'});
 });
