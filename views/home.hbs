@@ -1,5 +1,5 @@
 <div class="t-main t-home"> 
-<div class="u-width-full u-color-bg-white u-border u-padding-xxlg u-margin-top-xxlg u-text-align-center u-color-blue u-box-shadow">
+<div class="t-home__news u-color-bg-white u-border u-padding-xxlg u-margin-top-xxlg u-text-align-center u-color-blue u-box-shadow">
   <span class="u-text-bold">Welcome Back, User Name!</span> Here's what you missed:
 </div>
   <div class="c-grid__row u-margin-top-xxlg">
@@ -8,9 +8,16 @@
       {{>feed}}
       {{>about}}
     </div>
-    <div class="c-grid__col4">
+    <div class="c-grid__col4 u-hidden-xs-down">
       {{>highlightworkout}}
-      {{>upcomingevents}}
+       <div class="u-color-bg-white u-width-full u-padding-lg u-box-shadow u-border u-margin-bottom-xxlg">
+          <h4 class="u-margin-top-none u-margin-bottom-none u-line-height-md u-color-blue u-text-size-normal  u-text-bold">Last Workout Completed</h4>
+          <h2 class="u-margin-top-none u-margin-bottom-none u-text-size-large c-link u-color-black">Cardio Death Trap</h2>
+          <a class="c-link u-text-size-small">Quick View</a>
+          <h4 class="u-margin-top-xlg u-margin-bottom-none u-line-height-md u-color-blue u-text-size-normal u-text-bold">Next Workout</h4>
+          <h2 class="u-margin-top-none u-margin-bottom-none u-text-size-large c-link u-color-black">Deadlift Long Workout Name</h2>
+          <a class="c-link u-text-size-small">Quick View</a>
+        </div>
       {{>upcomingevents}}
     </div>
   </div>

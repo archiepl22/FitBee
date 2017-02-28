@@ -1,0 +1,14 @@
+.t-home {
+  .c-share {
+    margin-top: 0;
+  }
+}
+
+.t-home__news {
+  margin-right: -$unit*3;
+  margin-left: -$unit*3;
+
+  @media (min-width: $screen-xs) {
+    margin: 0;
+  }
+}
