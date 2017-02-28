@@ -56,6 +56,11 @@
   margin-left: $unit*12;
   font-size: $small-font;
   margin-bottom: $unit*4;
+  // display: none;
+
+  li:not(:first-child) {
+    margin-top: $unit*3;
+  }
 }
 
 .c-side-nav__sub-item {
@@ -69,7 +74,7 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: $neutral-80;
+    color: $brand-orange;
 
     .c-side-nav__item-bar:before {
       display: block;

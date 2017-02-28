@@ -8,6 +8,12 @@ $( document ).ready(function() {
       $('.c-nav-primary__item-nav').hide();
   });
 
+  // $(".c-side-nav__item").click( function(){
+  //   event.stopPropagation();
+  //   console.log('kttens')
+  //   $(this).next().slideToggle(200);
+  // });
+
   // Tab-bar mobile dashboard menu
   // ---
 
