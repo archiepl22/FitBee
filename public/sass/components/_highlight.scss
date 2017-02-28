@@ -32,6 +32,14 @@
 
   @media (min-width: $screen-md) {
     justify-content: flex-start;
+    margin-top: $unit*3;
+    margin-bottom: $unit*5;
+  }
+}
+
+.c-highlight__followers {
+  @media (min-width: $screen-md) {
+    margin-top: $unit*10;
   }
 }
 
@@ -58,6 +66,7 @@
   @media (min-width: $screen-md) {
     margin-bottom: -$unit;
     width: 30%;
+    max-width: 200px;
   }
 }
 
