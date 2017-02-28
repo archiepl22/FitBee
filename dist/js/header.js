@@ -106,6 +106,12 @@ $( document ).ready(function() {
   });
 
 
+    // Group menu
+  $(".js-group-menu").click( function(){
+      console.log('cats');
+    $(".t-group__menu-items").slideToggle(200);
+  });
+
   // Calendar
   // ---
 

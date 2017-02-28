@@ -18,3 +18,11 @@
     padding: $unit*3;
   }
 }
+
+.c-share__label {
+  font-size: $small-font;
+
+  @media (min-width: $screen-sm) {
+    font-size: $font-size;
+  }
+}

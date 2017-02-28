@@ -5,19 +5,21 @@
     </div>
     <h1 class="t-group__title u-color-white u-text-align-center">Racine Erickson’s Baseball Team</h1>
   </div>
-  <div class="t-group__toolbar u-border-bottom u-padding-left-md u-color-bg-white u-width-full u-display-flex u-align-center   u--space-between">
+  <div class="t-group__toolbar u-position-relative u-border-bottom u-padding-left-md u-color-bg-white u-width-full u-display-flex u-align-center   u--space-between">
     <div class="u-display-flex u-align-center u-hidden-sm-down">
       <a class="u-display-block c-link u-padding-lg u-margin-right-xxlg u-line-height-lg">177 Members</a>
       <a class="u-display-block c-link u-padding-lg u-margin-right-xxlg u-line-height-lg">+ Join Group</a>
       <a class="u-display-block c-link u-padding-lg u-margin-right-xxlg u-line-height-lg">+ Invite Someone</a>
     </div>
-    <ul class="u-hidden-sm-up c-link">Group Menu
-{{!--         <li><a>View Memembers</a></li>
+    <div class="js-group-menu t-group__menu u-padding-top-lg u-padding-bottom-lg  u-hidden-xs-up c-link">Group Menu{{>iconarrow class="c--xsmall u-fill-blue t-group__menu-arrow u-margin-left-sm"}}</div>
+    
+    <ul class="t-group__menu-items">    
+        <li><a>View Memembers</a></li>
         <li><a>Join Group</a></li>
         <li><a>Invite Someone</a></li>
         <li><a>Send Group Message</a></li>
         <li><a>Calendar</a></li>
-        <li><a>Settings</a></li> --}}
+        <li><a>Settings</a></li>
       </ul>
     <div class="u-display-flex u-align-center">
       <a class="u-display-flex u--align-center u-padding-lg c-link u-margin-right-xlg">{{>iconmessage class="c--large u-fill-blue"}}</a>
@@ -25,7 +27,7 @@
     </div>
   </div>  
   <div class="t-group__main c-grid__row">
-    <div class="c-grid__col4 u-hidden-sm-down">
+    <div class="c-grid__col4 u-hidden-xs-down">
       {{>upcomingevents}}
       {{>upcomingevents}}
     </div>

@@ -8,6 +8,18 @@
   }
 }
 
+.u-hidden-xs-up {
+  @media (min-width: $screen-xs) {
+    display: none;
+  }
+}
+
+.u-hidden-xs-down {
+  @media (max-width: $screen-xs) {
+    display: none;
+  }
+}
+
 .u-hidden-sm-down {
   @media (max-width: $screen-sm) {
     display: none;
