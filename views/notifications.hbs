@@ -1,3 +1,20 @@
 <div class="t-main">
   <h2 class="u-margin-top-xxlg">Notifications</h2>
+  <ul>
+    {{!-- {{>notification text="Jessica Jones is now following you" link="Jessica's profile"}}
+    {{>notification text="Gerard Lafont posted in Baseball Team" link="/baseball-team"}}
+    {{>notification text="Sinor James has requested to join Baseball Team" link="/Sinor James profile" modifier="c--approval"}} --}}
+
+    <li class="u-margin-bottom-lg">
+      <a href="Jessica's profile" class="c-link">Jessica Jones</a> is now following you
+    </li>
+
+    <li class="t-notification">
+      <a href="/Sinor James profile" class="c-link">Sinor James</a> has requested to join Baseball Team</a>
+      <span class="c-notification__approval">
+        <a class="c-link c--blue u-margin-right-md u-margin-left-md">Reject</a>
+        <a class="c-link c--blue">Approve</a>
+      </span>
+    </li>
+  </ul>
 </div>
