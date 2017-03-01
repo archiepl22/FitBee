@@ -1,4 +1,29 @@
-<div class="t-dash">
+<div class="t-dash t-group">
 
-  {{>heading heading="Groups" link="/group-new" new="+ Create a Group"}}
+  <div class="t-group__init-wrapper u-padding-sides-xlg u-padding-top-xxlg">
+    {{>heading heading="Groups" class="u-padding-none"}}
+
+    <p>Some short blurb about what groups do and what they’re there for. Bacon ipsum dolor amet pig beef pancetta picanha biltong, frankfurter shoulder rump meatball.</p>
+
+    <a href="/group-new" class="c-link c--blue js-accordion-trigger">+ New Group</a>
+    <div class="js-accordion">
+      <form>
+        <div class="u-margin-top-xlg">
+          <label>Group name</label><span class="u-color-orange u-text-size-mobile u-margin-left-md">* Required</span>
+          <input type="text" placeholder="Group name" class="t-group__input u-margin-top-sm" />
+        </div>
+        <div class="u-margin-top-xlg">
+          <label>Group location</label>
+          <input type="text" placeholder="Group location" class="t-group__input u-margin-top-sm"/>
+        </div>
+        <label class="u-margin-top-xlg u-display-block">Group Purpose</label>
+        <textarea placeholder="E.g. Baseball team page to keep track of workouts." class="u-margin-top-sm"></textarea>
+        <div class="c-share__label u-display-inline-block u-text-bold u-color-blue u-margin-top-xxlg">
+          {{>iconphoto class="c--small u-fill-blue"}}
+          Add Cover Photo
+        </div>
+        <button type="submit" class="c-button c--primary u-display-block u-margin-top-xxlg u-margin-left-auto">Create</button>
+      </form>
+    </div>
+  </div>
 </div>

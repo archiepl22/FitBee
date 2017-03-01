@@ -94,3 +94,18 @@
     }
   }
 }
+
+// Group Init 
+// ---
+
+.t-group__init-wrapper {
+  max-width: $screen-sm;
+}
+
+.t-group__input {
+  width: 100%;
+
+  @media (min-width: $screen-sm) {
+    width: 50%;
+  }
+}
