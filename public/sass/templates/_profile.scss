@@ -45,3 +45,30 @@
   max-width: 75px;
   margin-right: $unit;
 }
+
+.t-profile__edit-check {
+  display: flex;
+  justify-content: flex-start !important;
+}
+
+.t-profile__edit-profession {
+   @media (min-width: $screen-sm) {
+    display: flex;
+   }
+}
+
+.t-profile__edit-avatar {
+  width: 70%;
+}
+
+.t-profile__edit-photo {
+  background: none;
+  border: 0;
+}
+
+.t-profile__edit-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

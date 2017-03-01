@@ -219,6 +219,12 @@
   }
 }
 
+.c-about {
+  @media (max-width: $screen-xs) {
+    width: auto;
+    margin: 0 -$unit*3;
+  }
+}
 
 // Modifiers
 

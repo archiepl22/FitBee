@@ -114,7 +114,6 @@ $( document ).ready(function() {
 
     // Group menu
   $(".js-group-menu").click( function(){
-      console.log('cats');
     $(".t-group__menu-items").slideToggle(200);
   });
 
@@ -166,6 +165,15 @@ $( document ).ready(function() {
             alert(event.Title);
         }
     }
+  });
+
+  // Accordion
+  // ---
+
+  $(".js-accordion").hide(); 
+
+  $(".js-accordion-trigger").click( function(){
+    $(this).next().slideToggle(200);
   });
 });
 

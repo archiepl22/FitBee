@@ -1,13 +1,57 @@
 {{>hero class="c--blue c--profile"}}
 
 <div class="t-main t-profile">
-  {{>profile modifier="c--edit"}}
+
+  <div class="c-profile">
+    <div class="c-profile__image t-profile__edit-image u-text-align-center u-color-bg-white u-border u-padding-sm">
+      {{>iconperson class="t-profile__edit-avatar u-fill-blue"}}
+      <button class="c-link t-profile__edit-photo u-text-size-normal u-margin-top-md">Add a profile photo</button>
+    </div>
+    <div class="c-profile__main">
+      <div class="c-profile__top u-display-flex u-padding-lg">
+        <div class="c-profile__details u-width-full">
+          <div class="c-profile__name u-display-flex u--align-center u-margin-top-none">
+            <h1 class="u-margin-right-lg u-margin-none u-text-size-title">User Name</h1>
+          </div>
+          <div>
+            <div class="t-profile__edit-profession">
+              <span class="u-margin-right-lg u-text-bold">Are you a coach or a trainer?</span>
+              <div class="t-profile__edit-check">
+                <div class="c-checkbox">
+                  <input type="checkbox" value="trainer" class="c-checkbox"/><label for="trainer">Trainer</label>
+                </div>
+                <div class="c-checkbox u-margin-left-md">
+                  <input type="checkbox" value="coach" class="c-checkbox"/><label for="coach">Coach</label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="u-margin-top-xlg">
+              <label>What is your title?</label>
+              <input type="text" placeholder="e.g. Head Coach, Nutrionist" class="u-margin-top-sm u-width-full"/>
+            </div>
+            <div class="u-margin-top-xlg">
+              <label>What is your current location?</label>
+              <input type="text" placeholder="Location" class="u-margin-top-sm u-width-full"/>
+            </div>
+
+
+          </div>
+        
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+
+
   <div class="c-grid__row u-margin-top-xxlg">
     <div class="c-grid__col4 hidden-xs-up">
     </div>
     <div class="c-grid__col8 u-display-block">
 
-      <div class="js-about c-about u-display-block">
+      <div class="js-about c-about u-display-block u-margin-top-none">
         <h1 class="u-text-size-title u-margin-top-none u-margin-bottom-md">About</h1>
 
         <div class="c-item u-padding-xlg">
