@@ -5,7 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: $border;
+  border-bottom: $border;
+  background-color: $neutral-00;
+
+  h1 {
+    font-size: $large-font;
+  }
 
   @media (min-width: $screen-xs) {
    display: none;

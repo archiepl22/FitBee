@@ -1,29 +1,33 @@
-<article class="c-tile {{class}} u-display-flex u--align-center u--space-between u-padding-lg">
-  <div class="u-display-flex u--align-center u--space-between">
-    {{>iconedit class="c--small u-margin-right-xlg"}}
-    <div>
-      <div class="c-tile__title">
-        <span class="u-text-size-medium u-color-blue u-margin-right-xxlg">Super Workout Title</span>
-        <span class="u-text-size-medium">Name Author</span>
+<article class="c-tile {{class}}">
+  <div class="c-tile__content">
+    {{>iconedit class="c--small u-margin-right-xlg u-hidden-xs-down"}}
+    <div class="t-details">
+      <div class="c-tile__names">
+        <h1 class="c-tile__workout">Super Workout Title</h1>
+        <div class="c-tile__rating">
+          {{>iconrating class="c-tile__stars u-fill-yellow"}}
+          <span class="u-text-size-quiet u-margin-left-lg">saved 6845 times</span>
+        </div>
+        <span class="c-tile__author">Name Author</span>
       </div>
-      <div>
-        <span class="u-text-size-mobile u-margin-right-xxlg">#tags, #tags, #tags, #tags</span>
-        <span class="u-text-size-mobile">difficulty</span>
+      <div class="c-tile__extras">
+        <span class="u-text-size-mobile u-hidden-xs-down u-margin-right-xxlg">#tags, #tags, #tags, #tags</span>
+        <span class="u-text-size-mobile">Difficulty</span>
       </div>
     </div>
   </div>
-  <div class="u-display-flex u--align-center u--space-between">
-    <div class="u-margin-right-lg">
-      {{>iconrating class="c--xlg"}}
-      <span class="u-text-size-quiet">saved 6845 times</span>
-    </div>
-    <div class="c-tile__edit-options">
+  <a class="js-tile-save c-tile__save">
+    {{>iconmark class="c--medium u-fill-blue c-tile__mark-icon"}}
+    {{>iconsaved class="c--medium u-fill-blue c-tile__saved-icon"}}
+  </a>
+  <div class="">
+    <div class="c-tile__edit-options u-hidden-xs-down">
       {{>iconcalendar class="c--small u-margin-sides-lg"}}
       {{>iconedit class="c--small u-margin-sides-lg"}}
       {{>iconedit class="c--small u-margin-sides-lg"}}
       {{>icontrash class="c--small u-margin-sides-lg"}}
     </div>
-    <div class="c-tile__save-options">
+    <div class="c-tile__save-options  u-hidden-xs-down">
       {{>iconedit class="c--small u-margin-sides-lg"}}
       <button class="c-button c--primary">Save workout</button>
     </div>

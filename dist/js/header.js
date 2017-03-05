@@ -32,6 +32,20 @@ $( document ).ready(function() {
   });
 
 
+  // Browse Workouts
+  $(".js-browse-submit").click( function(){
+    $(".js-browse-search").addClass('active');
+  });
+
+  $(".js-browse-back").click( function(){
+    $(".js-browse-search").removeClass('active');
+  });
+
+  $(".c-tile").find(".js-tile-save").click( function(){
+    $(this).parent(".c-tile").toggleClass('c--saved');
+  });
+
+
   // Profile feed
   // ---
 
@@ -175,5 +189,6 @@ $( document ).ready(function() {
   $(".js-accordion-trigger").click( function(){
     $(this).next().slideToggle(200);
   });
+
 });
 

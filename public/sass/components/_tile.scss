@@ -3,12 +3,16 @@
 
 
 .c-tile {
+  padding: $unit*2;
+  display: flex;
+
   background-color: $neutral-00;
-  border: $border;
+  border-bottom: $border;
 }
 
-// Elements
-// ---
+.c-tile__content {
+  flex: 1;
+}
 
 .c-tile__options {
   display: none;
@@ -30,17 +34,67 @@
   }
 }
 
-.c-tile__title {
+.c-tile__names {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 
   @media (min-width: $screen-sm) {
     flex-direction: row;
   }
 }
 
+.c-tile__workout {
+  color: $brand-blue;
+  font-weight: 500;
+  font-size: $medium-font;
+  margin: 0;
+  margin-bottom: $unit*2;
+  line-height: 20px;
+}
+
+.c-tile__author {
+  font-size: $font-size;
+  margin-top: $unit*2;
+}
+
+.c-tile__extras {
+  // display: flex;
+  // flex-direction: row-reverse;
+  // align-items: center;
+  // justify-content: space-between;
+}
+
+.c-tile__rating {
+  display: flex;
+  align-items: center;
+}
+
+.c-tile__save {
+  padding: $unit*3;
+}
+
+.c-tile__stars {
+  width: 100px;
+}
+
+.c-tile__saved-icon {
+  display: none;
+}
+
+
 // Modifiers
 // ---
+
+.c-tile.c--saved {
+  .c-tile__mark-icon {
+    display: none;
+  }
+
+  .c-tile__saved-icon {
+    display: block;
+  }
+}
 
 .c-tile.c--save {
   .c-tile__edit-options {

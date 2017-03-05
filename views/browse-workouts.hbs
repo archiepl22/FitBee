@@ -1,13 +1,77 @@
-{{>hero class="c--blue" heading="Browse Workouts"}}
+{{!-- {{>hero class="c--blue" heading="Browse Workouts"}} --}}
 
-<div class="t-main">
-  <h1>Search</h1>
 
-  {{>search placeholder= "e.g. Weight Training, Barbell, Squat"}}
 
-  <h2>Results</h2>
-  <div class="c-tile__legend">
-    <span class="u-text-size-quiet">Quick </br>View</span>
+<div class="t-main t-browse">
+
+  <div class="js-browse-search t-browse__search">
+    {{>mobileheader header="Browse Workouts" newclass="u-display-none" backclass="u-display-none"}}
+   <div class="t-browse__search-wrapper">
+    <h1 class="t-browse__title">Search</h1>
+    <form>
+      <div class="t-browse__search-input u-color-bg-white">
+        <label class="u-color-blue u-text-bold u-hidden-xs-down" for="keywords">Keywords</label>
+        <input type="text" id="keywords" placeholder="Biceps, crossfit, deadlifts" />
+      </div>
+      <div class="t-browse__search-filters">
+        <h2 class="u-padding-left-md u-hidden-xs-up u-text-size-medium">Filters</h2>
+        <select class="t-browse__select" name="select">
+          <option value="value1" selected>Category</option>
+          <option value="value1">Strength training</option>
+          <option value="value2">Free weights only</option>
+          <option value="value3">HIIT</option>
+          <option value="value3">Body building</option>
+          <option value="value3">Sport Specific</option>
+          <option value="value3">Cardio</option>
+          <option value="value3">Body weight</option>
+          <option value="value3">Physical therapy</option>
+          <option value="value3">Home workouts</option>
+        </select>
+        <select class="t-browse__select" name="select">
+          <option value="value1"selected>Body part</option>
+          <option value="value1">Full body</option> 
+          <option value="value2">Upper body</option>
+          <option value="value3">Lower body</option>
+          <option value="value3">Legs</option>
+          <option value="value3">Arms</option>
+          <option value="value3">Chest</option>
+          <option value="value3">Back</option>
+          <option value="value3">Shoulders</option>
+          <option value="value3">Biceps</option>
+          <option value="value3">Triceps</option>
+          <option value="value3">Hamstrings</option>
+          <option value="value3">Quadriceps</option>
+          <option value="value3">Forearms</option>
+          <option value="value3">Hips</option>
+        </select>
+        <select class="t-browse__select" name="select">
+          <option value="value1" selected>Difficulty</option> 
+          <option value="value2" >Beginner</option>
+          <option value="value3">Intermediate</option>
+          <option value="value3">Advanced</option>
+        </select>
+      </div>
+      <div class='t-browse__sort'>
+        <h2 class="u-text-size-medium u-padding-left-md">Sort by</h2>
+        <div class="u-padding-left-md">
+          <input type="radio" name="sort" value="popularity" id="popularity">
+          <label for="popularity">Popularity</label>
+          <input type="radio" name="sort" value="rating" id="rating">
+          <label for="popularity">Rating</label>
+        </div>
+      </div>
+      <button type="button" class="js-browse-submit t-browse__submit c-button c--primary u-display-block u-margin-left-auto">Search</button>
+    </form>
+    </div>
   </div>
-  {{> tile class="c--save"}}
+  <div class="t-browse__results">
+    {{>mobileheader header="Search Results" newclass="u-display-none" backclass="js-browse-back"}}
+    <h2 class="u-hidden-xs-down">Results</h2>
+    <div class="c-tile__legend">
+      <span class="u-text-size-quiet">Quick </br>View</span>
+    </div>
+    {{> tile class="c--save"}}
+    {{> tile class="c--save"}}
+  
+  </div>
 </div>
