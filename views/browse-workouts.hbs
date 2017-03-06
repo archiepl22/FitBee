@@ -6,10 +6,11 @@
 
   <div class="js-browse-search t-browse__search">
     {{>mobileheader header="Browse Workouts" newclass="u-display-none" backclass="u-display-none"}}
+        <h1 class="t-browse__title">Search</h1>
    <div class="t-browse__search-wrapper">
-    <h1 class="t-browse__title">Search</h1>
+
     <form>
-      <div class="t-browse__search-input u-color-bg-white">
+      <div class="t-browse__search-input">
         <label class="u-color-blue u-text-bold u-hidden-xs-down" for="keywords">Keywords</label>
         <input type="text" id="keywords" placeholder="Biceps, crossfit, deadlifts" />
       </div>
@@ -52,24 +53,30 @@
         </select>
       </div>
       <div class='t-browse__sort'>
-        <h2 class="u-text-size-medium u-padding-left-md">Sort by</h2>
-        <div class="u-padding-left-md">
-          <input type="radio" name="sort" value="popularity" id="popularity">
-          <label for="popularity">Popularity</label>
-          <input type="radio" name="sort" value="rating" id="rating">
-          <label for="popularity">Rating</label>
+        <div class="t-browse__sort-filters">
+          <span class=" u-padding-left-md">Sort by</span>
+          <span class="u-padding-left-md">
+            <input type="radio" name="sort" value="popularity" id="popularity">
+            <label for="popularity">Popularity</label>
+            <input type="radio" name="sort" value="rating" id="rating">
+            <label for="popularity">Rating</label>
+          </span>
         </div>
+        <button type="button" class="js-browse-submit t-browse__submit c-button c--primary">Search</button>
       </div>
-      <button type="button" class="js-browse-submit t-browse__submit c-button c--primary u-display-block u-margin-left-auto">Search</button>
     </form>
     </div>
   </div>
   <div class="t-browse__results">
     {{>mobileheader header="Search Results" newclass="u-display-none" backclass="js-browse-back"}}
     <h2 class="u-hidden-xs-down">Results</h2>
-    <div class="c-tile__legend">
-      <span class="u-text-size-quiet">Quick </br>View</span>
-    </div>
+    <div class="c-tile__legend u-display-none u-hidden-xs-down">
+      <span class="c-tile__icon u-display-flex u--column u--align-center u-text-size-quiet">Add to<span> Calendar</span></span>
+      <span class="c-tile__icon u-text-size-quiet">Quick View</span>
+      <span class="c-tile__icon u-text-size-quiet">Save</span>
+  </div>
+    {{> tile class="c--save"}}
+    {{> tile class="c--save"}}
     {{> tile class="c--save"}}
     {{> tile class="c--save"}}
   

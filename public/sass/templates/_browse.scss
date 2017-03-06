@@ -34,6 +34,14 @@
   background-color: $neutral-10;
   transition: $slow-animation;
 
+  @media (min-width: $screen-xs) {
+    margin-top: 0;
+    height: auto;
+
+    position: static;
+    overflow-y: visible;
+  }
+
   &.active {
     right: 100%;
   }
@@ -42,6 +50,14 @@
 .t-browse__search-wrapper {
   overflow-y: scroll;
   height: 100vh;
+
+  @media (min-width: $screen-xs) {
+    overflow-y: visible;
+    height: auto;
+    background-color: $neutral-00;
+    border: $border;
+    border-radius: $border-radius !important;
+  }
 }
 
 .t-browse__title {
@@ -70,6 +86,20 @@
     border-radius: 0 !important;
     border-right: 0 !important;
     border-left: 0 !important;
+
+    @media (min-width: $screen-xs) {
+      border: none !important;
+      background-image: none;
+      padding-left: $unit !important;
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: $screen-xs) {
+    display: flex;
+    align-items: center;
+    border-bottom: $border;
+    margin-bottom: $unit*2;
   }
 }
 
@@ -91,12 +121,37 @@
 
   &:last-child {
     border-bottom: $border !important;
+
+    @media (min-width: $screen-xs) {
+      border: 0 !important;
+    }
+  }
+  
+  @media (min-width: $screen-xs) {
+    border: 0 !important;
+    width: auto;
+    background-image: none;
+    font-size: $small-font;
+    margin-right: $unit*2;
+  }
+}
+
+.t-browse__search-filters {
+  @media (min-width: $screen-xs) {
+    display: flex;
+    padding-right: $unit*2;
   }
 }
 
 .t-browse__submit {
   margin-top: $unit*5;
   margin-right: $unit*2;
+  margin-left: auto;
+  display: block !important;
+
+  @media (min-width: $screen-xs) {
+    margin-top: 0;
+  }
 }
 
 .t-browse__results {
@@ -104,6 +159,26 @@
 }
 
 .t-browse__sort {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  // font-size: $small-font;
+
+  h2 {
+    font-size: $font-size;
+
+    @media (min-width: $screen-xs) {
+      font-size: $small-font;
+    }
+  }
+
+  @media (min-width: $screen-xs) {
+    font-size: $small-font;
+    display: flex;
+    align-items: center;
+    margin: $unit*2 $unit;
+  }
+}
+
+.t-browse__sort-filters {
+  margin: $unit*3 0;
 }

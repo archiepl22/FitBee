@@ -8,10 +8,32 @@
 
   background-color: $neutral-00;
   border-bottom: $border;
+
+  @media (min-width: $screen-xs) {
+    border: $border;
+    margin-bottom: $unit*3;
+  }
+
+  @media (min-width: $screen-md) {
+    width: 49%;
+    display: inline-flex;
+    vertical-align: top;
+
+    &:nth-child(odd) {
+      margin-left: 1%;
+    }
+  }
 }
 
 .c-tile__content {
   flex: 1;
+}
+
+.c-tile__details {
+  @media (min-width: $screen-xs) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .c-tile__options {
@@ -23,15 +45,22 @@
 }
 
 .c-tile__legend {
-  display: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: $unit*3;
+  align-items: center;  
 
-  @media (min-width: $screen-sm) {
-    margin-left: auto;
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-    margin-right: $unit*5;
+  .c-tile__icon {
+    margin-right: $unit*2;
   }
+
+  // @media (min-width: $screen-sm) {
+  //   margin-left: auto;
+  //   width: 150px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   margin-right: $unit*5;
+  // }
 }
 
 .c-tile__names {
@@ -39,8 +68,11 @@
   flex-direction: column;
   align-items: flex-start;
 
-  @media (min-width: $screen-sm) {
-    flex-direction: row;
+  @media (min-width: $screen-xs) {
+    margin-right: $unit*5;
+  }
+  @media (min-width: $screen-hlf-scrn) {
+    margin-right: $unit*10;
   }
 }
 
@@ -56,18 +88,25 @@
 .c-tile__author {
   font-size: $font-size;
   margin-top: $unit*2;
+
+  @media (min-width: $screen-xs) {
+    margin-top: 0;
+    margin-bottom: $unit*3;
+  }
 }
 
 .c-tile__extras {
-  // display: flex;
-  // flex-direction: row-reverse;
-  // align-items: center;
-  // justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
 
 .c-tile__rating {
   display: flex;
   align-items: center;
+
+  @media (min-width: $screen-xs) {
+    margin-bottom: $unit*2;
+  }
 }
 
 .c-tile__save {
@@ -82,6 +121,20 @@
   display: none;
 }
 
+.c-tile__icons {
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: $brand-blue;  
+
+    &:hover,
+    &:active,
+    &:focus {
+      fill: darken($brand-blue, 10%);
+    }
+  }
+}
 
 // Modifiers
 // ---
@@ -98,7 +151,7 @@
 
 .c-tile.c--save {
   .c-tile__edit-options {
-    display: none;
+    // display: none;
   }
 }
 

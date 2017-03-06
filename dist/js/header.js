@@ -41,8 +41,8 @@ $( document ).ready(function() {
     $(".js-browse-search").removeClass('active');
   });
 
-  $(".c-tile").find(".js-tile-save").click( function(){
-    $(this).parent(".c-tile").toggleClass('c--saved');
+  $(".js-tile-save").click( function(){
+    $(this).parent().parent(".c-tile").toggleClass('c--saved');
   });
 
 
