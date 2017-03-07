@@ -33,7 +33,7 @@ img {
 
 main {
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
   background-color: $neutral-30;
 
   @media (max-width: $screen-xs) {
