@@ -190,7 +190,7 @@
 
 .t-messages__contacts-wrapper {
   height: calc(100% - 54px);
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 
@@ -260,7 +260,7 @@
 // ---
 
 .t-messages__messages {
-  overflow: scroll;
+  overflow-y: scroll;
   height: calc(100% - 176px);
 
   @media (min-width: $screen-xs) {
