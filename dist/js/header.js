@@ -115,20 +115,6 @@ $( document ).ready(function() {
     $(".js-swipe-nav").addClass('c--open');
   });
 
-  // Exercise Options
-  // ---
-
-  $(".js-workout-search").click( function(){
-     $(".js-workout-search-results").slideToggle(400);
-  });
-
-  // Exercise Search
-
-  $(".js-mobile-nav").click( function(){
-    $(".js-swipe-nav").addClass('c--open');
-  });
-
-
   // close on back button
   $(".js-swipe-nav__back").click( function(){
     $(".js-swipe-nav").removeClass('c--open');
@@ -143,6 +129,25 @@ $( document ).ready(function() {
     // Group menu
   $(".js-group-menu").click( function(){
     $(".t-group__menu-items").slideToggle(200);
+  });
+
+   // Exercise Options
+  // ---
+
+  $(".js-exercise-button").click( function(){
+     $(this).next(".js-exercise-options").toggleClass('active');
+  });
+
+  // Exercise Search
+
+  $(".js-workout-search").click( function(){
+     $(".js-workout-search-results").slideToggle(400);
+  });
+
+  // Exercise new
+
+  $(".js-workout-exercise").click( function(){
+     $(this).removeClass('t--new');
   });
 
   // Calendar
