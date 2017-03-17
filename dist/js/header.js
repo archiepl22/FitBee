@@ -115,6 +115,14 @@ $( document ).ready(function() {
     $(".js-swipe-nav").addClass('c--open');
   });
 
+  // Exercise Options
+  // ---
+
+  $(".js-exercise-button").click( function(){
+     $(this).next(".js-exercise-options").toggleClass('active');
+  });
+
+
   // close on back button
   $(".js-swipe-nav__back").click( function(){
     $(".js-swipe-nav").removeClass('c--open');

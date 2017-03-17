@@ -33,6 +33,12 @@ router.get('/landing', function *() {
   });
 });
 
+router.get('/create-workout', function *() {
+  yield this.render('createworkout', {
+    title: 'Create a new workout'
+  });
+});
+
 router.get('/workouts', function *() {
   yield this.render('workouts', {
     layout: 'dash',

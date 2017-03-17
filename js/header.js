@@ -41,6 +41,10 @@ $( document ).ready(function() {
     $(".js-browse-search").removeClass('active');
   });
 
+  $(".js-tile-save").click( function(){
+    $(this).parent().parent(".c-tile").toggleClass('c--saved');
+  });
+
 
   // Profile feed
   // ---

@@ -1,0 +1,165 @@
+// Workout
+// ====
+// 
+
+
+.t-workout{
+  background: $neutral-00;
+
+  h1,
+  p {
+    margin: 0;
+  }
+}
+
+// Workout main column
+// ---
+
+.t-workout__main {
+  width: 100%;
+}
+
+.t-workout__heading {
+  padding: $unit*2;
+  padding-top: $unit*4;
+}
+
+.t-workout__author {
+  font-size: $mobile-font;
+  color: $neutral-60;
+}
+
+.t-workout__search {
+  width: 100%;
+  padding: $unit*3;
+  padding-left: $unit*12;
+
+  border-top: $border;
+  border-bottom: $border;
+  border-right: none !important;
+  border-left: none !important;
+
+  background-image: url('../img/search.svg');
+  background-repeat: no-repeat;
+  background-size: $unit*6;
+  background-position: $unit*3;
+
+  font-size: $font-size;
+}
+
+.t-workout__workout {
+  background-color: $neutral-10;
+  padding-top: $unit*3;
+}
+
+.t-workout__exercise {
+  display: flex;
+  align-items: center;
+  margin-bottom: $unit*3;
+
+  position: relative;
+
+  background-color: $neutral-00;
+  box-shadow: $box-shadow;
+}
+
+.t-workout__exercise-details {
+  display: inline-block;
+  width: 90%;
+  padding: $unit*3 0 $unit*3 $unit*3;
+
+  font-size: $small-font;
+}
+
+.t-workout__exercise-name {
+  font-size: $small-font;
+  display: inline;
+  line-height: 20px;
+}
+
+.t-workout__exercise-notes {
+  width: 100%;
+  max-height: $unit*10;
+  font-size: $mobile-font;
+}
+
+.t-workout__exercise-numbers {
+  margin-bottom: $unit;
+}
+
+
+.t-workout__keywords {
+  width: 100%;
+}
+
+.t-workout__keywords,
+.t-workout__description {
+  padding: $unit 0;
+}
+
+.t-workout__description {
+  margin-top: $unit*0.5 !important;
+}
+
+.t-workout__exercise-options-button {
+  display: inline-block;
+  padding: $unit*5;
+
+  z-index: 100;
+}
+
+.t-workout__exercise-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 0%;
+  height: 100%;
+  padding-right: $unit*8;
+
+  background-color: white;
+
+  position: absolute;
+  right: -$unit*34;
+  transition: $slow-animation;
+}
+
+.t-workout__exercise-options.active {
+  width: 100%;
+
+  right: -$unit;
+}
+
+.t-workout__exercise-dots {
+  fill: $brand-blue;
+  width: 3px;
+}
+
+.t-workout__exercise-wrapper {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.t-workout__select {
+  font-size: $small-font;
+  margin-right: -$unit*5;
+  margin-left: -$unit;
+}
+
+.t-workout__exercise-option {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: $unit*2;
+  }
+}
+
+
+// Workout Side bar
+// ---
+
+.t-workout__side {
+  width: 100%;
+}
+
+

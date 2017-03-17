@@ -1,0 +1,33 @@
+<article class="t-workout__exercise">
+  <div class="t-workout__exercise-details">
+    <div class="t-workout__exercise-numbers">
+      <span>1.</span>
+      <h1 class="t-workout__exercise-name single-line"contenteditable="true">Exercise</h1>
+      <div class="t-workout__exercise-wrapper">
+        <div class="t-workout__exercise-reps">
+          <span class="single-line" contenteditable="true">Weight</span>
+          <select class="t-workout__select" name="weight">
+            <option value="lb" selected>lb</option>
+            <option value="lb">kg</option>
+          </select>
+          <span>x</span>
+          <span contenteditable="true" class="single-line">reps</span>
+        </div>
+      </div>
+    </div>
+    <div class="t-workout__exercise-notes" contenteditable="true">Notes: Add a helpful tip or description for this exercise</div>
+  </div>
+  <div class="js-exercise-button t-workout__exercise-options-button">
+  {{>icondots class="t-workout__exercise-dots"}}
+  </div>
+  <div class="js-exercise-options t-workout__exercise-options">
+    <div class="t-workout__exercise-option">
+      {{>iconcamera class="c--large u-fill-blue"}}
+      <span class="u-hidden-xs-up u-color-blue u-text-bold">Add Media</span>
+    </div>
+     <div class="t-workout__exercise-option">
+      {{>icontrash class="c--medium u-fill-blue"}}
+      <span class="u-hidden-xs-up u-color-blue u-text-bold">Remove</span>
+    </div>
+  </div>
+</article>
