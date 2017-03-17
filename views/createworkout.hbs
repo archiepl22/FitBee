@@ -6,7 +6,18 @@
       <p contenteditable="true" class="t-workout__description single-line">Description</p>
       <div class="t-workout__keywords single-line" contenteditable="true">keywords</div>
     </div>
-    <input placeholder="Search" class="t-workout__search u-hidden-xs-up"/>
+    <input placeholder="Search" class="js-workout-search t-workout__search u-hidden-xs-up"/>
+    <div class="js-workout-search-results t-workout__search-container">
+      <span class="t-workout__search-heading">Search Results</span>
+      {{!-- IF NO RESULTS THEN SHOW --}}
+{{!--       <p class="t-workout__search-text">There are no results for this search</p> --}}
+      <p class="t-workout__search-text">Tap an exercise to add it to your workout</p>
+      <div>
+        <div class="t-workout__search-result">
+          + Barbell Bicep Curls
+        </div>
+      </div>
+    </div>
     <div class="t-workout__workout">
 
       {{>exercise}}

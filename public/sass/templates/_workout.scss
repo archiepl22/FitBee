@@ -52,6 +52,32 @@
   padding-top: $unit*3;
 }
 
+.t-workout__search-container {
+  display: none;
+  padding: $unit*3;
+  background-color: $neutral-00;
+}
+
+.t-workout__search-heading {
+  display: block;
+  margin-bottom: $unit*2;
+  font-size: $large-font;
+  color: $neutral-70;
+}
+
+.t-workout__search-text {
+  padding-bottom: $unit*3;
+} 
+
+.t-workout__search-result {
+
+  padding: $unit*3;
+  background-color: $brand-blue;
+  color: $neutral-00;
+  font-weight: 500;
+  border-radius: $border-radius;
+}
+
 .t-workout__exercise {
   display: flex;
   align-items: center;

@@ -118,8 +118,14 @@ $( document ).ready(function() {
   // Exercise Options
   // ---
 
-  $(".js-exercise-button").click( function(){
-     $(this).next(".js-exercise-options").toggleClass('active');
+  $(".js-workout-search").click( function(){
+     $(".js-workout-search-results").slideToggle(400);
+  });
+
+  // Exercise Search
+
+  $(".js-mobile-nav").click( function(){
+    $(".js-swipe-nav").addClass('c--open');
   });
 
 
