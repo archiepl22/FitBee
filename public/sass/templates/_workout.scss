@@ -2,13 +2,18 @@
 // ====
 // 
 
+$heading-height: 137px;
 
 .t-workout {
-  background: $neutral-00;
+  background-color: $neutral-30;
 
   h1,
   p {
     margin: 0;
+  }
+
+  @media (min-width: $screen-hlf-scrn) {
+    display: flex;
   }
 }
 
@@ -17,11 +22,19 @@
 
 .t-workout__main {
   width: 100%;
+  height: 100vh;
 }
 
 .t-workout__heading {
+  height: $heading-height;
   padding: $unit*2;
   padding-top: $unit*4;
+
+  background: $neutral-00;
+
+  @media (min-width: $screen-hlf-scrn) {
+    border-bottom: $border;
+  }
 }
 
 .t-workout__author {
@@ -50,6 +63,30 @@
 .t-workout__workout {
   background-color: $neutral-30;
   padding-top: $unit*3;
+
+  @media (min-width: $screen-hlf-scrn) {
+    padding: $unit*3;
+  }
+}
+
+.t-workout__workout-legend {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $unit;
+  padding-left: $unit*10;
+
+  font-size: $mobile-font;
+}
+
+.t-workout__cta-legend {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $unit;
+
+  @media (min-width: $screen-sm) {
+    width: 140px;
+  }
 }
 
 .t-workout__search-container {
@@ -71,7 +108,6 @@
 } 
 
 .t-workout__search-result {
-
   padding: $unit*3;
   background-color: $brand-blue;
   color: $neutral-00;
@@ -84,13 +120,16 @@
   align-items: center;
   margin-bottom: $unit*3;
 
+  overflow: hidden;
+
   position: relative;
 
   background-color: $neutral-00;
   box-shadow: $box-shadow;
 }
 
-.t-workout__exercise.t--new {
+.t-workout__exercise.t--new,
+.t-workout__exercise-wrapper.t--new {
   opacity: 0.65;
 }
 
@@ -106,6 +145,7 @@
   font-size: $small-font;
   display: inline;
   line-height: 20px;
+  margin-right: $unit*2 !important;
 }
 
 .t-workout__exercise-notes {
@@ -137,8 +177,27 @@
   padding: $unit*5;
 
   z-index: 100;
+
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
 }
 
+// desktop only
+.t-workout__exercise-cta {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+  padding-right: $unit*3;
+  margin-left: $unit*3;
+
+  @media (min-width: $screen-sm) {
+    width: 140px;
+  }
+}
+
+// mobile only
 .t-workout__exercise-options {
   display: flex;
   align-items: center;
@@ -152,6 +211,10 @@
   position: absolute;
   right: -$unit*34;
   transition: $slow-animation;
+
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
 }
 
 .t-workout__exercise-options.active {
@@ -163,17 +226,28 @@
 .t-workout__exercise-dots {
   fill: $brand-blue;
   width: 3px;
+
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
 }
 
 .t-workout__exercise-wrapper {
   display: inline-flex;
   white-space: nowrap;
+  margin-right: $unit*2;
 }
 
 .t-workout__select {
   font-size: $small-font;
   margin-right: -$unit*5;
   margin-left: -$unit;
+  border: 0;
+  background-color: transparent;
+
+  @media (min-width: $screen-xs) {
+    margin-right: 0;
+  }
 }
 
 .t-workout__exercise-option {
@@ -191,6 +265,59 @@
 
 .t-workout__side {
   width: 100%;
+  height: 100vh;
+
+  background: $neutral-00;
+  border-left: $border;
+
+  @media (min-width: $screen-hlf-scrn) {
+    width: 75%;
+  }
+
+  @media (min-width: $screen-sm) {
+    width: auto;
+    max-width: 60%;
+  }
+
+  @media (min-width: $screen-sm) {
+    width: auto;
+    max-width: 60%;
+  }
+}
+
+.t-workout__side-heading {
+  height: $heading-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.t-workout__side-title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.t-workout__filters {
+  display: flex;
+  justify-content: space-between;
+  padding: $unit*2;
+}
+
+.t-workout__side-results {
+  margin-top: $unit*3;
+  padding: $unit*3;
+}
+
+.t-workout__side-exercise {
+  padding: $unit*3;
+  margin-bottom: $unit*2;
+  background-color: $brand-blue;
+  color: $neutral-00;
+  font-weight: 500;
+  border-radius: $border-radius;
 }
 
 

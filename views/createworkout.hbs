@@ -6,7 +6,7 @@
       <p contenteditable="true" class="t-workout__description single-line">Description</p>
       <div class="t-workout__keywords single-line" contenteditable="true">keywords</div>
     </div>
-    <input placeholder="Search" class="js-workout-search t-workout__search u-hidden-xs-up"/>
+    <input placeholder="Search" class="js-workout-search t-workout__search u-hidden-hlf-up"/>
     <div class="js-workout-search-results t-workout__search-container">
       <span class="t-workout__search-heading">Search Results</span>
       {{!-- IF NO RESULTS THEN SHOW --}}
@@ -19,7 +19,14 @@
       </div>
     </div>
     <div class="t-workout__workout">
-
+    <div class="t-workout__workout-legend u-hidden-sm-down">
+      <span>Exercise</span>
+      <span>Quantity</span>
+      <span class="t-workout__cta-legend">
+        <span>Add Media</span>
+        <span>Remove</span>
+      </span>
+    </div>
       {{>exercise}}
       {{>exercise}}
       {{>exercise class="t--new"}}
@@ -27,6 +34,68 @@
     </div>
     
   </div>
-  <div class="t-workout__side">
+  <div class="t-workout__side u-hidden-hlf-down">
+    <div class="t-workout__side-heading">
+      <div class="t-workout__side-title">
+        <span class="u-display-block">Find and select exercises<br>for your&nbsp;workout</span>
+      </div>
+      <input placeholder="Search" class="t-workout__search"/>
+    </div>
+    <div class="t-workout__side-wrapper">
+      <div class="t-workout__filters">
+        <select class="t-workout__filter" name="category">
+          <option value="category" selected>Category</option>
+          <option value="strength-training">Strength training</option>
+          <option value="free-weights">Free weights only</option>
+          <option value="crossfit">Crossfit</option>
+          <option value="HIIT">HIIT</option>
+          <option value="body-building">Body building</option>
+          <option value="sport">Sport specific</option>
+          <option value="cardio">Cardio</option>
+          <option value="body-weight">Body weight</option>
+          <option value="physical-therapy">Physical therapy</option>
+          <option value="home-workout">Home workout</option>
+        </select>
+        <select class="t-workout__filter" name="category">
+          <option value="body-part" selected>Body part</option>
+          <option value="full-body">Full body</option>
+          <option value="upper-body">Upper body</option>
+          <option value="lower-body">Lower body</option>
+          <option value="legs">Legs</option>
+          <option value="arms">Arms</option>
+          <option value="chest">Chest</option>
+          <option value="back">Back</option>
+          <option value="shoulders">Shoulders</option>
+          <option value="biceps">Biceps</option>
+          <option value="triceps">Triceps</option>
+          <option value="hamstrings">Hamstrings</option>
+          <option value="quadriceps">Quadriceps</option>
+          <option value="forearms">Forearms</option>
+          <option value="hips">Hips</option>
+
+        </select>
+        <select class="t-workout__filter" name="category">
+          <option value="difficulty" selected>Difficulty</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+      <div class="t-workout__side-results">
+        <div>Search Results</div>
+        <span class="u-text-size-small">Click an exercise to add it to your workout</span>
+        <div class="t-workout__side-exercises u-margin-top-xlg">
+          <div class="t-workout__side-exercise">
+            + Barbell Bicep Curls
+          </div>
+          <div class="t-workout__side-exercise">
+            + Barbell Bicep Curls
+          </div>
+          <div class="t-workout__side-exercise">
+            + Barbell Bicep Curls
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

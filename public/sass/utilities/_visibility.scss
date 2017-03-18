@@ -14,8 +14,26 @@
   }
 }
 
+.u-hidden-hlf-up {
+  @media (min-width: $screen-hlf-scrn) {
+    display: none;
+  }
+}
+
+.u-hidden-sm-up {
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
+}
+
 .u-hidden-xs-down {
   @media (max-width: $screen-xs) {
+    display: none;
+  }
+}
+
+.u-hidden-hlf-down {
+  @media (max-width: $screen-hlf-scrn) {
     display: none;
   }
 }
