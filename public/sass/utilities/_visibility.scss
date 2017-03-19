@@ -4,48 +4,48 @@
 
 .hidden-xs-up {
   @media (max-width: $screen-xs) {
-    display: none;
+    display: none !important;
   }
 }
 
 .u-hidden-xs-up {
   @media (min-width: $screen-xs) {
-    display: none;
+    display: none !important;
   }
 }
 
 .u-hidden-hlf-up {
   @media (min-width: $screen-hlf-scrn) {
-    display: none;
+    display: none !important;
   }
 }
 
 .u-hidden-sm-up {
   @media (min-width: $screen-sm) {
-    display: none;
+    display: none !important;
   }
 }
 
 .u-hidden-xs-down {
   @media (max-width: $screen-xs) {
-    display: none;
+    display: none !important;
   }
 }
 
 .u-hidden-hlf-down {
   @media (max-width: $screen-hlf-scrn) {
-    display: none;
+    display: none !important;
   }
 }
 
 .u-hidden-sm-down {
   @media (max-width: $screen-sm) {
-    display: none;
+    display: none !important;
   }
 }
 
 .u-hidden-md-down {
   @media (max-width: $screen-md) {
-    display: none;
+    display: none !important;
   }
 }

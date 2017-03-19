@@ -131,6 +131,25 @@ $( document ).ready(function() {
     $(".t-group__menu-items").slideToggle(200);
   });
 
+   // Exercise Options
+  // ---
+
+  $(".js-exercise-button").click( function(){
+     $(this).next(".js-exercise-options").toggleClass('active');
+  });
+
+  // Exercise Search
+
+  $(".js-workout-search").click( function(){
+     $(".js-workout-search-results").slideToggle(400);
+  });
+
+  // Exercise new
+
+  $(".js-workout-exercise").click( function(){
+     $(this).removeClass('t--new');
+  });
+
   // Calendar
   // ---
 

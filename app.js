@@ -39,6 +39,12 @@ router.get('/create-workout', function *() {
   });
 });
 
+router.get('/view-workout', function *() {
+  yield this.render('viewworkout', {
+    title: 'Workout Title'
+  });
+});
+
 router.get('/workouts', function *() {
   yield this.render('workouts', {
     layout: 'dash',

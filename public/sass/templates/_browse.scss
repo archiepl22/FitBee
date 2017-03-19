@@ -4,7 +4,7 @@
 
 .t-browse {
   padding: 0;
-  background-color: $neutral-10;
+  background-color: $neutral-30;
 
   position: relative;
 
@@ -31,7 +31,7 @@
   overflow-y: scroll;
   height: calc(100vh - 55px);
 
-  background-color: $neutral-10;
+  background-color: $neutral-30;
   transition: $slow-animation;
 
   @media (min-width: $screen-xs) {

@@ -26,14 +26,30 @@ $heading-height: 137px;
 }
 
 .t-workout__heading {
-  height: $heading-height;
   padding: $unit*2;
   padding-top: $unit*4;
 
+  position: relative;
   background: $neutral-00;
 
   @media (min-width: $screen-hlf-scrn) {
     border-bottom: $border;
+    height: $heading-height;
+    padding-left: $unit*5;
+  }
+}
+
+.t-workout__complete {
+  @media (min-width: $screen-xs) {
+    position: absolute;
+    bottom: $unit*5;
+    right: $unit*5;
+  }
+  @media (min-width: $screen-hlf-scrn) {
+    position: absolute;
+    top: $unit*5;
+    right: $unit*5;
+    bottom: auto;
   }
 }
 
@@ -259,6 +275,25 @@ $heading-height: 137px;
   }
 }
 
+.t-workout__view-menu {
+  background-color: $neutral-00;
+  border-bottom: $border;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $unit*3;
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    padding: $unit*3;
+    font-size: $small-font;
+    color: $brand-blue;
+  }
+}
 
 // Workout Side bar
 // ---
@@ -286,11 +321,14 @@ $heading-height: 137px;
 }
 
 .t-workout__side-heading {
-  height: $heading-height;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $screen-hlf-scrn) {
+    height: $heading-height;
+  }
 }
 
 .t-workout__side-title {

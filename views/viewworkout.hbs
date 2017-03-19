@@ -1,0 +1,71 @@
+<div class="t-workout t--create">
+  <div class="t-workout__main">
+    <div class="t-workout__heading">
+      <h1 class="t-workout__title single-line">Workout Name</h1>
+      <span class="t-workout__author">Created by <author>User Name </author>on <date>dd/mm/yyyy</date></span>
+      <p class="t-workout__description single-line">Description</p>
+      <div class="t-workout__keywords single-line">keywords</div>
+      <button class="t-workout__complete c-button c--secondary">&check; Mark complete</button>
+    </div>
+    <input placeholder="Search" class="js-workout-search t-workout__search u-hidden-hlf-up"/>
+    <div class="js-workout-search-results t-workout__search-container">
+      <span class="t-workout__search-heading">Search Results</span>
+      {{!-- IF NO RESULTS THEN SHOW --}}
+{{!--       <p class="t-workout__search-text">There are no results for this search</p> --}}
+      <p class="t-workout__search-text">Tap an exercise to add it to your workout</p>
+      <div>
+        <div class="t-workout__search-result">
+          + Barbell Bicep Curls
+        </div>
+      </div>
+    </div>
+    <div class="t-workout__view-menu">
+      <span>{{>iconedit class="c--small u-fill-blue u-margin-right-sm"}} <span class="u-hidden-hlf-down">Edit</span></span>
+      <span>{{>iconcalendar class="c--small u-fill-blue u-margin-right-sm"}} <span class="u-hidden-hlf-down">Add to Calendar</span></span>
+      <span>{{>iconshare class="c--small u-fill-blue u-margin-right-sm"}} <span class="u-hidden-hlf-down">Share</span></span>
+      <span>{{>iconsave class="c--small u-fill-blue u-margin-right-sm"}} <span class="u-hidden-hlf-down">Save to library</span></span>
+    </div>
+    <div class="t-workout__workout">
+      <div class="t-workout__workout-legend u-hidden-sm-down">
+        <span>Exercise</span>
+        <span>Quantity</span>
+        <span class="t-workout__cta-legend">
+          <span>View Media</span>
+          <span>Remove</span>
+        </span>
+      </div>
+      {{>exercise editable="false"}}
+      {{>exercise editable="false"}}
+      {{>exercise editable="false"}}
+      <div class="u-color-blue u-text-bold u-padding-lg u-margin-top-lg">+ Add Circuit</div>
+    </div>
+    
+  </div>
+  <div class="t-workout__side u-hidden-hlf-down">
+    <div class="t-workout__side-heading">
+      <div class="t-workout__side-title">
+        <span class="u-display-block">Find and select exercises<br>for your&nbsp;workout</span>
+      </div>
+      <input placeholder="Search" class="t-workout__search"/>
+    </div>
+    <div class="t-workout__side-wrapper">
+      <div class="t-workout__filters">
+      </div>
+      <div class="t-workout__side-results">
+        <div>Search Results</div>
+        <span class="u-text-size-small">Click an exercise to add it to your workout</span>
+        <div class="t-workout__side-exercises u-margin-top-xlg">
+          <div class="t-workout__side-exercise">
+            + Barbell Bicep Curls
+          </div>
+          <div class="t-workout__side-exercise">
+            + Barbell Bicep Curls
+          </div>
+          <div class="t-workout__side-exercise">
+            + Barbell Bicep Curls
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
