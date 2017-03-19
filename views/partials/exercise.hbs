@@ -49,8 +49,11 @@
     <div class="t-workout__exercise-option">
       {{>iconcamera class="c--large u-fill-blue"}}
     </div>
-     <div class="t-workout__exercise-option">
+     <div class="t-workout__exercise-option t-workout__option-remove">
       {{>icontrash class="c--medium u-fill-blue"}}
+    </div>
+    <div class="t-workout__exercise-option t-workout__option-complete">
+      <label class="c-checkbox"><input type="checkbox" value="complete"/></label>
     </div>
   </div>
 
@@ -63,9 +66,12 @@
       {{>iconcamera class="c--large u-fill-blue"}}
       <span class="u-hidden-sm-up u-color-blue u-text-bold">Add Media</span>
     </div>
-     <div class="t-workout__exercise-option">
+     <div class="t-workout__exercise-option t-workout__option-remove">
       {{>icontrash class="c--medium u-fill-blue"}}
       <span class="u-hidden-sm-up u-color-blue u-text-bold">Remove</span>
+    </div>
+      <div class="t-workout__exercise-option t-workout__option-complete">
+      <label class="c-checkbox u-color-blue u-text-bold"><input type="checkbox" value="complete" class="u-margin-right-sm"/>Complete</label>
     </div>
   </div>
 

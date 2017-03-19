@@ -149,6 +149,22 @@ $heading-height: 137px;
   opacity: 0.65;
 }
 
+.t-workout__option-complete {
+  display: none !important;
+}
+
+.t-workout__exercise.t--complete {
+  .t-workout__option-remove {
+    display: none;
+  }
+
+  .t-workout__option-complete {
+    display: block !important;
+  }
+}
+
+
+
 .t-workout__exercise-details {
   display: inline-block;
   width: 90%;

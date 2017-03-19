@@ -1,0 +1,23 @@
+.c-workout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-workout__detail {
+
+}
+
+.c-workout__title {
+  color: $brand-blue;
+  font-weight: 500;
+  font-size: $small-font;
+  line-height: 20px;
+}
+
+.c-workout__author {
+  font-size: $mobile-font;
+}
+
+.c-workout__rating {
+  width: 50px;
+}
