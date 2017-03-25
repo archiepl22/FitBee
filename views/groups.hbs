@@ -1,29 +1,128 @@
 <div class="t-dash t-group">
 
-  <div class="t-group__init-wrapper u-padding-sides-xlg u-padding-top-xxlg">
-    {{>heading heading="Groups" class="u-padding-none"}}
+  <div class="t-group__init-wrapper">
+    <div class="t-group__heading">
+      <h1 class="u-margin-none">Browse Groups</h1>
+      <a class="c-link c--blue js-accordion-trigger t-group__new-button">+ New Group</a>
+      <div class="js-accordion">
+        <form>
+          <div class="u-margin-top-xlg">
+            <label>Group name</label><span class="u-color-orange u-text-size-mobile u-margin-left-md">* Required</span>
+            <input type="text" placeholder="Group name" class="t-group__input u-margin-top-sm" />
+          </div>
+          <div class="u-margin-top-xlg">
+            <label>Group location</label>
+            <input type="text" placeholder="Group location" class="t-group__input u-margin-top-sm"/>
+          </div>
+          <label class="u-margin-top-xlg u-display-block">Group Purpose</label>
+          <textarea placeholder="E.g. Baseball team page to keep track of workouts." class="u-margin-top-sm"></textarea>
+          <div class="c-share__label u-display-inline-block u-text-bold u-color-blue u-margin-top-xxlg">
+            {{>iconphoto class="c--small u-fill-blue"}}
+            Add Cover Photo
+          </div>
+          <button href="/group-new" type="submit" class="c-button c--primary u-display-block u-margin-top-xxlg u-margin-left-auto">Create</button>
+        </form>
+      </div>
+    </div>
 
-    <p>Some short blurb about what groups do and what they’re there for. Bacon ipsum dolor amet pig beef pancetta picanha biltong, frankfurter shoulder rump meatball.</p>
+    <p class="t-group__intro">Some short blurb about what groups do and what they’re there for. Bacon ipsum dolor amet pig beef pancetta picanha biltong, frankfurter shoulder rump meatball.</p>
 
-    <a class="c-link c--blue js-accordion-trigger u-margin-top-xxlg u-display-block">+ New Group</a>
-    <div class="js-accordion">
+    <div class="t-group__search-wrapper">
       <form>
-        <div class="u-margin-top-xlg">
-          <label>Group name</label><span class="u-color-orange u-text-size-mobile u-margin-left-md">* Required</span>
-          <input type="text" placeholder="Group name" class="t-group__input u-margin-top-sm" />
+        <div class="t-group__search-input">
+          <label class="u-color-blue u-text-bold u-hidden-xs-down" for="keywords">Keywords</label>
+          <input type="text" id="keywords" placeholder="Biceps, crossfit, deadlifts" />
         </div>
-        <div class="u-margin-top-xlg">
-          <label>Group location</label>
-          <input type="text" placeholder="Group location" class="t-group__input u-margin-top-sm"/>
+        <div class="t-group__search-filters">
+          <div>
+            <h2 class="u-padding-left-md u-hidden-xs-up u-text-size-medium">Filters</h2>
+            <select class="t-group__select" name="select">
+              <option value="value1" selected>Category</option>
+              <option value="value1">Strength training</option>
+              <option value="value2">Free weights only</option>
+              <option value="value3">HIIT</option>
+              <option value="value3">Body building</option>
+              <option value="value3">Sport Specific</option>
+              <option value="value3">Cardio</option>
+              <option value="value3">Body weight</option>
+              <option value="value3">Physical therapy</option>
+              <option value="value3">Home workouts</option>
+            </select>
+            <select class="t-group__select" name="select">
+              <option value="value1" selected>Difficulty</option> 
+              <option value="value2" >Beginner</option>
+              <option value="value3">Intermediate</option>
+              <option value="value3">Advanced</option>
+            </select>
+          </div>
+          <div class="t-group__sort-filters">
+            <span class=" u-padding-left-md">Sort by</span>
+            <span class="u-padding-left-md">
+              <input type="radio" name="sort" value="popularity" id="popularity">
+              <label for="popularity">Popularity</label>
+              <input type="radio" name="sort" value="rating" id="rating">
+              <label for="popularity">Rating</label>
+            </span>
+          </div>
+           <button type="button" class="js-group-submit t-group__submit c-button c--primary">Search</button>
         </div>
-        <label class="u-margin-top-xlg u-display-block">Group Purpose</label>
-        <textarea placeholder="E.g. Baseball team page to keep track of workouts." class="u-margin-top-sm"></textarea>
-        <div class="c-share__label u-display-inline-block u-text-bold u-color-blue u-margin-top-xxlg">
-          {{>iconphoto class="c--small u-fill-blue"}}
-          Add Cover Photo
-        </div>
-        <button href="/group-new" type="submit" class="c-button c--primary u-display-block u-margin-top-xxlg u-margin-left-auto">Create</button>
+       
       </form>
     </div>
+    <h2 class="u-margin-">Search Results</h2>
+
+    <article class="t-group-tile">
+      <div class="t-group-tile__content">
+
+        <div class="t-group-tile__details">
+          <div class="t-group-tile__names">
+            <h1 class="t-group-tile__title">Group Name</h1>
+            <span class="t-group-tile__location">Location</span> 
+          </div>
+          <div class="t-group-tile__rating">
+            {{>iconrating class="t-group-tile__stars u-fill-yellow"}}
+            <span class="u-text-size-quiet u-margin-top-sm">362 Members</span>
+          </div>
+        </div>
+
+        <div class="t-group-tile__filters">
+          <span>Difficulty</span>
+          <span>Category</span>
+          <span>Public</span>
+        </div>
+      </div>
+
+      <div class="t-group-tile__cta">
+        <button class="c-button c--primary">Join Group</button>
+      </div>
+    </article>
+
+    <article class="t-group-tile">
+      <div class="t-group-tile__content">
+
+        <div class="t-group-tile__details">
+          <div class="t-group-tile__names">
+            <h1 class="t-group-tile__title">Group Name</h1>
+            <span class="t-group-tile__location">Location</span> 
+          </div>
+          <div class="t-group-tile__rating">
+            {{>iconrating class="t-group-tile__stars u-fill-yellow"}}
+            <span class="u-text-size-quiet u-margin-top-sm">362 Members</span>
+          </div>
+        </div>
+
+        <div class="t-group-tile__filters">
+          <span>Difficulty</span>
+          <span>Category</span>
+          <span>Public</span>
+        </div>
+      </div>
+
+      <div class="t-group-tile__cta">
+        <button class="c-button c--primary">Join Group</button>
+      </div>
+    </article>
+
+
   </div>
 </div>
