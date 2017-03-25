@@ -1,7 +1,33 @@
 .t-workouts {
+  @media (max-width: $screen-xs) {
+    padding: 0;
+    padding-top: $unit*4;
+  }
+
   .c-tile {
+    border-top: $border;
+    border-bottom: $border;
+    margin-bottom: $unit*2;
+
     @media (min-width: $screen-sm) {
       width: 100%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
     }
   }
+
+
+}
+
+.t-workouts__subtitle {
+  margin-left: $unit*3;
+}
+
+.t-workouts__legend {
+  width: 173px;
+  display: flex;
+  margin-left: auto;
+  padding-right: $unit*3;
+  align-items: center;  
+  justify-content: space-between;
 }

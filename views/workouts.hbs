@@ -3,16 +3,17 @@
   {{>heading heading="Workouts" new="+ Create Workout"}}
 
   <div>
-    <h2>My Workouts</h2>
-    <div class="c-tile__legend">
-      <span class="u-text-size-quiet">Add to</br> Calendar</span><span class="u-text-size-quiet">Quick </br>View</span><span class="u-text-size-quiet">Edit</span><span class="u-text-size-quiet">Remove</span>
+    <h2 class="t-workouts__subtitle">My Workouts</h2>
+    <div class="t-workouts__legend u-hidden-xs-down">
+      <div class="u-text-size-quiet">Add to</br> Calendar</div><div class="u-text-size-quiet">Quick </br>View</div><div class="u-text-size-quiet">Edit</div><div class="u-text-size-quiet">Remove</div>
     </div>
+    {{> tile class="c--edit"}}
     {{> tile class="c--edit"}}
   </div>
   <div>
-    <h2>Saved Workouts</h2>
-    <div class="c-tile__legend">
-      <span class="u-text-size-quiet">Add to</br> Calendar</span><span class="u-text-size-quiet">Quick </br>View</span><span class="u-text-size-quiet">Remove</span>
+    <h2 class="t-workouts__subtitle">Saved Workouts</h2>
+    <div class="t-workouts__legend u-hidden-hlf-down">
+      <div class="u-text-size-quiet">Add to</br> Calendar</div><div class="u-text-size-quiet">Quick </br>View</div><div class="u-text-size-quiet">Edit</div><div class="u-text-size-quiet">Remove</div>
     </div>
     {{> tile class="c--edit"}}
   </div>

@@ -150,6 +150,12 @@ $( document ).ready(function() {
      $(this).removeClass('t--new');
   });
 
+  // Workouts
+   $(".js-tile-more").click( function(){
+     $(this).next('.js-tile-icons').addClass('active');
+  });
+
+
   // Calendar
   // ---
 

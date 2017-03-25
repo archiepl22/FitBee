@@ -5,6 +5,7 @@
 .c-tile {
   padding: $unit*2;
   display: flex;
+  position: relative;
 
   background-color: $neutral-00;
   border-bottom: $border;
@@ -122,8 +123,10 @@
 }
 
 .c-tile__icons {
+  
   display: flex;
   align-items: center;
+  transition: $slow-animation;
 
   svg {
     fill: $brand-blue;  
@@ -134,10 +137,66 @@
       fill: darken($brand-blue, 10%);
     }
   }
+
+  @media (max-width: $screen-xs) {
+    position: absolute;
+    height: 91%;
+    width: 87%;
+    left: 100%;
+    background-color: $neutral-00;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $screen-xs) {
+    position: static;
+  }
+}
+
+.c-tile__icons.active {
+  left: 0;
+}
+
+.c-tile__more {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.c-tile__dots {
+  width: $unit;
 }
 
 .c-tile__save-options {
   display: none;
+}
+
+.c-tile__option {
+  display: flex;
+  align-items: center;
+}
+
+.c-tile__calendar-icon {
+  width: 25px;
+
+  @media (min-width: $screen-xs) {
+    width: 18px;
+  }
+}
+
+.c-tile__edit-icon {
+  width: 25px;
+
+  @media (min-width: $screen-xs) {
+    width: 14px;
+  }
+}
+
+.c-tile__trash-icon {
+  width: 20px;
+
+  @media (min-width: $screen-xs) {
+    width: 14px;
+  }
 }
 
 // Modifiers

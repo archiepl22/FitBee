@@ -16,21 +16,24 @@
       </div>
     </div>
   </div>
+  <div class="c-tile__more js-tile-more {{dots}} u-hidden-xs-up">
+    {{>icondots class="c-tile__dots u-fill-blue"}}
+  </div>
 
-  <div class="c-tile__icons">
-    <div class="c-tile__edit-options u-hidden-xs-down">
-      {{>iconcalendar class="c--medium u-margin-sides-lg"}}
-      {{>iconview class="c--large u-margin-sides-lg"}}
+  <div class="c-tile__icons js-tile-icons">
+    {{!-- <div class="c-tile__edit-options"> --}}
+      {{>iconcalendar class="u-margin-sides-lg c-tile__edit-options c-tile__calendar-icon"}}
+      {{>iconview class="c--large u-margin-sides-lg u-hidden-xs-down c-tile__edit-options "}}
       {{!-- {{>iconedit class="c--small u-margin-sides-lg"}} --}}
       
-    </div>
+    {{!-- </div> --}}
     <a class="js-tile-save c-tile__save">
       {{>iconmark class="c--medium u-fill-blue c-tile__mark-icon"}}
       {{>iconsaved class="c--medium u-fill-blue c-tile__saved-icon"}}
     </a>
-    <div class="c-tile__save-options  u-hidden-xs-down">
-      {{>iconedit class="c--small u-margin-sides-lg"}}
-      {{>icontrash class="c--small u-margin-sides-lg"}}
-    </div>
+{{!--     <div class="c-tile__save-options"> --}}
+      {{>iconedit class="u-margin-sides-lg c-tile__save-options c-tile__edit-icon"}}
+      {{>icontrash class="u-margin-sides-lg c-tile__save-options c-tile__trash-icon"}}
+    {{!-- </div> --}}
   </div>
 </article>
