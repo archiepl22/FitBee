@@ -1,0 +1,7 @@
+.t-workouts {
+  .c-tile {
+    @media (min-width: $screen-sm) {
+      width: 100%;
+    }
+  }
+}

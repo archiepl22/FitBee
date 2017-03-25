@@ -136,6 +136,10 @@
   }
 }
 
+.c-tile__save-options {
+  display: none;
+}
+
 // Modifiers
 // ---
 
@@ -150,13 +154,17 @@
 }
 
 .c-tile.c--save {
-  .c-tile__edit-options {
+  .c-tile__e-options {
     // display: none;
   }
 }
 
 .c-tile.c--edit {
   .c-tile__save-options {
+    display: block;
+  }
+
+  .c-tile__save {
     display: none;
   }
 }

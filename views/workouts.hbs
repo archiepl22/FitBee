@@ -1,11 +1,18 @@
-<div class="t-dash">
+<div class="t-dash t-workouts">
 
   {{>heading heading="Workouts" new="+ Create Workout"}}
 
   <div>
     <h2>My Workouts</h2>
     <div class="c-tile__legend">
-      <span class="u-text-size-quiet">Add to</br> Calendar</span><span class="u-text-size-quiet">Quick </br>View</span><span class="u-text-size-quiet">Edit</span><span class="u-text-size-quiet">Trash</span>
+      <span class="u-text-size-quiet">Add to</br> Calendar</span><span class="u-text-size-quiet">Quick </br>View</span><span class="u-text-size-quiet">Edit</span><span class="u-text-size-quiet">Remove</span>
+    </div>
+    {{> tile class="c--edit"}}
+  </div>
+  <div>
+    <h2>Saved Workouts</h2>
+    <div class="c-tile__legend">
+      <span class="u-text-size-quiet">Add to</br> Calendar</span><span class="u-text-size-quiet">Quick </br>View</span><span class="u-text-size-quiet">Remove</span>
     </div>
     {{> tile class="c--edit"}}
   </div>
