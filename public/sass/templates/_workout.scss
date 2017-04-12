@@ -31,9 +31,9 @@ $heading-height: 137px;
 
   position: relative;
   background: $neutral-00;
+  border-bottom: $border;
 
   @media (min-width: $screen-hlf-scrn) {
-    border-bottom: $border;
     height: $heading-height;
     padding-left: $unit*5;
   }

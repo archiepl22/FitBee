@@ -146,13 +146,18 @@ $( document ).ready(function() {
 
   // Exercise new
 
-  $(".js-workout-exercise").click( function(){
-     $(this).removeClass('t--new');
+  $(".js-workout-exercise.t--new").click( function(){
+     $(this).removeClass('t--new')
+     .clone().appendTo('.t-workout__group').addClass('t--new');
+  });
+
+  $(".js-add-circuit").click( function(){
+      $(".js-workout-exercise").first().clone().append().insertAfter('.js-add-circuit');
   });
 
   // Workouts
    $(".js-tile-more").click( function(){
-     $(this).next('.js-tile-icons').toggleClass('active');
+     $(this).next('.js-tile-icons').addClass('active');
   });
 
 

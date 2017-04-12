@@ -6,7 +6,7 @@
       <p contenteditable="true" class="t-workout__description single-line">Description</p>
       <div class="t-workout__keywords single-line" contenteditable="true">keywords</div>
     </div>
-    <input placeholder="Search" class="js-workout-search t-workout__search u-hidden-hlf-up"/>
+    <input placeholder="Search" class="js-workout-search t-workout__search u-display-none u-hidden-hlf-up"/>
     <div class="js-workout-search-results t-workout__search-container">
       <span class="t-workout__search-heading">Search Results</span>
       {{!-- IF NO RESULTS THEN SHOW --}}
@@ -27,14 +27,16 @@
           <span>Remove</span>
         </span>
       </div>
+      <div class="t-workout__group">
       {{>exercise editable="true"}}
       {{>exercise editable="true"}}
       {{>exercise editable="true" class="t--new"}}
-      <div class="u-color-blue u-text-bold u-padding-lg u-margin-top-lg">+ Add Circuit</div>
+      </div>
+      <div class="js-add-circuit c-link u-color-blue u-text-bold u-padding-lg u-margin-top-lg">+ Add Circuit</div>
     </div>
     
   </div>
-  <div class="t-workout__side u-hidden-hlf-down">
+  <div class="t-workout__side u-display-none">
     <div class="t-workout__side-heading">
       <div class="t-workout__side-title">
         <span class="u-display-block">Find and select exercises<br>for your&nbsp;workout</span>
