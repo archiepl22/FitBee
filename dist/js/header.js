@@ -155,6 +155,10 @@ $( document ).ready(function() {
       $(".js-workout-exercise").first().clone().append().insertAfter('.js-add-circuit');
   });
 
+  $(".js-remove-exercise").click( function(){
+      $(this).parent().parent().remove();
+  });
+
   // Workouts
    $(".js-tile-more").click( function(){
      $(this).next('.js-tile-icons').addClass('active');
