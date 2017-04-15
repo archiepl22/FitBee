@@ -34,6 +34,7 @@ img {
 main {
   height: 100%;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   background-color: $neutral-30;
 
   @media (max-width: $screen-xs) {

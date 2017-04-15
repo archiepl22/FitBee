@@ -29,6 +29,8 @@
   right: 0;
 
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
   height: calc(100vh - 55px);
 
   background-color: $neutral-30;
@@ -49,6 +51,7 @@
 
 .t-browse__search-wrapper {
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   height: 100vh;
 
   @media (min-width: $screen-xs) {
