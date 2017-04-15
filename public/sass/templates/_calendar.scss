@@ -8,8 +8,14 @@
   position: relative;
   background: $neutral-30;
   height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 
   @media (min-width: $screen-xs) {
+    padding: $unit*5;
+  }
+
+  @media (min-width: $screen-sm) {
     padding: $unit*10;
     padding-left: 210px;
   }

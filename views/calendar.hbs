@@ -1,6 +1,10 @@
 
 <div class="t-calendar u-padding-top-xlg">
 {{>heading heading="Calendar" link="/new-event" new="+ Create Event" class="t-calendar__new"}}
+   <select class="u-display-block u-margin-bottom-lg u-hidden-xs-up">
+      <option value="my-calendar">Calendar</option>
+      <option value="group-calendar">Group Calendar</option>
+    </select>
   {{!-- <h1 class="u-margin-top-none u-margin-left-lg">Calendar</h1> --}}
   <div id="calendar"></div>
 
