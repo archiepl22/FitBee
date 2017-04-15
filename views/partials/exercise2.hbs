@@ -1,0 +1,78 @@
+<article class="js-workout-exercise t-workout__exercise {{class}} {{editable}}">
+  <div class="t-workout__exercise-details">
+    <div class="t-workout__exercise-numbers">
+      <span>1.</span>
+      <input type="text"  class="t-workout__exercise-input u-margin-right-lg" placeholder="Exercise"/>
+
+      <div class="t-workout__exercise-wrapper">
+        <div class="t-workout__exercise-reps">
+          <input type="text" class="t-workout__exercise-input t--number u-text-align-right" placeholder="weight">
+          <select class="t-workout__select" name="weight">
+            <option value="lb" selected>lb</option>
+            <option value="lb">kg</option>
+          </select>
+          <span>x</span>
+          <input type="text" class="t-workout__exercise-input t--number" placeholder="reps">
+        </div>
+      </div>
+
+      <div class="t-workout__exercise-wrapper">
+        <div class="t-workout__exercise-reps">
+          <input type="text"class="t-workout__exercise-input t--number u-text-align-right" placeholder="weight">
+          <select class="t-workout__select" name="weight">
+            <option value="lb" selected>lb</option>
+            <option value="lb">kg</option>
+          </select>
+          <span>x</span>
+          <input type="text" class="t-workout__exercise-input t--number" placeholder="reps">
+        </div>
+      </div>
+
+      <div class="t-workout__exercise-wrapper">
+        <div class="t-workout__exercise-reps">
+          <input type="text" class="t-workout__exercise-input t--number u-text-align-right" placeholder="weight">
+          <select class="t-workout__select" name="weight">
+            <option value="lb" selected>lb</option>
+            <option value="lb">kg</option>
+          </select>
+          <span>x</span>
+          <input type="text" class="t-workout__exercise-input t--number" placeholder="reps">
+        </div>
+      </div>
+
+    </div>
+    <span class="t-workout__exercise-notes">Notes: </span><span class="t-workout__exercise-notes" >Add a helpful tip or description for this exercise</span>
+  </div>
+
+  {{!-- DESKTOP ONLY --}}
+  <div class="t-workout__exercise-cta u-hidden-sm-down">
+    <div class="t-workout__exercise-option">
+      {{>iconcamera class="c--large u-fill-blue"}}
+    </div>
+     <div class="js-remove-exercise t-workout__exercise-option t-workout__option-remove">
+      {{>icontrash class="c--medium u-fill-blue"}}
+    </div>
+    <div class="t-workout__exercise-option t-workout__option-complete">
+      <label class="c-checkbox"><input type="checkbox" value="complete"/></label>
+    </div>
+  </div>
+
+  {{!-- MOBILE ONLY --}}
+  <div class="js-exercise-button t-workout__exercise-options-button">
+  {{>icondots class="t-workout__exercise-dots"}}
+  </div>
+  <div class="js-exercise-options t-workout__exercise-options">
+    <div class="t-workout__exercise-option">
+      {{>iconcamera class="c--large u-fill-blue"}}
+      <span class="u-hidden-sm-up u-color-blue u-text-bold">Add Media</span>
+    </div>
+     <div class="js-remove-exercise t-workout__exercise-option t-workout__option-remove">
+      {{>icontrash class="c--medium u-fill-blue"}}
+      <span class="u-hidden-sm-up u-color-blue u-text-bold">Remove</span>
+    </div>
+      <div class="t-workout__exercise-option t-workout__option-complete">
+      <label class="c-checkbox u-color-blue u-text-bold"><input type="checkbox" value="complete" class="u-margin-right-sm"/>Complete</label>
+    </div>
+  </div>
+
+</article>

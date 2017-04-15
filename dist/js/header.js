@@ -148,16 +148,16 @@ $( document ).ready(function() {
 
   // Exercise Highlight
 
-  $(".js-workout-exercise").click( function(){
-    $(".js-workout-exercise").not(this).removeClass('active');
-    $(this).toggleClass('active');
-  });
+  // $(".js-workout-exercise").click( function(){
+  //   $(".js-workout-exercise").not(this).removeClass('active');
+  //   $(this).toggleClass('active');
+  // });
 
-  $(".single-line").click( function() {
-    if ($(this).html() === "Exercise" || $(this).html() === "Weight" || $(this).html() === "reps") {
-      $(this).text("");
-    }
-  });
+  // $(".single-line").click( function() {
+  //   if ($(this).html() === "Exercise" || $(this).html() === "Weight" || $(this).html() === "reps") {
+  //     $(this).text("");
+  //   }
+  // });
 
   // $(".single-line").focus(function() {
   //   $(this).text("")
