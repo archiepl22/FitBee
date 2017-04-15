@@ -146,6 +146,27 @@ $( document ).ready(function() {
 
   // Exercise new
 
+  // Exercise Highlight
+
+  $(".js-workout-exercise").click( function(){
+    $(".js-workout-exercise").not(this).removeClass('active');
+    $(this).toggleClass('active');
+  });
+
+  $(".single-line").click( function() {
+    if ($(this).html() === "Exercise" || $(this).html() === "Weight" || $(this).html() === "reps") {
+      $(this).text("");
+    }
+  });
+
+  // $(".single-line").focus(function() {
+  //   $(this).text("")
+  // });
+
+  // $(document).click( function(){
+  //   $('.js-workout-exercise').removeClass('active');
+  // });
+
   $(".js-workout-exercise.t--new").click( function(){
      $(this).removeClass('t--new')
      .clone().appendTo('.t-workout__group').addClass('t--new');

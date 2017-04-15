@@ -142,6 +142,15 @@ $heading-height: 137px;
 
   background-color: $neutral-00;
   box-shadow: $box-shadow;
+
+  .single-line {
+    min-width: 50px;
+    display: inline-block;
+  }
+}
+
+.t-workout__exercise.active {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(19, 133, 185, 0.6);
 }
 
 .t-workout__exercise.t--new,
