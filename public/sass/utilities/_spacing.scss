@@ -3,6 +3,10 @@
 
 // Margin
 // ---
+.u-margin-extend {
+  margin: -$unit*3 !important;
+  width: auto !important
+}
 
 .u-margin-none {
   margin: 0 !important;
