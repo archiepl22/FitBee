@@ -296,6 +296,11 @@ $heading-height: 137px;
   &.t--number {
     width: 75px !important
   }
+
+  &.t--notes {
+    width: 80% !important;
+    font-size: 12px !important;
+  }
 }
 
 .t-workout__exercise-wrapper {
