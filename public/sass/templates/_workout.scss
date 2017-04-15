@@ -280,11 +280,11 @@ $heading-height: 137px;
 }
 
 .t-workout__select {
-  font-size: $small-font;
-  margin-right: -$unit*5;
-  margin-left: -$unit;
-  border: 0;
-  background-color: transparent;
+  // font-size: $small-font;
+  // margin-right: -$unit*5;
+  // margin-left: -$unit;
+  // border: 0;
+  // background-color: transparent;
 
   @media (min-width: $screen-xs) {
     margin-right: 0;
